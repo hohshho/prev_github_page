@@ -662,7 +662,7 @@
  - 코드 재사용 용이
  - 유지 보수 쉬움
  - 강한 응집력과 약한 결합력을 가진다
- - (응집력 : 기능을 수행하기 위해 얼마만큼의 연관된 책임과 아이디어가 뭉쳐있는지를 나타내는 정도)
+ - (응집력 : 기능을 수행하기 위해 얼마만큼의 연관된 책임과 아이디어가 뭉친 정도)
  - (결합력 : 프로그램의 요소가 다른 것과 얼마나 연결되어 있는지, 의존적인지)
 
 4. 단점
@@ -703,18 +703,12 @@
  - 메소드 형태가 제한적이다.
  - 표준 규약이 없다.
  - HTTP 통신 모델에 대해서만 지원합니다.</code></pre></div>
-<p><strong>1. API란 무엇인가요?</strong></p>
-<ul>
-<li>API란, 응용 프로그램에서 사용할 수 있도록 운영 체제나 프로그래밍 언어가 제공하는 기능을 제어할 수 있게 만든 인터페이스를 뜻합니다. </li>
-</ul>
-<p><strong>2. REST API란 무엇인가요?</strong></p>
-<ul>
-<li>자원이 있는 곳을 URI로 정의하고, 자원을 이용하는 방법을 HTTP Method를 통해 자원을 처리하는 것을 말합니다.</li>
-</ul>
-<p><strong>3. RESTful 하게 API를 디자인 한다는 것은 무엇을 의미하는가?</strong></p>
-<ul>
-<li>REST API의 6가지 기본 원칙을 성실히 지킨 서비스를 RESTful하다라고 표현합니다.</li>
-</ul>
+<p><strong>1. API란 무엇인가요?</strong>
+- API란, 응용 프로그램에서 사용할 수 있도록 운영 체제나 프로그래밍 언어가 제공하는 기능을 제어할 수 있게 만든 인터페이스를 뜻합니다. </p>
+<p><strong>2. REST API란 무엇인가요?</strong>
+- 자원이 있는 곳을 URI로 정의하고, 자원을 이용하는 방법을 HTTP Method를 통해 자원을 처리하는 것을 말합니다.</p>
+<p><strong>3. RESTful 하게 API를 디자인 한다는 것은 무엇을 의미하는가?</strong>
+- REST API의 6가지 기본 원칙을 성실히 지킨 서비스를 RESTful하다라고 표현합니다.</p>
 <h3 id="3-tdd" style="position:relative;"><a href="#3-tdd" aria-label="3 tdd permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>3. TDD</h3>
 <div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">1. 정의
  - 테스트 주도 개발
@@ -735,9 +729,9 @@
  - 개발시간이 길어진다.</code></pre></div>
 <p><strong>1. TDD에 대해 설명해주세요</strong></p>
 <p><strong>2. BDD에 대해 아시나요?</strong></p>
-<p><strong>3. 좋은 코드에 대해 어떻게 생각하시나요? (내생각)</strong>
+<p><strong>3. 좋은 코드에 대해 어떻게 생각하시나요? (내생각)</strong><br>
 - 저는 좋은 코드를 판단하는 기준으로 <strong>가독성, 효율성</strong>이 가장 중요하다고 생각합니다.
-- 가독성 부분은 개발자마다 프로그래밍 수준이 다르므로 기준이 다를 수 있겠지만, Coding Convention을 잘 지키고 일관성있게 작성된 코드를 가독성이 좋다고 할 수 있는 것 같고, 문제상황에서 필요한 요구사항을 적절히 충족하며, 효율적으로 해결하는 코드가 좋은 코드라고 생각합니다.</p>
+가독성 부분은 개발자마다 프로그래밍 수준이 다르므로 기준이 다를 수 있겠지만, Coding Convention을 잘 지키고 일관성있게 작성된 코드를 가독성이 좋다고 할 수 있는 것 같고, 문제상황에서 필요한 요구사항을 적절히 충족하며, 효율적으로 해결하는 코드가 좋은 코드라고 생각합니다.</p>
 <h3 id="4-git" style="position:relative;"><a href="#4-git" aria-label="4 git permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>4. GIT</h3>
 <div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">1. 정의
  - 버전 관리 시스템
@@ -746,10 +740,8 @@
  - 여러명이 동시에 작업하는 병렬 개발이 가능하다.
  - 분산 버전관리이기 때문에 인터넷이 연결되지 않은 곳에서도 개발을 진행할 수 있다.
  - 체계적인 개발이 가능해진다.</code></pre></div>
-<p><strong>1. Git의 장점에 대해 설명해주세요</strong></p>
-<ul>
-<li>여러명이 동시 작업하는 병렬 개발이 가능하고, 분산 버전관리기 때문에 인터넷이 연결되지 않은 곳에서도 개발을 진행할 수 있는 것이 장점입니다.</li>
-</ul>
+<p><strong>1. Git의 장점에 대해 설명해주세요</strong>
+- 여러명이 동시 작업하는 병렬 개발이 가능하고, 분산 버전관리기 때문에 인터넷이 연결되지 않은 곳에서도 개발을 진행할 수 있는 것이 장점입니다.</p>
 <h2 id="part-1-2-자료구조" style="position:relative;"><a href="#part-1-2-%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0" aria-label="part 1 2 자료구조 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Part 1-2 자료구조</h2>
 <h3 id="1-array--linkedlist" style="position:relative;"><a href="#1-array--linkedlist" aria-label="1 array  linkedlist permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>1. Array / LinkedList</h3>
 <div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">1. 정의
@@ -764,9 +756,9 @@
 4. 단점
  -</code></pre></div>
 <h3 id="2-stack--queue" style="position:relative;"><a href="#2-stack--queue" aria-label="2 stack  queue permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2. Stack / Queue</h3>
-<p>** 1. Stack에 대해 설명해주세요 **
+<p><strong>1. Stack에 대해 설명해주세요</strong>
 - 선형 자료구조의 일종으로 Last In First Out (LIFO)구조를 가집니다.</p>
-<p>** 2. Queue에 대해 설명해주세요 **
+<p><strong>2. Queue에 대해 설명해주세요</strong>
 - 선형 자료구조의 일종으로 First In First Out (FIFO)구조를 가집니다.</p>
 <h3 id="3-tree" style="position:relative;"><a href="#3-tree" aria-label="3 tree permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>3. Tree</h3>
 <div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text"> 1. Binary Tree(이진트리)
@@ -778,9 +770,9 @@
  4. Red Black Tree
 
  5. Graph</code></pre></div>
-<p>** 1. Tree에 대해 설명해주세요 **
+<p><strong>1. Tree에 대해 설명해주세요</strong><br>
 - 비선형 자료구조이다. 트리는 계층적 관계(Hierarchical Relationship)을 표현하는 자료구조이다. </p>
-<p>** 2. 이진트리(Binary Tree)에 대해 설명해주세요.</p>
+<p><strong>2. 이진트리(Binary Tree)에 대해 설명해주세요.</strong></p>
 <h2 id="part-1-3-알고리즘" style="position:relative;"><a href="#part-1-3-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98" aria-label="part 1 3 알고리즘 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Part 1-3 알고리즘</h2>
 <h2 id="part-1-4-네트워크" style="position:relative;"><a href="#part-1-4-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC" aria-label="part 1 4 네트워크 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Part 1-4 네트워크</h2>
 <h3 id="1-http-method" style="position:relative;"><a href="#1-http-method" aria-label="1 http method permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>1. HTTP Method</h3>
@@ -791,8 +783,8 @@
 <h3 id="1-프로세스스레드" style="position:relative;"><a href="#1-%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4%EC%8A%A4%EB%A0%88%EB%93%9C" aria-label="1 프로세스스레드 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>1. 프로세스/스레드</h3>
 <h3 id="2-멀티스레드멀티-프로세스" style="position:relative;"><a href="#2-%EB%A9%80%ED%8B%B0%EC%8A%A4%EB%A0%88%EB%93%9C%EB%A9%80%ED%8B%B0-%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4" aria-label="2 멀티스레드멀티 프로세스 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2. 멀티스레드/멀티 프로세스</h3>
 <h3 id="3-동기비동기" style="position:relative;"><a href="#3-%EB%8F%99%EA%B8%B0%EB%B9%84%EB%8F%99%EA%B8%B0" aria-label="3 동기비동기 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>3. 동기/비동기</h3>
-<p>재귀 호출의 단점은?
--> 재귀 호출 시, 함수를 반복해서 호출해야 하는데, 매번 호출할 때마다 시간과 스택 공간에서 오버헤드 발생.</p>
+<p><strong>1.재귀 호출의 단점은?</strong>
+- 재귀 호출 시, 함수를 반복해서 호출해야 하는데, 매번 호출할 때마다 시간과 스택 공간에서 오버헤드 발생.</p>
 <h2 id="part-1-6-데이터-베이스" style="position:relative;"><a href="#part-1-6-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EB%B2%A0%EC%9D%B4%EC%8A%A4" aria-label="part 1 6 데이터 베이스 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Part 1-6 데이터 베이스</h2>
 <h3 id="1-데이터-베이스-사용하는-이유" style="position:relative;"><a href="#1-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EB%B2%A0%EC%9D%B4%EC%8A%A4-%EC%82%AC%EC%9A%A9%ED%95%98%EB%8A%94-%EC%9D%B4%EC%9C%A0" aria-label="1 데이터 베이스 사용하는 이유 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>1. 데이터 베이스 사용하는 이유</h3>
 <h3 id="2-정규화" style="position:relative;"><a href="#2-%EC%A0%95%EA%B7%9C%ED%99%94" aria-label="2 정규화 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2. 정규화</h3>
