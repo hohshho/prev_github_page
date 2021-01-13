@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Just Do It! | Feed]]></title><description><![CDATA[웹 개발 블로그입니다. ]]></description><link>https://hohshho.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 09 Jan 2021 06:16:19 GMT</lastBuildDate><item><title><![CDATA[백준 2981 - 검문 풀이]]></title><description><![CDATA[문제를 풀다 조금 재밌는 부분이 생겨 정리한다. 
- 백준 문제를 풀 때 한가지 팁은 문제가 낮은 정답비율이면, 자신이 생각한 방법의 입출력이나 시간복잡도를 의심해보는게 좋은 것 같다.  -> ㄹㅇ 꿀팁이다. 자, 일단 처음엔 뭔가 최대공약수로 장난치…]]></description><link>https://hohshho.github.io/backjoon2981/</link><guid isPermaLink="false">https://hohshho.github.io/backjoon2981/</guid><pubDate>Sat, 09 Jan 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;문제를 풀다 조금 재밌는 부분이 생겨 정리한다.&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Just Do It! | Feed]]></title><description><![CDATA[웹 개발 블로그입니다. ]]></description><link>https://hohshho.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 13 Jan 2021 02:44:50 GMT</lastBuildDate><item><title><![CDATA[백준 2981 - 검문 풀이]]></title><description><![CDATA[문제를 풀다 조금 재밌는 부분이 생겨 정리한다. 
+ 백준 문제를 풀 때 한가지 팁은 문제가 낮은 정답비율이면, 자신이 생각한 방법의 입출력이나 시간복잡도를 확인하는게 좋은거같다.  -> ㄹㅇ 꿀팁이다. 자, 일단 처음엔 뭔가 최대공약수로 장난치는 문…]]></description><link>https://hohshho.github.io/backjoon2981/</link><guid isPermaLink="false">https://hohshho.github.io/backjoon2981/</guid><pubDate>Sat, 09 Jan 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;문제를 풀다 조금 재밌는 부분이 생겨 정리한다.&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
@@ -65,7 +65,7 @@
   &lt;/a&gt;
     &lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;백준 문제를 풀 때 한가지 팁은 문제가 낮은 정답비율이면,&lt;br&gt;
-&lt;strong&gt;자신이 생각한 방법의 입출력이나 시간복잡도를 의심&lt;/strong&gt;해보는게 좋은 것 같다.&lt;br&gt;
+자신이 생각한 방법의 입출력이나 시간복잡도를 확인하는게 좋은거같다.&lt;br&gt;
 -&gt; ㄹㅇ 꿀팁이다.&lt;/p&gt;
 &lt;p&gt;자, 일단 처음엔 뭔가 최대공약수로 장난치는 문제인 느낌을 받아서&lt;br&gt;
 &apos;값 하나씩 모두 최대공약수를 찾아볼까?&apos; 라는 생각을 가졌다.&lt;/p&gt;
