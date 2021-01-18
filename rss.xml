@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Just Do It! | Feed]]></title><description><![CDATA[웹 개발 블로그입니다. ]]></description><link>https://hohshho.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 17 Jan 2021 06:52:16 GMT</lastBuildDate><item><title><![CDATA[이분탐색, 파라매트릭 서치(Parametric Search)]]></title><description><![CDATA[백준 이분 탐색 문제를 풀다 Parametric Search에 대해 알게 되었고, 정리 할 필요성을 느껴서 포스팅한다. 일단 이분탐색은 탐색 기법으로 원하는 탐색 범위를 두 부분으로 분할해서 찾는 방식이다  -> O(logN)의 시간 복잡도를 가지고…]]></description><link>https://hohshho.github.io/ParametricSearch/</link><guid isPermaLink="false">https://hohshho.github.io/ParametricSearch/</guid><pubDate>Sun, 17 Jan 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;백준 이분 탐색 문제를 풀다 Parametric Search에 대해 알게 되었고, 정리 할 필요성을 느껴서 포스팅한다.&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Just Do It! | Feed]]></title><description><![CDATA[웹 개발 블로그입니다. ]]></description><link>https://hohshho.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 18 Jan 2021 03:11:24 GMT</lastBuildDate><item><title><![CDATA[이분탐색, 파라매트릭 서치(Parametric Search)]]></title><description><![CDATA[백준 이분 탐색 문제를 풀다 Parametric Search에 대해 알게 되었고, 정리 할 필요성을 느껴서 포스팅한다. 일단 이분탐색은 탐색 기법으로 원하는 탐색 범위를 두 부분으로 분할해서 찾는 방식이다  -> O(logN)의 시간 복잡도를 가지고…]]></description><link>https://hohshho.github.io/ParametricSearch/</link><guid isPermaLink="false">https://hohshho.github.io/ParametricSearch/</guid><pubDate>Sun, 17 Jan 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;백준 이분 탐색 문제를 풀다 Parametric Search에 대해 알게 되었고, 정리 할 필요성을 느껴서 포스팅한다.&lt;/p&gt;
 &lt;p&gt;일단 &lt;strong&gt;이분탐색&lt;/strong&gt;은 탐색 기법으로 &lt;strong&gt;원하는 탐색 범위를 두 부분으로 분할&lt;/strong&gt;해서 찾는 방식이다&lt;br&gt;
 -&gt; O(logN)의 시간 복잡도를 가지고 있다.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;파라매트릭 서치&lt;/strong&gt;는 &lt;strong&gt;최적화 문제(문제 상황을 만족하는 특정한 값 - ex) 최소값, 최대값)을 결정문제로 바꾸어 푸는 것&lt;/strong&gt;을 말한다.  &lt;/p&gt;
@@ -546,7 +546,7 @@ dp를 활용해 가장 긴 증가하는 부분 수열 구할 수 있는데 이�
 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;이 문제는 한 줄에 10개씩 들어온다는게 포인트다. 10개씩 장난쳐줘야 한다.&lt;/p&gt;
 &lt;p&gt;정말 끝&lt;/p&gt;</content:encoded></item><item><title><![CDATA[백준 2981 - 검문 풀이]]></title><description><![CDATA[문제를 풀다 조금 재밌는 부분이 생겨 정리한다. 
- 백준 문제를 풀 때 한가지 팁은 문제가 낮은 정답비율이면, 자신이 생각한 방법의 입출력이나 시간복잡도를 확인하는게 좋은거같다.  -> ㄹㅇ 꿀팁이다. 자, 일단 처음엔 뭔가 최대공약수로 장난치는 문…]]></description><link>https://hohshho.github.io/backjoon2981/</link><guid isPermaLink="false">https://hohshho.github.io/backjoon2981/</guid><pubDate>Sat, 09 Jan 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;문제를 풀다 조금 재밌는 부분이 생겨 정리한다.&lt;/p&gt;
+ 백준 문제를 풀 때 한가지 팁은 문제가 낮은 정답비율이면 입출력이나 시간복잡도를 확인하는게 좋은거같다.  -> ㄹㅇ 꿀팁이다.   일단 뭔가 최대공약수로 장난치는 문제인 느낌을 받아서 규칙을 찾아보…]]></description><link>https://hohshho.github.io/backjoon2981/</link><guid isPermaLink="false">https://hohshho.github.io/backjoon2981/</guid><pubDate>Sat, 09 Jan 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;문제를 풀다 조금 재밌는 부분이 생겨 정리한다.&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
@@ -611,12 +611,10 @@ dp를 활용해 가장 긴 증가하는 부분 수열 구할 수 있는데 이�
       /&gt;
   &lt;/a&gt;
     &lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;백준 문제를 풀 때 한가지 팁은 문제가 낮은 정답비율이면,&lt;br&gt;
-자신이 생각한 방법의 입출력이나 시간복잡도를 확인하는게 좋은거같다.&lt;br&gt;
--&gt; ㄹㅇ 꿀팁이다.&lt;/p&gt;
-&lt;p&gt;자, 일단 처음엔 뭔가 최대공약수로 장난치는 문제인 느낌을 받아서&lt;br&gt;
-&apos;값 하나씩 모두 최대공약수를 찾아볼까?&apos; 라는 생각을 가졌다.&lt;/p&gt;
-&lt;p&gt;하지만, 이 문제는 낮은 정답비율을 가졌기 때문에, 규칙을 한번 더 찾아보는 수고정도는 해줄 수 있다고 생각해 규칙을 찾아보았다.&lt;/p&gt;
+&lt;p&gt;백준 문제를 풀 때 한가지 팁은 문제가 낮은 정답비율이면&lt;br&gt;
+입출력이나 시간복잡도를 확인하는게 좋은거같다.&lt;br&gt;
+-&gt; ㄹㅇ 꿀팁이다.  &lt;/p&gt;
+&lt;p&gt;일단 뭔가 최대공약수로 장난치는 문제인 느낌을 받아서 규칙을 찾아보았다.&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;arr[1] % M + r = arr[2] % M + r = arr[3] % M + r
  -&amp;gt; 요런 식이 나온다. 조금 장난쳐보면
 
@@ -661,7 +659,7 @@ arr[3] % M + r - arr[2] % M - r = arr[2] % M + r - arr[1] % M - r
 
 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;아 조금 주의할 점, arr[n] - arr[n-1]값이 음수일 수 있어서 절대값으로 받아야 한다.&lt;/p&gt;
-&lt;p&gt;오늘은 뭔가 낚이지 않은 기분이다. (기분 ㄹㅇ 째짐 ㅋ👌하핳)&lt;/p&gt;</content:encoded></item><item><title><![CDATA[백준 9251 - LCS 풀이]]></title><description><![CDATA[풀이를 보고 바로 이해하지 못하고 헷갈린 부분이 있어서 정리한다.  LCS란? 공통적으로 가지고 있는 부분 문자열 중, 가장 긴 문자열(최장 공통 부분 수열) 규칙찾기 점화식을 찾아내기 전에 문제에 나온 예제 입력값을 통해 규칙을 찾아보면 접근 문제…]]></description><link>https://hohshho.github.io/backjoon9251/</link><guid isPermaLink="false">https://hohshho.github.io/backjoon9251/</guid><pubDate>Mon, 28 Dec 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;풀이를 보고 바로 이해하지 못하고 헷갈린 부분이 있어서 정리한다.&lt;/p&gt;
+&lt;p&gt;오늘은 뭔가 낚이지 않은 기분이다. 👌하핳&lt;/p&gt;</content:encoded></item><item><title><![CDATA[백준 9251 - LCS 풀이]]></title><description><![CDATA[풀이를 보고 바로 이해하지 못하고 헷갈린 부분이 있어서 정리한다.  LCS란? 공통적으로 가지고 있는 부분 문자열 중, 가장 긴 문자열(최장 공통 부분 수열) 규칙찾기 점화식을 찾아내기 전에 문제에 나온 예제 입력값을 통해 규칙을 찾아보면 접근 문제…]]></description><link>https://hohshho.github.io/backjoon9251/</link><guid isPermaLink="false">https://hohshho.github.io/backjoon9251/</guid><pubDate>Mon, 28 Dec 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;풀이를 보고 바로 이해하지 못하고 헷갈린 부분이 있어서 정리한다.&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
