@@ -1,67 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Just Do It! | Feed]]></title><description><![CDATA[웹 개발 블로그입니다. ]]></description><link>https://hohshho.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 25 Jan 2021 14:30:57 GMT</lastBuildDate><item><title><![CDATA[KMP 알고리즘]]></title><link>https://hohshho.github.io/kmpAlgorithm/</link><guid isPermaLink="false">https://hohshho.github.io/kmpAlgorithm/</guid><pubDate>Mon, 25 Jan 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/72b3e9fe0f39985b6d8dc1cccb9f3f68/1e2b7/kmpProblem1.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 21.62162162162162%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAECAYAAACOXx+WAAAACXBIWXMAABJ0AAASdAHeZh94AAAAf0lEQVQY032O2w7DIAxD+f+/3KTuadoDyoCYi0doQeukLiLCcByDg4K3552P7UW2vlo7tdW3/j0Pfew5Z7qqnt5vFEmngSv9j9Va6QAldA9DBt8hDFhKGS9amRHAGkwpLaaqoydzZlTFgiKyh/f7dBgt3ELmUIxxBZoO/ROTfQDSITvQhrPk1AAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;문제사진&quot;
-        title=&quot;문제사진&quot;
-        src=&quot;/static/72b3e9fe0f39985b6d8dc1cccb9f3f68/fcda8/kmpProblem1.png&quot;
-        srcset=&quot;/static/72b3e9fe0f39985b6d8dc1cccb9f3f68/12f09/kmpProblem1.png 148w,
-/static/72b3e9fe0f39985b6d8dc1cccb9f3f68/e4a3f/kmpProblem1.png 295w,
-/static/72b3e9fe0f39985b6d8dc1cccb9f3f68/fcda8/kmpProblem1.png 590w,
-/static/72b3e9fe0f39985b6d8dc1cccb9f3f68/efc66/kmpProblem1.png 885w,
-/static/72b3e9fe0f39985b6d8dc1cccb9f3f68/c83ae/kmpProblem1.png 1180w,
-/static/72b3e9fe0f39985b6d8dc1cccb9f3f68/1e2b7/kmpProblem1.png 1483w&quot;
-        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;
-&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/bf5190388d06e3024330bba1b76be1b3/c211c/kmpProblem2.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 36.486486486486484%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAHCAYAAAAIy204AAAACXBIWXMAABJ0AAASdAHeZh94AAAA4ElEQVQoz32S627DMAiF/f7v2U6T1tjx3djJKeC5zfajlj4JMIYDiYm5oFHHOqdwCieu55878zDzrpicM7z3KKUghADxBfGFWuu0ubHEU0qvHLHHGH8aGR8icqk4jkMvxzjUXvTePyJvVq4qTNzJWovAKp1z2DbLbIrGWbUoqaySWmOlGTFGVS3xGKdimUSKasGHdciVMH4VEZEi9tqlTLKHBOIJPh0jH+X7x8L51a3o2EIX+lxDSAV75F22rjFi+gWiOboJPuB++4Kzc1xrdy2a0pta26vZulv2NUb8tzwB/vojht+9QJ4AAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;문제사진2&quot;
-        title=&quot;문제사진2&quot;
-        src=&quot;/static/bf5190388d06e3024330bba1b76be1b3/fcda8/kmpProblem2.png&quot;
-        srcset=&quot;/static/bf5190388d06e3024330bba1b76be1b3/12f09/kmpProblem2.png 148w,
-/static/bf5190388d06e3024330bba1b76be1b3/e4a3f/kmpProblem2.png 295w,
-/static/bf5190388d06e3024330bba1b76be1b3/fcda8/kmpProblem2.png 590w,
-/static/bf5190388d06e3024330bba1b76be1b3/efc66/kmpProblem2.png 885w,
-/static/bf5190388d06e3024330bba1b76be1b3/c83ae/kmpProblem2.png 1180w,
-/static/bf5190388d06e3024330bba1b76be1b3/c211c/kmpProblem2.png 1502w&quot;
-        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[투포인터 알고리즘]]></title><link>https://hohshho.github.io/twoPoint/</link><guid isPermaLink="false">https://hohshho.github.io/twoPoint/</guid><pubDate>Mon, 25 Jan 2021 00:00:00 GMT</pubDate><content:encoded></content:encoded></item><item><title><![CDATA[Java Live Coding - 제목(DAY2)]]></title><link>https://hohshho.github.io/javaLiveCoding_2/</link><guid isPermaLink="false">https://hohshho.github.io/javaLiveCoding_2/</guid><pubDate>Mon, 25 Jan 2021 00:00:00 GMT</pubDate><content:encoded></content:encoded></item><item><title><![CDATA[최단거리 경로복원]]></title><description><![CDATA[백준 11779, 11780, 1738번 문제를 통해 최단경로의 경로출력 정리해보려고 한다. 다익스트라 - 백준 11779 
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Just Do It! | Feed]]></title><description><![CDATA[웹 개발 블로그입니다. ]]></description><link>https://hohshho.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 25 Jan 2021 14:41:20 GMT</lastBuildDate><item><title><![CDATA[Java Live Coding - 제목(DAY2)]]></title><link>https://hohshho.github.io/javaLiveCoding_2/</link><guid isPermaLink="false">https://hohshho.github.io/javaLiveCoding_2/</guid><pubDate>Mon, 25 Jan 2021 00:00:00 GMT</pubDate><content:encoded></content:encoded></item><item><title><![CDATA[최단거리 경로복원]]></title><description><![CDATA[백준 11779, 11780, 1738번 문제를 통해 최단경로의 경로출력 정리해보려고 한다. 다익스트라 - 백준 11779 
  소스를 간략히 설명하면 다익스트라 알고리즘에 값이 조건에 맞아 갱신될 때 배열의 값에 이전 노드를 저장한다. 첫 노드부터 …]]></description><link>https://hohshho.github.io/shortestDistance_2/</link><guid isPermaLink="false">https://hohshho.github.io/shortestDistance_2/</guid><pubDate>Mon, 25 Jan 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;백준 11779, 11780, 1738번 문제를 통해 최단경로의 경로출력 정리해보려고 한다.&lt;/p&gt;
 &lt;h1 id=&quot;다익스트라---백준-11779&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EB%8B%A4%EC%9D%B5%EC%8A%A4%ED%8A%B8%EB%9D%BC---%EB%B0%B1%EC%A4%80-11779&quot; aria-label=&quot;다익스트라   백준 11779 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;다익스트라 - 백준 11779&lt;/h1&gt;
 &lt;p&gt;&lt;span
@@ -232,7 +169,70 @@
 &lt;p&gt;다익스트라 알고리즘에 값이 조건에 맞아 갱신될 때 배열의 값에 이전 노드를 저장한다.&lt;/p&gt;
 &lt;p&gt;첫 노드부터 순서대로 출력하기 위해 stack을 사용했다.&lt;/p&gt;
 &lt;h1 id=&quot;플로이드---백준-11780&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%ED%94%8C%EB%A1%9C%EC%9D%B4%EB%93%9C---%EB%B0%B1%EC%A4%80-11780&quot; aria-label=&quot;플로이드   백준 11780 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;플로이드 - 백준 11780&lt;/h1&gt;
-&lt;h1 id=&quot;벨만포드---백준-1738&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EB%B2%A8%EB%A7%8C%ED%8F%AC%EB%93%9C---%EB%B0%B1%EC%A4%80-1738&quot; aria-label=&quot;벨만포드   백준 1738 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;벨만포드 - 백준 1738&lt;/h1&gt;</content:encoded></item><item><title><![CDATA[최단거리 알고리즘]]></title><description><![CDATA[정리 안해두면 까먹을거 같아서 기억력을 조금이라도 향상시키기 위해 정리해둔다. 자, 최단거리 알고리즘을 이해하기 위해 그래프를 간략히 살펴보면 그래프란? 그래프는 정점(Vertex) 와 간선(Edge) 을 모아놓은 자료구조다. 그래프라는 친구는 보통…]]></description><link>https://hohshho.github.io/shortestDistance_1/</link><guid isPermaLink="false">https://hohshho.github.io/shortestDistance_1/</guid><pubDate>Sat, 23 Jan 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;정리 안해두면 까먹을거 같아서 기억력을 조금이라도 향상시키기 위해 정리해둔다.&lt;/p&gt;
+&lt;h1 id=&quot;벨만포드---백준-1738&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EB%B2%A8%EB%A7%8C%ED%8F%AC%EB%93%9C---%EB%B0%B1%EC%A4%80-1738&quot; aria-label=&quot;벨만포드   백준 1738 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;벨만포드 - 백준 1738&lt;/h1&gt;</content:encoded></item><item><title><![CDATA[투포인터 알고리즘]]></title><link>https://hohshho.github.io/twoPoint/</link><guid isPermaLink="false">https://hohshho.github.io/twoPoint/</guid><pubDate>Mon, 25 Jan 2021 00:00:00 GMT</pubDate><content:encoded></content:encoded></item><item><title><![CDATA[KMP 알고리즘]]></title><link>https://hohshho.github.io/kmpAlgorithm/</link><guid isPermaLink="false">https://hohshho.github.io/kmpAlgorithm/</guid><pubDate>Mon, 25 Jan 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/72b3e9fe0f39985b6d8dc1cccb9f3f68/1e2b7/kmpProblem1.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 21.62162162162162%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAECAYAAACOXx+WAAAACXBIWXMAABJ0AAASdAHeZh94AAAAf0lEQVQY032O2w7DIAxD+f+/3KTuadoDyoCYi0doQeukLiLCcByDg4K3552P7UW2vlo7tdW3/j0Pfew5Z7qqnt5vFEmngSv9j9Va6QAldA9DBt8hDFhKGS9amRHAGkwpLaaqoydzZlTFgiKyh/f7dBgt3ELmUIxxBZoO/ROTfQDSITvQhrPk1AAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;문제사진&quot;
+        title=&quot;문제사진&quot;
+        src=&quot;/static/72b3e9fe0f39985b6d8dc1cccb9f3f68/fcda8/kmpProblem1.png&quot;
+        srcset=&quot;/static/72b3e9fe0f39985b6d8dc1cccb9f3f68/12f09/kmpProblem1.png 148w,
+/static/72b3e9fe0f39985b6d8dc1cccb9f3f68/e4a3f/kmpProblem1.png 295w,
+/static/72b3e9fe0f39985b6d8dc1cccb9f3f68/fcda8/kmpProblem1.png 590w,
+/static/72b3e9fe0f39985b6d8dc1cccb9f3f68/efc66/kmpProblem1.png 885w,
+/static/72b3e9fe0f39985b6d8dc1cccb9f3f68/c83ae/kmpProblem1.png 1180w,
+/static/72b3e9fe0f39985b6d8dc1cccb9f3f68/1e2b7/kmpProblem1.png 1483w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
+&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/bf5190388d06e3024330bba1b76be1b3/c211c/kmpProblem2.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 36.486486486486484%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAHCAYAAAAIy204AAAACXBIWXMAABJ0AAASdAHeZh94AAAA4ElEQVQoz32S627DMAiF/f7v2U6T1tjx3djJKeC5zfajlj4JMIYDiYm5oFHHOqdwCieu55878zDzrpicM7z3KKUghADxBfGFWuu0ubHEU0qvHLHHGH8aGR8icqk4jkMvxzjUXvTePyJvVq4qTNzJWovAKp1z2DbLbIrGWbUoqaySWmOlGTFGVS3xGKdimUSKasGHdciVMH4VEZEi9tqlTLKHBOIJPh0jH+X7x8L51a3o2EIX+lxDSAV75F22rjFi+gWiOboJPuB++4Kzc1xrdy2a0pta26vZulv2NUb8tzwB/vojht+9QJ4AAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;문제사진2&quot;
+        title=&quot;문제사진2&quot;
+        src=&quot;/static/bf5190388d06e3024330bba1b76be1b3/fcda8/kmpProblem2.png&quot;
+        srcset=&quot;/static/bf5190388d06e3024330bba1b76be1b3/12f09/kmpProblem2.png 148w,
+/static/bf5190388d06e3024330bba1b76be1b3/e4a3f/kmpProblem2.png 295w,
+/static/bf5190388d06e3024330bba1b76be1b3/fcda8/kmpProblem2.png 590w,
+/static/bf5190388d06e3024330bba1b76be1b3/efc66/kmpProblem2.png 885w,
+/static/bf5190388d06e3024330bba1b76be1b3/c83ae/kmpProblem2.png 1180w,
+/static/bf5190388d06e3024330bba1b76be1b3/c211c/kmpProblem2.png 1502w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[최단거리 알고리즘]]></title><description><![CDATA[정리 안해두면 까먹을거 같아서 기억력을 조금이라도 향상시키기 위해 정리해둔다. 자, 최단거리 알고리즘을 이해하기 위해 그래프를 간략히 살펴보면 그래프란? 그래프는 정점(Vertex) 와 간선(Edge) 을 모아놓은 자료구조다. 그래프라는 친구는 보통…]]></description><link>https://hohshho.github.io/shortestDistance_1/</link><guid isPermaLink="false">https://hohshho.github.io/shortestDistance_1/</guid><pubDate>Sat, 23 Jan 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;정리 안해두면 까먹을거 같아서 기억력을 조금이라도 향상시키기 위해 정리해둔다.&lt;/p&gt;
 &lt;p&gt;자, 최단거리 알고리즘을 이해하기 위해 그래프를 간략히 살펴보면&lt;/p&gt;
 &lt;h1 id=&quot;그래프란&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EA%B7%B8%EB%9E%98%ED%94%84%EB%9E%80&quot; aria-label=&quot;그래프란 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;그래프란?&lt;/h1&gt;
 &lt;p&gt;그래프는 &lt;strong&gt;정점(Vertex)&lt;/strong&gt; 와 &lt;strong&gt;간선(Edge)&lt;/strong&gt; 을 모아놓은 자료구조다.&lt;/p&gt;
@@ -918,120 +918,7 @@
 &lt;h2 id=&quot;바이트코드란-무엇인가&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EB%B0%94%EC%9D%B4%ED%8A%B8%EC%BD%94%EB%93%9C%EB%9E%80-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80&quot; aria-label=&quot;바이트코드란 무엇인가 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;바이트코드란 무엇인가&lt;/h2&gt;
 &lt;h2 id=&quot;jit-컴파일러란-무엇이며-어떻게-동작하는지&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#jit-%EC%BB%B4%ED%8C%8C%EC%9D%BC%EB%9F%AC%EB%9E%80-%EB%AC%B4%EC%97%87%EC%9D%B4%EB%A9%B0-%EC%96%B4%EB%96%BB%EA%B2%8C-%EB%8F%99%EC%9E%91%ED%95%98%EB%8A%94%EC%A7%80&quot; aria-label=&quot;jit 컴파일러란 무엇이며 어떻게 동작하는지 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;JIT 컴파일러란 무엇이며 어떻게 동작하는지&lt;/h2&gt;
 &lt;h2 id=&quot;jvm-구성-요소&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#jvm-%EA%B5%AC%EC%84%B1-%EC%9A%94%EC%86%8C&quot; aria-label=&quot;jvm 구성 요소 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;JVM 구성 요소&lt;/h2&gt;
-&lt;h2 id=&quot;jdk와-jre의-차이&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#jdk%EC%99%80-jre%EC%9D%98-%EC%B0%A8%EC%9D%B4&quot; aria-label=&quot;jdk와 jre의 차이 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;JDK와 JRE의 차이&lt;/h2&gt;</content:encoded></item><item><title><![CDATA[백준 200문제 풀이 후기]]></title><description><![CDATA[백준 알고리즘 200문제 같지 않은 200문제를 풀고난 후기다. 
- 알고리즘 공부를 시작하면서 200문제 쯤 되면 후기 한번 야무지게 남기고 싶었다ㅋ 일단 후기를 작성하기 앞서 본인 소개를 간략하게 하겠다. 나는 20년 2월에 졸업했다. 졸업하고 나…]]></description><link>https://hohshho.github.io/solvedac200/</link><guid isPermaLink="false">https://hohshho.github.io/solvedac200/</guid><pubDate>Wed, 20 Jan 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;백준 알고리즘 200문제 같지 않은 200문제를 풀고난 후기다.&lt;/p&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/99dd59ecbed31f76437679ba38dc5f9f/2a077/solveac1.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 52.70270270270271%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAABJ0AAASdAHeZh94AAABlElEQVQoz61Sv0tCURS+g1t/R039By01RGNLbVHgFLg0BBHNRRlSqa9dotVwCsJFEJpEhHCRMFMLtYe9m+/d9/vrnfvElBwqOvBx73nc853vO+cx0SsD5jMGvI1ms4VW6/dot9uo1+tQVRWMVxPAywVKhTPET8+RTqckUqmfQ1EUxONxFItFMF14EBYCePiPYIYxgGF8wDCN4BRwHAeu6/4JnueBWbYdUvtfXVw3VOv7/lRQ4fh9PGdUePtWweb9JTLJI1QbPUk20HX5cBoxhWmasCxrJEIIIVUyPN2gnJvHbHYby6vrWNtJQH3n8BwLmtqZSmYHrvSgIeV00napgbQsClEgE0HuagkrsWMsbuwjf18JVfL+SOH4SXM2AkUUmqah2+2CRicJ9WIMvSRDT4lgbzeKha1DlB5q8nHX7sPyJ21TUCEpouCch4SBfUno8kd0rufQOGG4O5hBMpMd2nLxyh3Yfrix74SWnFmo2JYzlIRyq6KPQS0Lo5GnLFRkO/BNO1y+JJu07tBvMsyJmMZA3z8B59copR5Vx+4AAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;프로필사진&quot;
-        title=&quot;프로필사진&quot;
-        src=&quot;/static/99dd59ecbed31f76437679ba38dc5f9f/fcda8/solveac1.png&quot;
-        srcset=&quot;/static/99dd59ecbed31f76437679ba38dc5f9f/12f09/solveac1.png 148w,
-/static/99dd59ecbed31f76437679ba38dc5f9f/e4a3f/solveac1.png 295w,
-/static/99dd59ecbed31f76437679ba38dc5f9f/fcda8/solveac1.png 590w,
-/static/99dd59ecbed31f76437679ba38dc5f9f/efc66/solveac1.png 885w,
-/static/99dd59ecbed31f76437679ba38dc5f9f/c83ae/solveac1.png 1180w,
-/static/99dd59ecbed31f76437679ba38dc5f9f/2a077/solveac1.png 1533w&quot;
-        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;
-&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/3e005ec553bf6ae47fdbbc76a60c5c49/2dab4/solveac2.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 57.432432432432435%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAABJ0AAASdAHeZh94AAABDklEQVQoz4WSi66EIAxE/f8v1fhAI4Q3XaZudxvXmztJA+pwnAJDa41QtTbKudD3uVIphUTyXgqKMbJPlFKiAZNSsDhTzYnBAjLG0DzP5Jz7gWKxtY7n8J3nSd57GrCY00RHyR8d6hkKbdvGJSl0OgBR0DiOdBwHd/gFJkclByphp/pOCNg0TT/pBBh6yxA8+75Ly41brmi5QzHiGUK767r+CYxPQHxGwtqNpbfKo0porX0EAhbCDZhzB74NpMwimAR+B4YQyPcSoDFImK9T1kY9lzbkvR6vhOGzNTgUBt5BGojrsCzL489yb0/2UIB8ynSTXoQ9RMqna4Ot0EDTff8CYdSHokedED++EmZ6AXHnYPVNYYNpAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;프로필사진2&quot;
-        title=&quot;프로필사진2&quot;
-        src=&quot;/static/3e005ec553bf6ae47fdbbc76a60c5c49/fcda8/solveac2.png&quot;
-        srcset=&quot;/static/3e005ec553bf6ae47fdbbc76a60c5c49/12f09/solveac2.png 148w,
-/static/3e005ec553bf6ae47fdbbc76a60c5c49/e4a3f/solveac2.png 295w,
-/static/3e005ec553bf6ae47fdbbc76a60c5c49/fcda8/solveac2.png 590w,
-/static/3e005ec553bf6ae47fdbbc76a60c5c49/efc66/solveac2.png 885w,
-/static/3e005ec553bf6ae47fdbbc76a60c5c49/c83ae/solveac2.png 1180w,
-/static/3e005ec553bf6ae47fdbbc76a60c5c49/2dab4/solveac2.png 1461w&quot;
-        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;알고리즘 공부를 시작하면서 200문제 쯤 되면 후기 한번 야무지게 남기고 싶었다ㅋ&lt;/p&gt;
-&lt;p&gt;일단 후기를 작성하기 앞서 본인 소개를 간략하게 하겠다.&lt;/p&gt;
-&lt;p&gt;나는 20년 2월에 졸업했다.&lt;br&gt;
-졸업하고 나선 많이 안일한 생각을 가지고 상반기에 보안기사를 취득하는데 올인했다.&lt;/p&gt;
-&lt;p&gt;보통 개발자분들은 정보처리기사를 많이 따는데 보안기사를 딴 이유는, 개발자도 운영이나 보안쪽 지식이 필요하다고 생각했다.  &lt;/p&gt;
-&lt;p&gt;진짜 존나 다행히 한번에 합격했다. ㄹㅇ결과 볼 때 울뻔했다. 이게 뭐라고...하.....&lt;/p&gt;
-&lt;p&gt;자, 2020년 첫번재 퀘스트인 보안기사를 취득했으니&lt;br&gt;
-두번째 퀘스트인 취업을 위해 2020년 하반기 이력서를 제출하기 시작했다.&lt;/p&gt;
-&lt;p&gt;코테 승률은..... 3번보면 1번 정도 통과한 것 같다.&lt;br&gt;
-(지금보면 가끔 통과한 것도 왜 통과했는지 이해가 안된다 ㅋㅋㅋㅋㅋㅋㅋ)&lt;/p&gt;
-&lt;p&gt;뭐... 모든 기업이 코딩테스트를 보는게 아니니 면접도 봐가며 정신없이 보냈다.&lt;/p&gt;
-&lt;p&gt;면접때 조금 우울했던 부분이 &lt;strong&gt;&apos;정보처리기사는 왜 없어요?&apos;&lt;/strong&gt; 란 질문이였다.&lt;br&gt;
-진짜 들을 때마다 너무 속상했다. ㅜㅜㅜㅜㅜㅜㅜㅜㅜㅜㅜㅜ 보안기사도 나름 배우는거 많은데 ㅜㅜㅜ&lt;br&gt;
-너무 스트레스 받아서 21년 상반기에 취득할 예정이다. 필기는 땄다.&lt;br&gt;
-(사실 실기 매번 깜빡해서 신청을 못함ㅋ 업보다ㅋㅋㅋ)   &lt;/p&gt;
-&lt;p&gt;11월쯤 되니까..... ㅋㅋㅋㅋㅋㅋ 뭔가 잘못되간다는 생각이 들었다.&lt;br&gt;
-구조적으로 뭔가 잘못 됐으니 취업을 못 하는거고, 분석을 했다. &lt;/p&gt;
-&lt;p&gt;ㅈㄴ 열받는 현실이지만 취업 실패&lt;/p&gt;
-&lt;p&gt;자, 인정을 하니 다음 단계는 쉬웠다.&lt;br&gt;
-처음으로 돌아가 기업 채용 프로세스 부터 살펴보자.&lt;/p&gt;
-&lt;p&gt;보통의 기업 채용 프로세스는 다음과 같다. &lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;1. 서류 -&amp;gt; 2. 코딩테스트 -&amp;gt; 3. 기술면접 -&amp;gt; 4. 임원면접&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;문제점을 파악해보면&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;저조한 코테 승률&lt;/li&gt;
-&lt;li&gt;면접 &lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;서류는 내 손을 떠났다고 생각하기 때문에 2가지가 문제라고 판단했다.&lt;/p&gt;
-&lt;p&gt;문제점을 알았으니, 새로운 목표를 정해보면&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;코테승률 80%&lt;/li&gt;
-&lt;li&gt;면접보면서 대답 못했던 부분은 꼭 챙기자&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;할 수 있는거 열심히 하자라는 생각으로 백준 단계별 문제 풀이를 시작했다.&lt;/p&gt;
-&lt;p&gt;가장 애용한 사이트로는&lt;br&gt;
-&lt;a href=&quot;https://blog.encrypted.gg/category/%EA%B0%95%EC%A2%8C/%EC%8B%A4%EC%A0%84%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98?page=1&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;BaaaaaaaarkingDog님 블로그&lt;/a&gt;&lt;br&gt;
-&lt;a href=&quot;https://m.blog.naver.com/kks227/220796029558&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;라이님 블로그&lt;/a&gt;&lt;br&gt;
-&lt;a href=&quot;https://koosaga.com/2?category=554431&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;구사가님 블로그&lt;/a&gt;&lt;br&gt;
-(만약 내가 취업을 성공한다면 이분들 덕이다 💖)&lt;/p&gt;
-&lt;p&gt;음.... 다시 백준 200문제 푼 후기로 돌아오면&lt;/p&gt;
-&lt;p&gt;아직 멀었다. 300 ~ 400문제쯤 풀면 승률 80%정도 나오지 않을까 한다.&lt;/p&gt;
-&lt;p&gt;하하 앞으로 즐겁게 문제 풀생각하니 짜릿하다👍&lt;br&gt;
-최대한 빠른 시일내에 300문제 후기로 찾아오겠다.&lt;br&gt;
-300문제 딱대 ㅋ&lt;/p&gt;
-&lt;p&gt;새벽 감성으로 글을 모두 작성하고 나니, 일기장 느낌이다. 부끄러움이 몰려온다.&lt;br&gt;
-하지만 이 글의 용도는 나를 더욱 채찍질(?)하기 위해 두고두고 읽겠다.&lt;/p&gt;
-&lt;p&gt;정말, 마지막으로 기합 한번 넣고 글을 마치겠다.&lt;/p&gt;
-&lt;h1 id=&quot;취업-성공하자잇&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%B7%A8%EC%97%85-%EC%84%B1%EA%B3%B5%ED%95%98%EC%9E%90%EC%9E%87&quot; aria-label=&quot;취업 성공하자잇 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;취업 성공하자잇!&lt;/h1&gt;</content:encoded></item><item><title><![CDATA[이분탐색, 파라매트릭 서치(Parametric Search)]]></title><description><![CDATA[백준 이분 탐색 문제를 풀다 Parametric Search에 대해 알게 되었고, 정리 할 필요성을 느껴서 포스팅한다. 일단 이분탐색은 탐색 기법으로 원하는 탐색 범위를 두 부분으로 분할해서 찾는 방식이다  -> O(logN)의 시간 복잡도를 가지고…]]></description><link>https://hohshho.github.io/ParametricSearch/</link><guid isPermaLink="false">https://hohshho.github.io/ParametricSearch/</guid><pubDate>Sun, 17 Jan 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;백준 이분 탐색 문제를 풀다 Parametric Search에 대해 알게 되었고, 정리 할 필요성을 느껴서 포스팅한다.&lt;/p&gt;
+&lt;h2 id=&quot;jdk와-jre의-차이&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#jdk%EC%99%80-jre%EC%9D%98-%EC%B0%A8%EC%9D%B4&quot; aria-label=&quot;jdk와 jre의 차이 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;JDK와 JRE의 차이&lt;/h2&gt;</content:encoded></item><item><title><![CDATA[이분탐색, 파라매트릭 서치(Parametric Search)]]></title><description><![CDATA[백준 이분 탐색 문제를 풀다 Parametric Search에 대해 알게 되었고, 정리 할 필요성을 느껴서 포스팅한다. 일단 이분탐색은 탐색 기법으로 원하는 탐색 범위를 두 부분으로 분할해서 찾는 방식이다  -> O(logN)의 시간 복잡도를 가지고…]]></description><link>https://hohshho.github.io/ParametricSearch/</link><guid isPermaLink="false">https://hohshho.github.io/ParametricSearch/</guid><pubDate>Sun, 17 Jan 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;백준 이분 탐색 문제를 풀다 Parametric Search에 대해 알게 되었고, 정리 할 필요성을 느껴서 포스팅한다.&lt;/p&gt;
 &lt;p&gt;일단 &lt;strong&gt;이분탐색&lt;/strong&gt;은 탐색 기법으로 &lt;strong&gt;원하는 탐색 범위를 두 부분으로 분할&lt;/strong&gt;해서 찾는 방식이다&lt;br&gt;
 -&gt; O(logN)의 시간 복잡도를 가지고 있다.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;파라매트릭 서치&lt;/strong&gt;는 &lt;strong&gt;최적화 문제(문제 상황을 만족하는 특정한 값 - ex) 최소값, 최대값)을 결정문제로 바꾸어 푸는 것&lt;/strong&gt;을 말한다.  &lt;/p&gt;
@@ -1692,4 +1579,95 @@ arr[3] % M + r - arr[2] % M - r = arr[2] % M + r - arr[1] % M - r
 
 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;아 조금 주의할 점, arr[n] - arr[n-1]값이 음수일 수 있어서 절대값으로 받아야 한다.&lt;/p&gt;
-&lt;p&gt;오늘은 뭔가 낚이지 않은 기분이다. 👌하핳&lt;/p&gt;</content:encoded></item></channel></rss>
+&lt;p&gt;오늘은 뭔가 낚이지 않은 기분이다. 👌하핳&lt;/p&gt;</content:encoded></item><item><title><![CDATA[백준 9251 - LCS 풀이]]></title><description><![CDATA[풀이를 보고 바로 이해하지 못하고 헷갈린 부분이 있어서 정리한다.  LCS란? 공통적으로 가지고 있는 부분 문자열 중, 가장 긴 문자열(최장 공통 부분 수열) 규칙찾기 점화식을 찾아내기 전에 문제에 나온 예제 입력값을 통해 규칙을 찾아보면 접근 문제…]]></description><link>https://hohshho.github.io/backjoon9251/</link><guid isPermaLink="false">https://hohshho.github.io/backjoon9251/</guid><pubDate>Mon, 28 Dec 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;풀이를 보고 바로 이해하지 못하고 헷갈린 부분이 있어서 정리한다.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/adc729ce99d6c9f70809a1ec1b6b9ff8/da994/problem.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 47.2972972972973%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAYAAAAywQxIAAAACXBIWXMAABJ0AAASdAHeZh94AAAA3ElEQVQoz6VS2RKDIAz0//+0hzO1hMidZlGw1R4PdWYHiJuwmzAQz5Jyln+/UkrFwFrQGCPMLNbaCpzJkBCRzPPc4+A0HuLYgxNj7EUHXgs0cktwzklW5UBKqWJ/BmJc4r0gLDvv66El7JOOyJ8tk2WZpvuLFaxEm0Ve7Tbr4LQCe6hClhACrliVbQpB+DWEY0Ft6vlyFfOkCArQ13rRkq4xJ8uLKF+nXXs4TiTsU78l11VUaVkVF5mMlfGmw/OxO9kDvAH9O58uOlWv6txbOBfqf0weSvHU3sH7IA/cksMNF0IVwQAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;문제사진&quot;
+        title=&quot;문제사진&quot;
+        src=&quot;/static/adc729ce99d6c9f70809a1ec1b6b9ff8/fcda8/problem.png&quot;
+        srcset=&quot;/static/adc729ce99d6c9f70809a1ec1b6b9ff8/12f09/problem.png 148w,
+/static/adc729ce99d6c9f70809a1ec1b6b9ff8/e4a3f/problem.png 295w,
+/static/adc729ce99d6c9f70809a1ec1b6b9ff8/fcda8/problem.png 590w,
+/static/adc729ce99d6c9f70809a1ec1b6b9ff8/efc66/problem.png 885w,
+/static/adc729ce99d6c9f70809a1ec1b6b9ff8/c83ae/problem.png 1180w,
+/static/adc729ce99d6c9f70809a1ec1b6b9ff8/da994/problem.png 1487w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;h1 id=&quot;lcs란&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#lcs%EB%9E%80&quot; aria-label=&quot;lcs란 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;LCS란?&lt;/h1&gt;
+&lt;p&gt;공통적으로 가지고 있는 부분 문자열 중, 가장 긴 문자열(최장 공통 부분 수열)&lt;/p&gt;
+&lt;h2 id=&quot;규칙찾기&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EA%B7%9C%EC%B9%99%EC%B0%BE%EA%B8%B0&quot; aria-label=&quot;규칙찾기 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;규칙찾기&lt;/h2&gt;
+&lt;p&gt;점화식을 찾아내기 전에 문제에 나온 예제 입력값을 통해 규칙을 찾아보면&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;index   C A P C A K
+A       0 1 1 1 1 1
+C       1 1 1 2 2 2
+A       1 2 2 2 3 3
+Y       1 2 2 2 3 3
+K       1 2 2 2 3 4
+P       1 2 3 3 3 4&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&quot;접근&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%A0%91%EA%B7%BC&quot; aria-label=&quot;접근 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;접근&lt;/h2&gt;
+&lt;p&gt;문제의 경우는 2가지로 나눌 수 있다.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;두 문자열에 같은 문자가 추가되는 경우&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;ex) ACAYKP&lt;strong&gt;A&lt;/strong&gt; , CAPCAK&lt;strong&gt;A&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;두 문자열에 다른 문자가 추가되는 경우&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;ex) ACAYKP&lt;strong&gt;B&lt;/strong&gt; , CAPCAK&lt;strong&gt;C&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;점화식&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%A0%90%ED%99%94%EC%8B%9D&quot; aria-label=&quot;점화식 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;점화식&lt;/h2&gt;
+&lt;p&gt;두 가지 경우를 각각 점화식으로 나타내 보면&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt; 1) dp[i][j] = dp[i-1][j-1] + 1
+ 2) dp[i][j] = Max(arr[i][j-1], arr[i-1][j])&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;점화식을 찾아냈으면 코드작성은 쉽다.&lt;/p&gt;
+&lt;h2 id=&quot;코드&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%BD%94%EB%93%9C&quot; aria-label=&quot;코드 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;코드&lt;/h2&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;java&quot;&gt;&lt;pre class=&quot;language-java&quot;&gt;&lt;code class=&quot;language-java&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;token namespace&quot;&gt;java&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;io&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;BufferedReader&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;token namespace&quot;&gt;java&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;io&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;IOException&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;token namespace&quot;&gt;java&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;io&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;InputStreamReader&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; num9251 &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+	&lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; args&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;throws&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;IOException&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+		&lt;span class=&quot;token class-name&quot;&gt;BufferedReader&lt;/span&gt; br &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;BufferedReader&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;InputStreamReader&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;in&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+		&lt;span class=&quot;token class-name&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; str1 &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; br&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;readLine&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;split&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+		&lt;span class=&quot;token class-name&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; str2 &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; br&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;readLine&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;split&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+		
+		&lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;N&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; str1&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;length&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+		&lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;M&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; str2&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;length&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+		&lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; arr &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;N&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;M&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+		
+		&lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; i&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;i&lt;span class=&quot;token operator&quot;&gt;&amp;lt;=&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;N&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;i&lt;span class=&quot;token operator&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+			&lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; j&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;j&lt;span class=&quot;token operator&quot;&gt;&amp;lt;=&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;M&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;j&lt;span class=&quot;token operator&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+				&lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;str1&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;i&lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;equals&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;str2&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;j&lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+					arr&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;i&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;j&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; arr&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;i&lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;j&lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+				&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+					arr&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;i&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;j&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Math&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;max&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;arr&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;i&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;j&lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;arr&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;i&lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;j&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+				&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+			&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+		&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+		&lt;span class=&quot;token class-name&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;out&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;arr&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;N&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;M&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+	&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item></channel></rss>
