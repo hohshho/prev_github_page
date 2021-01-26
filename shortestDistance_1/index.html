@@ -573,27 +573,34 @@
 <li><a href="/shortestDistance_1/#reference">Reference</a></li>
 </ul></div></div><div class="series"><div class="series-head"><span class="head">Post Series</span><div class="icon-wrap"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="layer-group" class="svg-inline--fa fa-layer-group fa-w-16 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M12.41 148.02l232.94 105.67c6.8 3.09 14.49 3.09 21.29 0l232.94-105.67c16.55-7.51 16.55-32.52 0-40.03L266.65 2.31a25.607 25.607 0 0 0-21.29 0L12.41 107.98c-16.55 7.51-16.55 32.53 0 40.04zm487.18 88.28l-58.09-26.33-161.64 73.27c-7.56 3.43-15.59 5.17-23.86 5.17s-16.29-1.74-23.86-5.17L70.51 209.97l-58.1 26.33c-16.55 7.5-16.55 32.5 0 40l232.94 105.59c6.8 3.08 14.49 3.08 21.29 0L499.59 276.3c16.55-7.5 16.55-32.5 0-40zm0 127.8l-57.87-26.23-161.86 73.37c-7.56 3.43-15.59 5.17-23.86 5.17s-16.29-1.74-23.86-5.17L70.29 337.87 12.41 364.1c-16.55 7.5-16.55 32.5 0 40l232.94 105.59c6.8 3.08 14.49 3.08 21.29 0L499.59 404.1c16.55-7.5 16.55-32.5 0-40z"></path></svg></div></div><ul class="series-list"><li class="series-item current-series"><a aria-current="page" class="" href="/shortestDistance_1/"><span>최단거리 알고리즘</span><div class="icon-wrap"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-left" class="svg-inline--fa fa-angle-left fa-w-8 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><path fill="currentColor" d="M31.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L127.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L201.7 409c-9.4 9.4-24.6 9.4-33.9 0l-136-136c-9.5-9.4-9.5-24.6-.1-34z"></path></svg></div></a></li><li class="series-item "><a href="/shortestDistance_2/"><span>최단거리 경로복원</span><div class="icon-wrap"></div></a></li></ul></div><div class="blog-post-content"><p>정리 안해두면 까먹을거 같아서 기억력을 조금이라도 향상시키기 위해 정리해둔다.</p>
 <p>자, 최단거리 알고리즘을 이해하기 위해 그래프를 간략히 살펴보면</p>
+<hr>
 <h1 id="그래프란" style="position:relative;"><a href="#%EA%B7%B8%EB%9E%98%ED%94%84%EB%9E%80" aria-label="그래프란 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>그래프란?</h1>
+<hr>
 <p>그래프는 <strong>정점(Vertex)</strong> 와 <strong>간선(Edge)</strong> 을 모아놓은 자료구조다.</p>
 <p>그래프라는 친구는 보통 간선에 가중치를 가진다.</p>
 <h2 id="구현-방법" style="position:relative;"><a href="#%EA%B5%AC%ED%98%84-%EB%B0%A9%EB%B2%95" aria-label="구현 방법 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>구현 방법</h2>
+<hr>
 <ol>
 <li>인접 행렬</li>
 <li>인접 리스트</li>
 </ol>
 <h1 id="다익스트라-알고리즘" style="position:relative;"><a href="#%EB%8B%A4%EC%9D%B5%EC%8A%A4%ED%8A%B8%EB%9D%BC-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98" aria-label="다익스트라 알고리즘 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>다익스트라 알고리즘</h1>
+<hr>
 <p>최단 거리 알고리즘은 기본적으로 <strong>그리디 알고리즘</strong> 으로 분류된다.<br>
 -> <strong>매번 가장 비용이 적은 노드</strong> 를 선택하는 과정을 반복하기 때문이다.</p>
 <h2 id="전제조건" style="position:relative;"><a href="#%EC%A0%84%EC%A0%9C%EC%A1%B0%EA%B1%B4" aria-label="전제조건 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>전제조건</h2>
+<hr>
 <ol>
 <li>시작 노드 - 시작 노드 사이 거리는 0이다.</li>
 <li>모든 간선은 양의 가중치를 가진다.</li>
 </ol>
 <h2 id="특징" style="position:relative;"><a href="#%ED%8A%B9%EC%A7%95" aria-label="특징 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>특징</h2>
+<hr>
 <ol>
 <li>구현 방법은 2가지</li>
 </ol>
 <h2 id="1-직관적인-방법---ov2" style="position:relative;"><a href="#1-%EC%A7%81%EA%B4%80%EC%A0%81%EC%9D%B8-%EB%B0%A9%EB%B2%95---ov2" aria-label="1 직관적인 방법   ov2 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>1. 직관적인 방법 - O(V^2)</h2>
+<hr>
 <ol>
 <li>각 노드에 대한 최단 거리를 담는 1차원 리스트 선언</li>
 <li>방문하지 않은 노드 중에서 거리가 가장 짧은 노드 선택<br>
@@ -601,6 +608,7 @@
 <li>거리가 더 짧으면 값 갱신</li>
 </ol>
 <h3 id="최단거리---백준-1753" style="position:relative;"><a href="#%EC%B5%9C%EB%8B%A8%EA%B1%B0%EB%A6%AC---%EB%B0%B1%EC%A4%80-1753" aria-label="최단거리   백준 1753 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>최단거리 - 백준 1753</h3>
+<hr>
 <p><span
       class="gatsby-resp-image-wrapper"
       style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
@@ -753,12 +761,15 @@
     <span class="token punctuation">}</span>
     
 <span class="token punctuation">}</span></code></pre></div>
+<hr>
 <p>소스를 간략히 설명하면<br>
 노드 arrayList를 만들고 Edge는 클래스로 만들어서 넣어주는 방법으로 구현했다.<br>
 (배열로만 구현하면 메모리 초과난다.)</p>
 <p>매번 최단거리가 가장 짧은 노드를 찾기 위해 O(V) 만큼 탐색하기 때문에 비효율적이다.<br>
 -> Priority Queue 활용</p>
+<hr>
 <h2 id="2-priority-queue-활용---oelogv" style="position:relative;"><a href="#2-priority-queue-%ED%99%9C%EC%9A%A9---oelogv" aria-label="2 priority queue 활용   oelogv permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2. Priority Queue 활용 - O(ElogV)</h2>
+<hr>
 <p>최단 거리 -> <strong>최소 힙</strong>을 사용한다.</p>
 <div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">1. 각 노드에 대한 최단 거리를 담는 1차원 리스트 선언
 2. 우선순위 큐을 사용해 거리가 짧은 정점부터 Queue에 넣어 줌.(처음 시작 값 : 0)  
@@ -788,6 +799,7 @@
 	<span class="token punctuation">}</span>
 <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre></div>
 <h3 id="최단거리---백준-1504" style="position:relative;"><a href="#%EC%B5%9C%EB%8B%A8%EA%B1%B0%EB%A6%AC---%EB%B0%B1%EC%A4%80-1504" aria-label="최단거리   백준 1504 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>최단거리 - 백준 1504</h3>
+<hr>
 <p><span
       class="gatsby-resp-image-wrapper"
       style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
@@ -852,12 +864,14 @@
       />
   </a>
     </span></p>
+<hr>
 <p>문제를 보면 정점 2개를 방문해야 한다는 조건이 있다. 정점을 각각 V1, V2라고 한다면 </p>
 <ol>
 <li>1 -> V1 -> V2 -> N</li>
 <li>1 -> V2 -> V1 -> N</li>
 </ol>
 <p>두가지 경우에 대해 구간별로 최소값을 구한 후, 더하면 된다.</p>
+<hr>
 <div class="gatsby-highlight" data-language="java"><pre class="language-java"><code class="language-java"><span class="token keyword">package</span> <span class="token namespace">package24</span><span class="token punctuation">;</span>
 
 <span class="token keyword">import</span> <span class="token namespace">java<span class="token punctuation">.</span>io<span class="token punctuation">.</span></span><span class="token operator">*</span><span class="token punctuation">;</span>
@@ -953,17 +967,24 @@
 	<span class="token punctuation">}</span>
 <span class="token punctuation">}</span></code></pre></div>
 <h1 id="벨만-포드-알고리즘" style="position:relative;"><a href="#%EB%B2%A8%EB%A7%8C-%ED%8F%AC%EB%93%9C-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98" aria-label="벨만 포드 알고리즘 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>벨만-포드 알고리즘</h1>
+<hr>
 <h2 id="특징-1" style="position:relative;"><a href="#%ED%8A%B9%EC%A7%95-1" aria-label="특징 1 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>특징</h2>
+<hr>
 <ol>
 <li>시간 복잡도 - O(VE)</li>
 <li>다익스트라 알고리즘보다 느리지만 음의 가중치를 가진 경로의 최단거리를 구할 수 있다.</li>
 </ol>
 <h2 id="전제-조건" style="position:relative;"><a href="#%EC%A0%84%EC%A0%9C-%EC%A1%B0%EA%B1%B4" aria-label="전제 조건 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>전제 조건</h2>
+<hr>
 <ol>
 <li><strong>같은 정점을 2번 지날일은 없기 때문에</strong> 간선의 최대 개수는 <strong>V-1</strong>이다.</li>
 <li>음수 사이클이 없는 최단 경로를 구해야 한다.</li>
 </ol>
+<blockquote>
+<p>존재하는 모든 간선을 돌아보면서 간선이 통할 수도 있는 거리를 갱신하는 것</p>
+</blockquote>
 <h2 id="백준-11657" style="position:relative;"><a href="#%EB%B0%B1%EC%A4%80-11657" aria-label="백준 11657 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>백준 11657</h2>
+<hr>
 <p><span
       class="gatsby-resp-image-wrapper"
       style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
@@ -1138,6 +1159,7 @@
 		<span class="token keyword">return</span> <span class="token class-name">Integer</span><span class="token punctuation">.</span><span class="token function">parseInt</span><span class="token punctuation">(</span>string<span class="token punctuation">)</span><span class="token punctuation">;</span>
 	<span class="token punctuation">}</span>
 <span class="token punctuation">}</span></code></pre></div>
+<hr>
 <p>코드를 간단히 설명해보면</p>
 <p>존재하는 모든 간선을 돌아보면서 이 간선을 통할 수도 있는 최단경로들의 거리를 갱신한다.
 같은 정점을 2번 방문하는 경우는 없다는 전제가 있으므로 V-1까지 확인한다
@@ -1145,8 +1167,11 @@
 위의 소스에선 V까지 루프의 마지막에 최단거리가 갱신되는지 확인한다.</p>
 <p>이 문제는 조금 주의할 점이 있다. </p>
 <p>최소 가중치가 -10000이라 언더플로우가 생길 수 있기 때문에 <strong>dist를 long[]으로 설정해야 한다.</strong>  </p>
+<hr>
 <h1 id="플로이드-알고리즘" style="position:relative;"><a href="#%ED%94%8C%EB%A1%9C%EC%9D%B4%EB%93%9C-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98" aria-label="플로이드 알고리즘 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>플로이드 알고리즘</h1>
+<hr>
 <h2 id="특징-2" style="position:relative;"><a href="#%ED%8A%B9%EC%A7%95-2" aria-label="특징 2 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>특징</h2>
+<hr>
 <ol>
 <li>다익스트라, 벨만 포드 알고리즘 : 하나의 시작점에 대한 최단 거리</li>
 <li>플로이드 워셜 알고리즘 : <strong>모든 지점에서 다른 모든 지점까지의 최단 경로를 모두 구해야 하는 경우</strong>  </li>
@@ -1154,13 +1179,14 @@
 -> 노드의 개수 O(V) * <strong>현재 노드를 거쳐가는 모든 경로O(V^2)</strong> -> <strong>O(V^3)</strong></li>
 <li><strong>DP형태</strong> -> 점화식에 맞게 2차원 리스트를 갱신하기 때문</li>
 </ol>
-<p>Tip!!
+<p><strong>Tip!!</strong><br>
 상황에 따라 자기 자신으로 이동 가능하면 dis[i][j] = 0 / 불가능하면 dis[i][j] = INF</p>
 <ul>
 <li>가장 바깥쪽 for문은 경유할 정점</li>
 <li>가운데 for문은 출발 정점</li>
 <li>가장 안쪽 for문은 도착 정점</li>
 </ul>
+<hr>
 <h2 id="백준-11404" style="position:relative;"><a href="#%EB%B0%B1%EC%A4%80-11404" aria-label="백준 11404 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>백준 11404</h2>
 <div class="gatsby-highlight" data-language="java"><pre class="language-java"><code class="language-java"><span class="token keyword">package</span> <span class="token namespace">package24</span><span class="token punctuation">;</span>
 
@@ -1222,6 +1248,7 @@
 
 <span class="token punctuation">}</span></code></pre></div>
 <h1 id="정리" style="position:relative;"><a href="#%EC%A0%95%EB%A6%AC" aria-label="정리 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>정리</h1>
+<hr>
 <p>이렇게 최단거리 알고리즘 3가지를 알아보았다.  </p>
 <p>사용하는 경우를 정리해보면  </p>
 <div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">1. 다익스트라 알고리즘[우선순위 큐] -&gt; 한 지점에서 다른 지점까지 최단거리 구하는 문제  
@@ -1232,6 +1259,7 @@
 다음 글은 최단경로의 경로출력에 대해 정리해 볼 예정이다.</p>
 <p>추가로 <a href="https://blog.naver.com/kks227/220796029558" target="_blank" rel="nofollow noopener noreferrer">라이님 블로그</a> 요기 있는 추가문제 하나씩 풀어봐야겠다.</p>
 <h1 id="reference" style="position:relative;"><a href="#reference" aria-label="reference permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Reference</h1>
+<hr>
 <p><a href="https://blog.naver.com/kks227/220796029558" target="_blank" rel="nofollow noopener noreferrer">라이님 블로그</a><br>
 <a href="https://blog.encrypted.gg/917?category=773649" target="_blank" rel="nofollow noopener noreferrer">갓킹독님 블로그</a><br>
 <a href="https://www.crocus.co.kr/546?category=209527" target="_blank" rel="nofollow noopener noreferrer">Crocus님 블로그</a><br>
