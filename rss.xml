@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Just Do It! | Feed]]></title><description><![CDATA[웹 개발 블로그입니다. ]]></description><link>https://hohshho.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 28 Jan 2021 16:45:20 GMT</lastBuildDate><item><title><![CDATA[트리]]></title><description><![CDATA[트리를 정리해보자 ㅎㅎ 특징 트리의 서브트리는 절대로 영역이 겹치지 않음 -> 분할정복, DP로 장난을 잘 칠 줄 알아야 한다. 순회 방법 트리의 순회 방법은 3가지다. 보통 BFS, DFS로 구현한다. 백준 11725 - 트리의 부모찾기 
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Just Do It! | Feed]]></title><description><![CDATA[웹 개발 블로그입니다. ]]></description><link>https://hohshho.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 28 Jan 2021 16:52:32 GMT</lastBuildDate><item><title><![CDATA[트리]]></title><description><![CDATA[트리를 정리해보자 ㅎㅎ 특징 트리의 서브트리는 절대로 영역이 겹치지 않음 -> 분할정복, DP로 장난을 잘 칠 줄 알아야 한다. 순회 방법 트리의 순회 방법은 3가지다. 보통 BFS, DFS로 구현한다. 백준 11725 - 트리의 부모찾기 
  풀이 …]]></description><link>https://hohshho.github.io/tree/</link><guid isPermaLink="false">https://hohshho.github.io/tree/</guid><pubDate>Thu, 28 Jan 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;트리를 정리해보자 ㅎㅎ&lt;/p&gt;
 &lt;h2 id=&quot;특징&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%ED%8A%B9%EC%A7%95&quot; aria-label=&quot;특징 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;특징&lt;/h2&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;1. 연결 그래프
@@ -344,7 +344,7 @@ Case 1: A forest of 3 trees.&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;1. 트리의 임의의 정점(x)에서 가장 먼 정점(y)을 찾는다.
 2. 가장 먼 정점(y) 에서 가장 먼 정점(z)을 찾는다.
  =&amp;gt; 지름은 y - z 까지의 거리다.&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;증명이 궁금하면 &lt;a href=&quot;https://blog.myungwoo.kr/112&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;전명우님 블로그 - 트리의 지름 구하기&lt;/a&gt; 에 쉽게 설명한 글이 있다.
+&lt;p&gt;증명이 궁금하면 &lt;a href=&quot;https://blog.myungwoo.kr/112&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;전명우님 블로그 - 트리의 지름 구하기&lt;/a&gt; 에 쉽게 설명한 글이 있다.&lt;br&gt;
 -&gt; 한줄 요약 : 어떤 한 점에서 가장 먼 점이 지름에 무조건 포함된다 (포함 안되는 경우를 증명)&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
@@ -485,7 +485,7 @@ Case 1: A forest of 3 trees.&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;h2 id=&quot;백준-2250---트리의-높이와-너비&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EB%B0%B1%EC%A4%80-2250---%ED%8A%B8%EB%A6%AC%EC%9D%98-%EB%86%92%EC%9D%B4%EC%99%80-%EB%84%88%EB%B9%84&quot; aria-label=&quot;백준 2250   트리의 높이와 너비 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;[백준 2250] - 트리의 높이와 너비&lt;/h2&gt;
 &lt;p&gt;이문제 풀면서 많이 헤맸다ㅋㅋㅋㅋㅋㅋㅋ &lt;/p&gt;
 &lt;p&gt;배열 만들어서 깊이마다 맨 오른쪽 값을 맨 왼쪽 값 빼면 될 것 같다는 생각을 했는데.....&lt;/p&gt;
-&lt;p&gt;양심고백을 조금 해보면 오늘 삽질을 너무 많이 해서 정답 의 해결 방법부터 찾아봤다.&lt;/p&gt;
+&lt;p&gt;양심고백을 조금 해보면 오늘 삽질을 너무 많이 해서 고민 많이 안해보고 정답 해결 방법부터 찾아봤다.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://wooooooak.github.io/algorithm/2018/12/05/%EB%B0%B1%EC%A4%802250%EB%AC%B8%EC%A0%9C/&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;쾌락코딩님 블로그 - 백준2250번 문제(트리의 높이와 너비) with Java&lt;/a&gt;글을 참고했다.&lt;/p&gt;
 &lt;p&gt;문제의 포인트는 3가지다.&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;1. 문제에서 루트가 정해저 있지 않다
@@ -494,7 +494,102 @@ Case 1: A forest of 3 trees.&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
    -&amp;gt; 오른쪽 - 왼쪽 + 1
 3. 중위 순회로 순회
    -&amp;gt; 그림보면 왼쪽 - 루트 - 오른쪽 순으로 index가 표시되있음&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;// TODO : 문제 사진&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/8b0c4337af12f628b8dca5f9d33e3589/78363/2250pb1.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 52.02702702702703%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAYAAAC0VX7mAAAACXBIWXMAABJ0AAASdAHeZh94AAABJklEQVQoz3VRW3KDMBDj/lfrEdp+9ScxhuL4yVO11jEQptmZZWXslbR240yHXisMxsLYX3z8fOH78wFsGzaw8FviHWbM84x1XdFskwWWgGuw4V2y8YprNDGNYDKstXDeCw4hYFkWwTHGHY/jCP88w3/GmBexJuUDVYEHqHjFZxfVVcXTNL0SPpzHnJvPI1QyJu+Ga9aKa55FDod5nLZtoVuN2+0GrTsMw4Cuy4/V9zJ6SknGPidH/y8aqt7vSgiYlYCVyZFIwH+FOAlZXXsfdpF13QqhUkrcOOfkYcxgDpwvnclmEtWkUMFHlZFdbtJay6gqO+X4SrUioAUr2Sc5HdMJX5mYlY4pzrUQ8ifvjC5IwlqbQ97jYZLIOgZxU8jC7rrsR7nDPxqjDRPy3DQoAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;2250pb1&quot;
+        title=&quot;2250pb1&quot;
+        src=&quot;/static/8b0c4337af12f628b8dca5f9d33e3589/fcda8/2250pb1.png&quot;
+        srcset=&quot;/static/8b0c4337af12f628b8dca5f9d33e3589/12f09/2250pb1.png 148w,
+/static/8b0c4337af12f628b8dca5f9d33e3589/e4a3f/2250pb1.png 295w,
+/static/8b0c4337af12f628b8dca5f9d33e3589/fcda8/2250pb1.png 590w,
+/static/8b0c4337af12f628b8dca5f9d33e3589/efc66/2250pb1.png 885w,
+/static/8b0c4337af12f628b8dca5f9d33e3589/c83ae/2250pb1.png 1180w,
+/static/8b0c4337af12f628b8dca5f9d33e3589/78363/2250pb1.png 1522w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
+&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/c32f83d513c5811a5ddf3ccdf343467a/78363/2250pb2.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 49.32432432432432%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAYAAAC0VX7mAAAACXBIWXMAABJ0AAASdAHeZh94AAABKklEQVQoz61S2Y6DQAyb//9AWloqqh7c5SjLfbg4ahBdVfu0kSw7oyFxMhi8Y57nlZ/PJ+73OzzPQxiGooMggO/7wjxrmubjOw3Dg99gIdu2cTgc4DgOXNfF+XzGbrfD5XLBfr+XplpwC4MvEccxrtcrLMvC8XgUfTqdcLvdJGeztm2/fQozTROIcRyhuq5rFEWBPM8FqrMsQ5qmeDweUpB3h2FYIQ55MY4TRFEk4I7IdBmGyqEgSZKlWCqFeU5mcdbgTqVgVVWSsGPbtKKbhemSmrzVXdfhrzB5+YN+sTstI+vY7KRr2EJH7PteoFpZHHI/tE37HEn3puNwZ7o3nvF1OY1OtWU2NGVV4z/D5O8XZOcsyz9el47KslxzarrlnWLJORHfYPs/vgCJ7ATr56T/GgAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;2250pb2&quot;
+        title=&quot;2250pb2&quot;
+        src=&quot;/static/c32f83d513c5811a5ddf3ccdf343467a/fcda8/2250pb2.png&quot;
+        srcset=&quot;/static/c32f83d513c5811a5ddf3ccdf343467a/12f09/2250pb2.png 148w,
+/static/c32f83d513c5811a5ddf3ccdf343467a/e4a3f/2250pb2.png 295w,
+/static/c32f83d513c5811a5ddf3ccdf343467a/fcda8/2250pb2.png 590w,
+/static/c32f83d513c5811a5ddf3ccdf343467a/efc66/2250pb2.png 885w,
+/static/c32f83d513c5811a5ddf3ccdf343467a/c83ae/2250pb2.png 1180w,
+/static/c32f83d513c5811a5ddf3ccdf343467a/78363/2250pb2.png 1522w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
+&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/4ab8cc2c1e985b80a3d4f5dedb569959/1f038/2250pb3.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 55.4054054054054%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAABJ0AAASdAHeZh94AAAAxUlEQVQoz52TCQ6DIBBFuf9NrSLKosNSfhlNU5dWrSQvRMI8/4AK6xx6YxFTxtEw1kJbh/g83ic6baHMgIECYowIYU+MCVL1aLWb9vGa92HB/JxSKsJOwxiHcfQYBtrhHM1F5MvsQcTQBl/qaQokpFRgKZU3s4DFS3iNE10dQjYt6lp+TbgV5pxPEUp1aIp0KfiV8KKw/1t43HI5w6qqV8Kzlg+F3PLj0WwSvrkh5Btet/zhltCUv0RrUwrHHZySZ/4OrwpfpDRfoqT4tSwAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;2250pb3&quot;
+        title=&quot;2250pb3&quot;
+        src=&quot;/static/4ab8cc2c1e985b80a3d4f5dedb569959/fcda8/2250pb3.png&quot;
+        srcset=&quot;/static/4ab8cc2c1e985b80a3d4f5dedb569959/12f09/2250pb3.png 148w,
+/static/4ab8cc2c1e985b80a3d4f5dedb569959/e4a3f/2250pb3.png 295w,
+/static/4ab8cc2c1e985b80a3d4f5dedb569959/fcda8/2250pb3.png 590w,
+/static/4ab8cc2c1e985b80a3d4f5dedb569959/efc66/2250pb3.png 885w,
+/static/4ab8cc2c1e985b80a3d4f5dedb569959/c83ae/2250pb3.png 1180w,
+/static/4ab8cc2c1e985b80a3d4f5dedb569959/1f038/2250pb3.png 1481w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
 &lt;h3 id=&quot;풀이-2&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%ED%92%80%EC%9D%B4-2&quot; aria-label=&quot;풀이 2 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;풀이&lt;/h3&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;java&quot;&gt;&lt;pre class=&quot;language-java&quot;&gt;&lt;code class=&quot;language-java&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;package&lt;/span&gt; &lt;span class=&quot;token namespace&quot;&gt;package27&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
 
@@ -648,7 +743,9 @@ Case 1: A forest of 3 trees.&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 빠른 시일내로 4문제 풀어봐야겠다. (조금 무서워 보인다ㅋ)&lt;/p&gt;
 &lt;h1 id=&quot;reference&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#reference&quot; aria-label=&quot;reference permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Reference&lt;/h1&gt;
 &lt;p&gt;&lt;a href=&quot;https://m.blog.naver.com/kks227/220788265724&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;라이님 블로그&lt;/a&gt;&lt;br&gt;
-&lt;a href=&quot;https://blog.myungwoo.kr/112&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;전명우님 블로그&lt;/a&gt;  &lt;/p&gt;</content:encoded></item><item><title><![CDATA[최단거리 경로복원]]></title><description><![CDATA[백준 11779, 11780, 1738번 문제를 통해 최단경로의 경로출력을 정리해보려고 한다. 백준 11779 - 다익스트라 
+&lt;a href=&quot;https://blog.myungwoo.kr/112&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;전명우님 블로그&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;https://wooooooak.github.io/algorithm/2018/12/05/%EB%B0%B1%EC%A4%802250%EB%AC%B8%EC%A0%9C/&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;쾌락코딩님 블로그 - 백준2250번 문제(트리의 높이와 너비) with Java&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;https://mapocodingpark.blogspot.com/2020/05/4803.html&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;마포 코딩박님 블로그&lt;/a&gt;  &lt;/p&gt;</content:encoded></item><item><title><![CDATA[최단거리 경로복원]]></title><description><![CDATA[백준 11779, 11780, 1738번 문제를 통해 최단경로의 경로출력을 정리해보려고 한다. 백준 11779 - 다익스트라 
  소스를 간략히 설명하면 다익스트라 알고리즘에 값이 조건에 맞아 갱신될 때 배열의 값에 이전 노드를 저장한다. 첫 노드부터…]]></description><link>https://hohshho.github.io/shortestDistance_2/</link><guid isPermaLink="false">https://hohshho.github.io/shortestDistance_2/</guid><pubDate>Mon, 25 Jan 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;백준 11779, 11780, 1738번 문제를 통해 최단경로의 경로출력을 정리해보려고 한다.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h1 id=&quot;백준-11779---다익스트라&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EB%B0%B1%EC%A4%80-11779---%EB%8B%A4%EC%9D%B5%EC%8A%A4%ED%8A%B8%EB%9D%BC&quot; aria-label=&quot;백준 11779   다익스트라 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;백준 11779 - 다익스트라&lt;/h1&gt;
