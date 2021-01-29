@@ -790,7 +790,7 @@
   </a>
     </span></p>
 <h3 id="풀이-1" style="position:relative;"><a href="#%ED%92%80%EC%9D%B4-1" aria-label="풀이 1 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>풀이</h3>
-<p>아.... 이거 풀다가 책상 부실뻔 했다.</p>
+<p>아.... 이거 풀다가 책상 부실뻔 했다. 너무 헤맸다... ㅜㅜ</p>
 <p>일단 문제에 T는 트리의 개수다.</p>
 <p>dfs로 입력받은 노드 모두 탐색하고, cycle이 존재하면 no tree로 출력하게 짰는데 계속 틀렸다고 나왔다.  ㅎㅎ 정답을 알려줘</p>
 <p>열받아서 <a href="https://mapocodingpark.blogspot.com/2020/05/4803.html" target="_blank" rel="nofollow noopener noreferrer">마포 코딩박님 블로그</a> dfs 부분을 참고해서 코드 작성했다.</p>
@@ -806,7 +806,6 @@
 Case 1: A forest of 3 trees.</code></pre></div>
 <p>이렇게 나오는데 이거 틀린거 아님? cycle 있으면 트리 없다고 나와야 하는거 아닌가 아시는 분 알려주세요ㅜㅜㅜㅜㅜ</p>
 <p>아 짜증나 ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ 화 좀 식히고 나중에 생각나면 다시 봐야겠다...</p>
-<p>이 글을 읽고 있는 나야 지금 다시 풀어봐라^^</p>
 <div class="gatsby-highlight" data-language="java"><pre class="language-java"><code class="language-java"><span class="token keyword">package</span> <span class="token namespace">package27</span><span class="token punctuation">;</span>
 
 <span class="token keyword">import</span> <span class="token namespace">java<span class="token punctuation">.</span>io<span class="token punctuation">.</span></span><span class="token class-name">BufferedReader</span><span class="token punctuation">;</span>
@@ -1048,7 +1047,7 @@ Case 1: A forest of 3 trees.</code></pre></div>
 <p>양심고백을 조금 해보면 오늘 삽질을 너무 많이 해서 고민 많이 안해보고 정답 해결 방법부터 찾아봤다.</p>
 <p><a href="https://wooooooak.github.io/algorithm/2018/12/05/%EB%B0%B1%EC%A4%802250%EB%AC%B8%EC%A0%9C/" target="_blank" rel="nofollow noopener noreferrer">쾌락코딩님 블로그 - 백준2250번 문제(트리의 높이와 너비) with Java</a>글을 참고했다.</p>
 <p>문제의 포인트는 3가지다.</p>
-<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">1. 문제에서 루트가 정해저 있지 않다
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">1. 문제에서 루트가 정해져 있지 않다
    -&gt; 루트를 확인할 수 있는 뭔가 방법이 필요
 2. 트리의 높이마다 가장 오른쪽 값, 가장 왼쪽값 저장
    -&gt; 오른쪽 - 왼쪽 + 1
