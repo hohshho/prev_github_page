@@ -548,10 +548,9 @@
 </ul>
 </li>
 <li>
-<p><a href="/linuxStudy/#4-file-discriptor--redirection">4. File Discriptor &#x26; Redirection</a></p>
+<p><a href="/linuxStudy/#4-redirection">4. Redirection</a></p>
 <ul>
-<li><a href="/linuxStudy/#discriptor">Discriptor</a></li>
-<li><a href="/linuxStudy/#redirection">Redirection</a></li>
+<li><a href="/linuxStudy/#%ED%91%9C%EC%A4%80-%EC%9E%85%EC%B6%9C%EB%A0%A5standard-io">표준 입출력(Standard I/O)</a></li>
 </ul>
 </li>
 <li>
@@ -916,10 +915,11 @@
 </blockquote>
 <p><strong>Tip!!</strong></p>
 <h2 id="옵션-2" style="position:relative;"><a href="#%EC%98%B5%EC%85%98-2" aria-label="옵션 2 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>옵션</h2>
-<h1 id="4-file-discriptor--redirection" style="position:relative;"><a href="#4-file-discriptor--redirection" aria-label="4 file discriptor  redirection permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>4. File Discriptor &#x26; Redirection</h1>
-<h2 id="discriptor" style="position:relative;"><a href="#discriptor" aria-label="discriptor permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Discriptor</h2>
+<h1 id="4-redirection" style="position:relative;"><a href="#4-redirection" aria-label="4 redirection permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>4. Redirection</h1>
 <blockquote>
+<p>명령의 결과를 모니터로 출력하지 않고, 파일로 저장할 수 있다. (리다이렉션을 사용해 출력, 입력 방향 지정 가능)</p>
 </blockquote>
+<h2 id="표준-입출력standard-io" style="position:relative;"><a href="#%ED%91%9C%EC%A4%80-%EC%9E%85%EC%B6%9C%EB%A0%A5standard-io" aria-label="표준 입출력standard io permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>표준 입출력(Standard I/O)</h2>
 <table>
 <thead>
 <tr>
@@ -942,10 +942,6 @@
 </tr>
 </tbody>
 </table>
-<h2 id="redirection" style="position:relative;"><a href="#redirection" aria-label="redirection permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Redirection</h2>
-<blockquote>
-<p>명령의 결과를 모니터로 출력하지 않고, 파일로 저장할 수 있다. (리다이렉션을 사용해 출력, 입력 방향 지정 가능)</p>
-</blockquote>
 <table>
 <thead>
 <tr>
@@ -1271,10 +1267,9 @@ seek = n        #n*obs 바이트만큼 무시하고 쓴다.</code></pre></div>
 </ul>
 </li>
 <li>
-<p><a href="/linuxStudy/#4-file-discriptor--redirection">4. File Discriptor &#x26; Redirection</a></p>
+<p><a href="/linuxStudy/#4-redirection">4. Redirection</a></p>
 <ul>
-<li><a href="/linuxStudy/#discriptor">Discriptor</a></li>
-<li><a href="/linuxStudy/#redirection">Redirection</a></li>
+<li><a href="/linuxStudy/#%ED%91%9C%EC%A4%80-%EC%9E%85%EC%B6%9C%EB%A0%A5standard-io">표준 입출력(Standard I/O)</a></li>
 </ul>
 </li>
 <li>
