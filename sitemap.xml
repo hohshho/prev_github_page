@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
-<url> <loc>https://hohshho.github.io/phpNginxConfig/</loc> <lastmod>2021-02-24</lastmod> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://hohshho.github.io/codeigniter/</loc> <lastmod>2021-02-25</lastmod> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://hohshho.github.io/2-nginxStudy/</loc> <lastmod>2021-02-24</lastmod> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://hohshho.github.io/phpNginxConfig/</loc> <lastmod>2021-02-24</lastmod> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://hohshho.github.io/bashMission/</loc> <lastmod>2021-02-23</lastmod> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://hohshho.github.io/whyBash/</loc> <lastmod>2021-02-23</lastmod> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://hohshho.github.io/linuxStudy/</loc> <lastmod>2021-02-22</lastmod> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
