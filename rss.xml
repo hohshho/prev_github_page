@@ -1,4 +1,30 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Just Do It! | Feed]]></title><description><![CDATA[웹 개발 블로그입니다. ]]></description><link>https://hohshho.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 02 Mar 2021 01:20:36 GMT</lastBuildDate><item><title><![CDATA[PHP 기본 문법 정리]]></title><description><![CDATA[php 문법을 간략히 정리해보자 1. 변수 PHP는 아래와 같은 자료형을 사용할 수 있다
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Just Do It! | Feed]]></title><description><![CDATA[웹 개발 블로그입니다. ]]></description><link>https://hohshho.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 05 Apr 2021 15:01:30 GMT</lastBuildDate><item><title><![CDATA[git flow 및 git cli 명령어 정리]]></title><description><![CDATA[개발 프로젝트를 진행하면 보통 코드베이스, 코드리뷰, 배포방법에 대해 고민한다. 회사 내에서 브랜치 전략으로 git flow를 사용하고 있는데 이에 대해 조금 더 알아보고 git flow, git cli 명령어를 정리해본다. 코드베이스란? 특정 시스…]]></description><link>https://hohshho.github.io/gitflow/</link><guid isPermaLink="false">https://hohshho.github.io/gitflow/</guid><pubDate>Tue, 06 Apr 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;개발 프로젝트를 진행하면 보통 &lt;strong&gt;코드베이스&lt;/strong&gt;, &lt;strong&gt;코드리뷰&lt;/strong&gt;, &lt;strong&gt;배포방법&lt;/strong&gt;에 대해 고민한다.&lt;/p&gt;
+&lt;!-- TODO : 회사 프로세스 파악해보고 대중적인 방법, 다른 기업 비교해보자 시리즈 --&gt;
+&lt;p&gt;회사 내에서 브랜치 전략으로 git flow를 사용하고 있는데 이에 대해 조금 더 알아보고 git flow, git cli 명령어를 정리해본다.&lt;/p&gt;
+&lt;h1 id=&quot;코드베이스란&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%BD%94%EB%93%9C%EB%B2%A0%EC%9D%B4%EC%8A%A4%EB%9E%80&quot; aria-label=&quot;코드베이스란 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;코드베이스란?&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;특정 시스템, 어플리케이션, 컴포넌트 따위를 빌드할 때 사용되는 소스코드의 전체집합, 그것을 담은 저장소 &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&quot;git-git-flow-명령어&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#git-git-flow-%EB%AA%85%EB%A0%B9%EC%96%B4&quot; aria-label=&quot;git git flow 명령어 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Git, Git flow 명령어&lt;/h1&gt;
+&lt;h3 id=&quot;git-commit&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#git-commit&quot; aria-label=&quot;git commit permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Git commit&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3 id=&quot;git-branch-생성-및-checkout&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#git-branch-%EC%83%9D%EC%84%B1-%EB%B0%8F-checkout&quot; aria-label=&quot;git branch 생성 및 checkout permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Git Branch 생성 및 checkout&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;$ &lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; checkout -b &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3 id=&quot;git-branch-삭제&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#git-branch-%EC%82%AD%EC%A0%9C&quot; aria-label=&quot;git branch 삭제 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Git Branch 삭제&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;$ &lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; branch -d &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;브런치 명&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3 id=&quot;git-branch-확인&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#git-branch-%ED%99%95%EC%9D%B8&quot; aria-label=&quot;git branch 확인 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Git Branch 확인&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;$ &lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; branch
+
+$ &lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; branch -v&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3 id=&quot;git-branch-상태-확인&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#git-branch-%EC%83%81%ED%83%9C-%ED%99%95%EC%9D%B8&quot; aria-label=&quot;git branch 상태 확인 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Git Branch 상태 확인&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;$ &lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; branch --merged&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;blockquote&gt;
+&lt;p&gt;이미 Merge한 브랜치 목록을 확인한다.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;git-log-확인&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#git-log-%ED%99%95%EC%9D%B8&quot; aria-label=&quot;git log 확인 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Git log 확인&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;$ &lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; log --oneline --graph&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h1 id=&quot;reference&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#reference&quot; aria-label=&quot;reference permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Reference&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&quot;https://zetawiki.com/wiki/%EC%BD%94%EB%93%9C%EB%B2%A0%EC%9D%B4%EC%8A%A4&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[PHP 기본 문법 정리]]></title><description><![CDATA[php 문법을 간략히 정리해보자 1. 변수 PHP는 아래와 같은 자료형을 사용할 수 있다
 문자열 String 정수형 Integer 실수형 Float 논리형 Boolean 배열 Array 객체형 Object 널 NULL 리소스 Resource   아래…]]></description><link>https://hohshho.github.io/phpNginxCI_3/</link><guid isPermaLink="false">https://hohshho.github.io/phpNginxCI_3/</guid><pubDate>Mon, 01 Mar 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;php 문법을 간략히 정리해보자&lt;/p&gt;
 &lt;h1 id=&quot;1-변수&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#1-%EB%B3%80%EC%88%98&quot; aria-label=&quot;1 변수 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;1. 변수&lt;/h1&gt;
 &lt;p&gt;PHP는 아래와 같은 자료형을 사용할 수 있다
@@ -17,7 +43,7 @@
 
 &lt;span class=&quot;token comment&quot;&gt;// 변수 자료형 변경&lt;/span&gt;
 &lt;span class=&quot;token function&quot;&gt;settype&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;변수이름&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;{자료형}&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;PHP의 특이한 점으로는 동적으로 변수명 설정이 가능하다.&lt;/p&gt;
+&lt;p&gt;PHP의 특징으로 동적으로 변수명 설정이 가능하다.&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;php&quot;&gt;&lt;pre class=&quot;language-php&quot;&gt;&lt;code class=&quot;language-php&quot;&gt;&lt;span class=&quot;token php language-php&quot;&gt;&lt;span class=&quot;token delimiter important&quot;&gt;&amp;lt;?php&lt;/span&gt;
 &lt;span class=&quot;token variable&quot;&gt;$title&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;subject&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
 &lt;span class=&quot;token variable&quot;&gt;$$title&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;PHP tutorial&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
@@ -28,7 +54,7 @@
 &lt;p&gt;이 나온다.&lt;/p&gt;
 &lt;p&gt;$$가 두번 표시되어 있는데, $title 의 값으로 변수가 생성된 것을 의미한다.&lt;/p&gt;
 &lt;h1 id=&quot;2-연관배열&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#2-%EC%97%B0%EA%B4%80%EB%B0%B0%EC%97%B4&quot; aria-label=&quot;2 연관배열 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;2. 연관배열&lt;/h1&gt;
-&lt;p&gt;조건문, 반복문은 일반적인 프로그래밍 언어와 거의 동일하게 사용하는데 배열이 특이한 점이 있다.&lt;/p&gt;
+&lt;p&gt;두번째 특징으로 연관배열이 있다.&lt;/p&gt;
 &lt;h2 id=&quot;연관배열&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%97%B0%EA%B4%80%EB%B0%B0%EC%97%B4&quot; aria-label=&quot;연관배열 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;연관배열&lt;/h2&gt;
 &lt;blockquote&gt;
 &lt;p&gt;배열의 키 값으로 숫자와 문자 모두 사용&lt;/p&gt;
@@ -46,16 +72,16 @@
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;php&quot;&gt;&lt;pre class=&quot;language-php&quot;&gt;&lt;code class=&quot;language-php&quot;&gt;key &lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; sorialgi  value &lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;80&lt;/span&gt;
 key &lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; k8805     value &lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;6&lt;/span&gt;
 key &lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; egoing    value &lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;10&lt;/span&gt;  &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;이렇게 해쉬맵처럼 사용한다.&lt;/p&gt;
+&lt;p&gt;키값 형태로 사용한다.&lt;/p&gt;
 &lt;h1 id=&quot;3-file-load&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#3-file-load&quot; aria-label=&quot;3 file load permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;3. File load&lt;/h1&gt;
 &lt;h2 id=&quot;require-import&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#require-import&quot; aria-label=&quot;require import permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;require, import&lt;/h2&gt;
 &lt;p&gt;php에는 &lt;strong&gt;1. require&lt;/strong&gt; , &lt;strong&gt;2. import&lt;/strong&gt; 두가지 방법으로 file호출 가능&lt;br&gt;
-뒤에 &lt;em&gt;once를 붙여 include&lt;/em&gt;once 처럼 사용하면 파일을 로드할 때 단 한번만 로드하면 된다는 의미&lt;/p&gt;
-&lt;p&gt;기능상 차이는 없는데 error 표시가 다름  &lt;/p&gt;
+뒤에 _once를 붙여 include_once 처럼 사용하면 파일을 로드할 때 단 한번만 로드하면 된다는 의미&lt;/p&gt;
+&lt;p&gt;기능상 차이는 없는데 error 표시가 다르다.  &lt;/p&gt;
 &lt;p&gt;require가 더 높은 에러 수준으로 error를 알리고, 코드의 실행을 중단시킨다.  &lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;1) 파일 복사&lt;/strong&gt;&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;copy(&lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;f&lt;/mi&gt;&lt;mi&gt;i&lt;/mi&gt;&lt;mi&gt;l&lt;/mi&gt;&lt;mi&gt;e&lt;/mi&gt;&lt;mo separator=&quot;true&quot;&gt;,&lt;/mo&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;file,&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0.8888799999999999em;vertical-align:-0.19444em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord mathdefault&quot; style=&quot;margin-right:0.10764em;&quot;&gt;f&lt;/span&gt;&lt;span class=&quot;mord mathdefault&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;mord mathdefault&quot; style=&quot;margin-right:0.01968em;&quot;&gt;l&lt;/span&gt;&lt;span class=&quot;mord mathdefault&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;mpunct&quot;&gt;,&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;newfile)&lt;/p&gt;
+&lt;p&gt;copy($file, $newfile)&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;&lt;strong&gt;2) 파일 삭제&lt;/strong&gt;&lt;/p&gt;
 &lt;blockquote&gt;
@@ -71,7 +97,7 @@ key &lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; egoing    val
 &lt;/blockquote&gt;
 &lt;p&gt;&lt;strong&gt;5) file etc&lt;/strong&gt;&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;is&lt;em&gt;readable, is&lt;/em&gt;writable, file_exists 같은 함수를 통해 파일 확인이 가능하다&lt;/p&gt;
+&lt;p&gt;is_readable, is_writable, file_exists 같은 함수를 통해 파일 확인이 가능하다&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;&lt;strong&gt;6) 디렉토리&lt;/strong&gt;&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;php&quot;&gt;&lt;pre class=&quot;language-php&quot;&gt;&lt;code class=&quot;language-php&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;// directory 읽기&lt;/span&gt;
@@ -99,7 +125,7 @@ key &lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; egoing    val
 &lt;blockquote&gt;
 &lt;p&gt;extends 키워드를 사용해 클래스를 상속할 수 있다.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;&lt;strong&gt;Tip!!&lt;/strong&gt;
+&lt;p&gt;&lt;strong&gt;Tip!!&lt;/strong&gt;&lt;br&gt;
 클래스 안에 static 키워드를 추가한 변수를 만들어주면 모든 인스턴스가 공유하는 변수를 만들어줄 수 있다.&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;php&quot;&gt;&lt;pre class=&quot;language-php&quot;&gt;&lt;code class=&quot;language-php&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;car&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
   &lt;span class=&quot;token keyword&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;token variable&quot;&gt;$count&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
@@ -1333,33 +1359,7 @@ backup : 모든 서버가 동작하지 않을 때 backup으로 표시된 서버�
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;if ($host ~* ^www\.(.*)){
     set $host_without_www $1;
     rewrite ^/(.*)$ $scheme://$host_without_www/$1 permanent;
-}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[쉘 스크립트 첫 줄에 [#!/bin/bash]를 쓰는 이유]]></title><description><![CDATA[#!/bin/bash를 왜 쓸까 bash파일은 주석을 #으로 단다. bash스크립트 파일 문제 풀면서 별 생각없이 #!/bin/bash 부분이 그냥 표시해주는 부분인 줄 알았는데 #!/bin/bash를 꼭 달아줘야 한다고 한다. "#!"는 Sheba…]]></description><link>https://hohshho.github.io/whyBash/</link><guid isPermaLink="false">https://hohshho.github.io/whyBash/</guid><pubDate>Tue, 23 Feb 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;binbash를-왜-쓸까&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#binbash%EB%A5%BC-%EC%99%9C-%EC%93%B8%EA%B9%8C&quot; aria-label=&quot;binbash를 왜 쓸까 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;#!/bin/bash를 왜 쓸까&lt;/h1&gt;
-&lt;p&gt;bash파일은 주석을 #으로 단다.&lt;/p&gt;
-&lt;p&gt;bash스크립트 파일 문제 풀면서 별 생각없이 #!/bin/bash 부분이 그냥 표시해주는 부분인 줄 알았는데&lt;/p&gt;
-&lt;p&gt;#!/bin/bash를 꼭 달아줘야 한다고 한다.&lt;/p&gt;
-&lt;p&gt;&quot;#!&quot;는 &lt;strong&gt;Shebang&lt;/strong&gt;이라고 부르고, 실행 가능한 쉘 스크립트라는 것을 나타내는 특별한 표시자이다.  &lt;/p&gt;
-&lt;p&gt;&quot;#!&quot; 뒤에 나오는 것은 경로명으로, 스크립트에 들어있는 명령어를 해석할 위치를 나타낸다.&lt;br&gt;
-&lt;strong&gt;정확히 Full PATH로 작성해야한다.&lt;/strong&gt;  &lt;/p&gt;
-&lt;p&gt;이 명령어 해석기가 주석은 무시하면서 스크립트의 첫번째 줄부터 명령어를 실행시킨다.&lt;/p&gt;
-&lt;h2 id=&quot;쉘-스크립트의-구조&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%89%98-%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%EC%9D%98-%EA%B5%AC%EC%A1%B0&quot; aria-label=&quot;쉘 스크립트의 구조 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;쉘 스크립트의 구조&lt;/h2&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;#!인터프리터(Interpreter)&lt;/span&gt;
-
-&lt;span class=&quot;token comment&quot;&gt;#&lt;/span&gt;
-&lt;span class=&quot;token comment&quot;&gt;# 주석(Comment)&lt;/span&gt;
-&lt;span class=&quot;token comment&quot;&gt;#&lt;/span&gt;
-
-함수명&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-  명령
-  &lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;.
-&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
-
-명령1&lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;Command&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
-명령2&lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;
-명령3&lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;
-
-흐름제어 &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;Flow Control&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
-
-함수 호출&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[bash 문제 풀이]]></title><description><![CDATA[bash 20문제 풀이 풀이 현재 자기신의 pc(linux기준)의 cpu모델명, Os 종류 및 버전, kernel 버전을 출력하시오. 매주 일요일, 새벽4시 30분과 낮12시 30분에, /tmp/* 를 삭제하는 crontab 
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[bash 문제 풀이]]></title><description><![CDATA[bash 20문제 풀이 풀이 현재 자기신의 pc(linux기준)의 cpu모델명, Os 종류 및 버전, kernel 버전을 출력하시오. 매주 일요일, 새벽4시 30분과 낮12시 30분에, /tmp/* 를 삭제하는 crontab 
 예) * * * * *…]]></description><link>https://hohshho.github.io/bashMission/</link><guid isPermaLink="false">https://hohshho.github.io/bashMission/</guid><pubDate>Tue, 23 Feb 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;bash 20문제 풀이&lt;/p&gt;
 &lt;h2 id=&quot;풀이&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%ED%92%80%EC%9D%B4&quot; aria-label=&quot;풀이 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;풀이&lt;/h2&gt;
 &lt;ol&gt;
@@ -1569,7 +1569,33 @@ divide &lt;span class=&quot;token variable&quot;&gt;$1&lt;/span&gt; &lt;span cla
 &lt;p&gt;중요한 명령어와 개념&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;find, ls, du, awk, sed, free, chown, chmod, 리눅스 권한부분은 상당히 중요!&lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Linux Study]]></title><description><![CDATA[리눅스 자주쓰는 명령어와 중요 개념 정리한다. 1. find find path Option expression : 파일이나 디렉터리를 찾고 싶을 때 사용하는 명령어 Tip!! 옵션을 통해 다양한 경우의 상황으로 찾기 가능 시간 옵션 뒤에 부여해야 하…]]></description><link>https://hohshho.github.io/linuxStudy/</link><guid isPermaLink="false">https://hohshho.github.io/linuxStudy/</guid><pubDate>Mon, 22 Feb 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;리눅스 자주쓰는 명령어와 중요 개념 정리한다.&lt;/p&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[쉘 스크립트 첫 줄에 [#!/bin/bash]를 쓰는 이유]]></title><description><![CDATA[#!/bin/bash를 왜 쓸까 bash파일은 주석을 #으로 단다. bash스크립트 파일 문제 풀면서 별 생각없이 #!/bin/bash 부분이 그냥 표시해주는 부분인 줄 알았는데 #!/bin/bash를 꼭 달아줘야 한다고 한다. "#!"는 Sheba…]]></description><link>https://hohshho.github.io/whyBash/</link><guid isPermaLink="false">https://hohshho.github.io/whyBash/</guid><pubDate>Tue, 23 Feb 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;binbash를-왜-쓸까&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#binbash%EB%A5%BC-%EC%99%9C-%EC%93%B8%EA%B9%8C&quot; aria-label=&quot;binbash를 왜 쓸까 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;#!/bin/bash를 왜 쓸까&lt;/h1&gt;
+&lt;p&gt;bash파일은 주석을 #으로 단다.&lt;/p&gt;
+&lt;p&gt;bash스크립트 파일 문제 풀면서 별 생각없이 #!/bin/bash 부분이 그냥 표시해주는 부분인 줄 알았는데&lt;/p&gt;
+&lt;p&gt;#!/bin/bash를 꼭 달아줘야 한다고 한다.&lt;/p&gt;
+&lt;p&gt;&quot;#!&quot;는 &lt;strong&gt;Shebang&lt;/strong&gt;이라고 부르고, 실행 가능한 쉘 스크립트라는 것을 나타내는 특별한 표시자이다.  &lt;/p&gt;
+&lt;p&gt;&quot;#!&quot; 뒤에 나오는 것은 경로명으로, 스크립트에 들어있는 명령어를 해석할 위치를 나타낸다.&lt;br&gt;
+&lt;strong&gt;정확히 Full PATH로 작성해야한다.&lt;/strong&gt;  &lt;/p&gt;
+&lt;p&gt;이 명령어 해석기가 주석은 무시하면서 스크립트의 첫번째 줄부터 명령어를 실행시킨다.&lt;/p&gt;
+&lt;h2 id=&quot;쉘-스크립트의-구조&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%89%98-%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%EC%9D%98-%EA%B5%AC%EC%A1%B0&quot; aria-label=&quot;쉘 스크립트의 구조 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;쉘 스크립트의 구조&lt;/h2&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;#!인터프리터(Interpreter)&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;#&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;# 주석(Comment)&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;#&lt;/span&gt;
+
+함수명&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  명령
+  &lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;.
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+명령1&lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;Command&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+명령2&lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;
+명령3&lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;
+
+흐름제어 &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;Flow Control&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+함수 호출&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[Linux Study]]></title><description><![CDATA[리눅스 자주쓰는 명령어와 중요 개념 정리한다. 1. find find path Option expression : 파일이나 디렉터리를 찾고 싶을 때 사용하는 명령어 Tip!! 옵션을 통해 다양한 경우의 상황으로 찾기 가능 시간 옵션 뒤에 부여해야 하…]]></description><link>https://hohshho.github.io/linuxStudy/</link><guid isPermaLink="false">https://hohshho.github.io/linuxStudy/</guid><pubDate>Mon, 22 Feb 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;리눅스 자주쓰는 명령어와 중요 개념 정리한다.&lt;/p&gt;
 &lt;h1 id=&quot;1-find&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#1-find&quot; aria-label=&quot;1 find permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;1. find&lt;/h1&gt;
 &lt;blockquote&gt;
 &lt;p&gt;find [path] [Option] [expression] : 파일이나 디렉터리를 찾고 싶을 때 사용하는 명령어&lt;/p&gt;
@@ -1795,9 +1821,6 @@ $ &lt;span class=&quot;token function&quot;&gt;awk&lt;/span&gt; &lt;span class=&
 &lt;blockquote&gt;
 &lt;p&gt;필터링과 텍스트를 변환하는 스트림 편집기&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;/li&gt;
-&lt;/ul&gt;
 &lt;h2 id=&quot;주요기능&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%A3%BC%EC%9A%94%EA%B8%B0%EB%8A%A5&quot; aria-label=&quot;주요기능 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;주요기능&lt;/h2&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;# 1. 치환&lt;/span&gt;
 &lt;span class=&quot;token comment&quot;&gt;# addrass를 address로 바꾼다.&lt;/span&gt;
@@ -1811,8 +1834,11 @@ $ &lt;span class=&quot;token function&quot;&gt;sed&lt;/span&gt; &lt;span class=&
 
 &lt;span class=&quot;token comment&quot;&gt;# 공백라인을 삭제하는 명령&lt;/span&gt;
 $ &lt;span class=&quot;token function&quot;&gt;sed&lt;/span&gt; &apos;/^$/d &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;파일 이름&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;&lt;a href=&quot;https://www.tecmint.com/linux-sed-command-tips-tricks/&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;추가 사용법 링크&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://jhnyang.tistory.com/287&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;jhnyang님 블로그&lt;/a&gt;&lt;/p&gt;
 &lt;h1 id=&quot;7-ls&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#7-ls&quot; aria-label=&quot;7 ls permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;7. ls&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;현재 폴더의 하위 디렉토리의 리스트 출력&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;h2 id=&quot;옵션-3&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%98%B5%EC%85%98-3&quot; aria-label=&quot;옵션 3 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;옵션&lt;/h2&gt;
 &lt;h1 id=&quot;8--사용자-권한-chmod-chown&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#8--%EC%82%AC%EC%9A%A9%EC%9E%90-%EA%B6%8C%ED%95%9C-chmod-chown&quot; aria-label=&quot;8  사용자 권한 chmod chown permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;8.  사용자 권한 (chmod, chown)&lt;/h1&gt;
 &lt;p&gt;리눅스는 사용자 및 그룹에 기반하여 액세스를 허가하거나 금지한다.&lt;/p&gt;
@@ -1834,15 +1860,7 @@ $ &lt;span class=&quot;token function&quot;&gt;sed&lt;/span&gt; &apos;/^$/d &lt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;$ &lt;span class=&quot;token function&quot;&gt;tty&lt;/span&gt;
 
 /dev/pts/0&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h1 id=&quot;10--mkdir--rmdir&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#10--mkdir--rmdir&quot; aria-label=&quot;10  mkdir  rmdir permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;10.  mkdir / rmdir&lt;/h1&gt;
-&lt;!-- &gt; 표현식 --&gt;
-&lt;p&gt;&lt;strong&gt;Tip!!&lt;/strong&gt;&lt;/p&gt;
-&lt;h2 id=&quot;옵션-4&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%98%B5%EC%85%98-4&quot; aria-label=&quot;옵션 4 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;옵션&lt;/h2&gt;
-&lt;h1 id=&quot;11--which--whereis&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#11--which--whereis&quot; aria-label=&quot;11  which  whereis permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;11.  which / whereis&lt;/h1&gt;
-&lt;!-- &gt; 표현식 --&gt;
-&lt;p&gt;&lt;strong&gt;Tip!!&lt;/strong&gt;&lt;/p&gt;
-&lt;h2 id=&quot;옵션-5&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%98%B5%EC%85%98-5&quot; aria-label=&quot;옵션 5 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;옵션&lt;/h2&gt;
-&lt;h1 id=&quot;12--alias&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#12--alias&quot; aria-label=&quot;12  alias permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;12.  alias&lt;/h1&gt;
+&lt;h1 id=&quot;10--alias&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#10--alias&quot; aria-label=&quot;10  alias permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;10.  alias&lt;/h1&gt;
 &lt;blockquote&gt;
 &lt;p&gt;사용자가 원하는 명령어를 추가하기 위한 명령어&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -1856,7 +1874,7 @@ $ alias mi=&amp;#39;mv -i&amp;#39;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;li&gt;alias를 입력하면 입력 된 alias를 확인할 수 있다.&lt;/li&gt;
 &lt;li&gt;~/.bashrc에 정의하면 쉘이 시작할 때 자동으로 정의된다.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h1 id=&quot;13-history&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#13-history&quot; aria-label=&quot;13 history permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;13. history&lt;/h1&gt;
+&lt;h1 id=&quot;11-history&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#11-history&quot; aria-label=&quot;11 history permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;11. history&lt;/h1&gt;
 &lt;blockquote&gt;
 &lt;p&gt;커맨드 이력 관리 명령어&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -1875,21 +1893,17 @@ HISTSIZE : 히스토리에 저장 가능한 최대 명령어 개수&lt;/code&gt;
 &lt;li&gt;!{string} : string으로 시작하는 가장 최근 실행한 커맨드 찾아 실행&lt;/li&gt;
 &lt;li&gt;:p : :p를 붙여서 실행 시 커맨드만 출력&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h1 id=&quot;14-jobs--포그라운드-백그라운드&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#14-jobs--%ED%8F%AC%EA%B7%B8%EB%9D%BC%EC%9A%B4%EB%93%9C-%EB%B0%B1%EA%B7%B8%EB%9D%BC%EC%9A%B4%EB%93%9C&quot; aria-label=&quot;14 jobs  포그라운드 백그라운드 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;14. jobs / 포그라운드 백그라운드&lt;/h1&gt;
+&lt;h1 id=&quot;12-jobs--포그라운드-백그라운드&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#12-jobs--%ED%8F%AC%EA%B7%B8%EB%9D%BC%EC%9A%B4%EB%93%9C-%EB%B0%B1%EA%B7%B8%EB%9D%BC%EC%9A%B4%EB%93%9C&quot; aria-label=&quot;12 jobs  포그라운드 백그라운드 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;12. jobs / 포그라운드 백그라운드&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;jobs : 현재 쉘에서 작업 중지된 상태나 백그라운드로 진행되는 작업 표시&lt;/li&gt;
 &lt;li&gt;bg : 백그라운드 프로세스 확인&lt;/li&gt;
 &lt;li&gt;&amp;#x26; : 프로세스를 백그라운드로 실행&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h1 id=&quot;15-ps&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#15-ps&quot; aria-label=&quot;15 ps permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;15. ps&lt;/h1&gt;
+&lt;h1 id=&quot;13-ps&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#13-ps&quot; aria-label=&quot;13 ps permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;13. ps&lt;/h1&gt;
 &lt;!-- &gt; 표현식 --&gt;
 &lt;p&gt;&lt;strong&gt;Tip!!&lt;/strong&gt;&lt;/p&gt;
-&lt;h2 id=&quot;옵션-6&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%98%B5%EC%85%98-6&quot; aria-label=&quot;옵션 6 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;옵션&lt;/h2&gt;
-&lt;h1 id=&quot;16-head-tail-more&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#16-head-tail-more&quot; aria-label=&quot;16 head tail more permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;16. head, tail, more&lt;/h1&gt;
-&lt;!-- &gt; 표현식 --&gt;
-&lt;p&gt;&lt;strong&gt;Tip!!&lt;/strong&gt;&lt;/p&gt;
-&lt;h2 id=&quot;옵션-7&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%98%B5%EC%85%98-7&quot; aria-label=&quot;옵션 7 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;옵션&lt;/h2&gt;
-&lt;h1 id=&quot;17-심볼릭-링크-하드-링크&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#17-%EC%8B%AC%EB%B3%BC%EB%A6%AD-%EB%A7%81%ED%81%AC-%ED%95%98%EB%93%9C-%EB%A7%81%ED%81%AC&quot; aria-label=&quot;17 심볼릭 링크 하드 링크 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;17. 심볼릭 링크, 하드 링크&lt;/h1&gt;
+&lt;h2 id=&quot;옵션-4&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%98%B5%EC%85%98-4&quot; aria-label=&quot;옵션 4 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;옵션&lt;/h2&gt;
+&lt;h1 id=&quot;14-심볼릭-링크-하드-링크&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#14-%EC%8B%AC%EB%B3%BC%EB%A6%AD-%EB%A7%81%ED%81%AC-%ED%95%98%EB%93%9C-%EB%A7%81%ED%81%AC&quot; aria-label=&quot;14 심볼릭 링크 하드 링크 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;14. 심볼릭 링크, 하드 링크&lt;/h1&gt;
 &lt;blockquote&gt;
 &lt;p&gt;하나의 파일에 두개의 이름 사용하게 링크를 연결&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -1921,12 +1935,12 @@ HISTSIZE : 히스토리에 저장 가능한 최대 명령어 개수&lt;/code&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;h1 id=&quot;18-du--df&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#18-du--df&quot; aria-label=&quot;18 du  df permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;18. du / df&lt;/h1&gt;
+&lt;h1 id=&quot;15-du--df&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#15-du--df&quot; aria-label=&quot;15 du  df permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;15. du / df&lt;/h1&gt;
 &lt;h2 id=&quot;du&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#du&quot; aria-label=&quot;du permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;du&lt;/h2&gt;
 &lt;blockquote&gt;
 &lt;p&gt;디렉토리 사용량 확인&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h3 id=&quot;옵션-8&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%98%B5%EC%85%98-8&quot; aria-label=&quot;옵션 8 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;옵션&lt;/h3&gt;
+&lt;h3 id=&quot;옵션-5&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%98%B5%EC%85%98-5&quot; aria-label=&quot;옵션 5 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;옵션&lt;/h3&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;-a : 모든 파일들의 기본정보를 보여준다.
 -b : 표시단위를 기본 KB 대신 Byte로 한다.
 -k : 표시단위를 KB 단위로 한다.
@@ -1938,23 +1952,7 @@ HISTSIZE : 히스토리에 저장 가능한 최대 명령어 개수&lt;/code&gt;
 &lt;blockquote&gt;
 &lt;p&gt;디스크의 사용가능한 용량 확인&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h1 id=&quot;19-who--whois&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#19-who--whois&quot; aria-label=&quot;19 who  whois permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;19. who / whois&lt;/h1&gt;
-&lt;!-- &gt; 표현식 --&gt;
-&lt;p&gt;&lt;strong&gt;Tip!!&lt;/strong&gt;&lt;/p&gt;
-&lt;h2 id=&quot;옵션-9&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%98%B5%EC%85%98-9&quot; aria-label=&quot;옵션 9 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;옵션&lt;/h2&gt;
-&lt;h1 id=&quot;20-free&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#20-free&quot; aria-label=&quot;20 free permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;20. free&lt;/h1&gt;
-&lt;!-- &gt; 표현식 --&gt;
-&lt;p&gt;&lt;strong&gt;Tip!!&lt;/strong&gt;&lt;/p&gt;
-&lt;h2 id=&quot;옵션-10&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%98%B5%EC%85%98-10&quot; aria-label=&quot;옵션 10 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;옵션&lt;/h2&gt;
-&lt;h1 id=&quot;21--diff&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#21--diff&quot; aria-label=&quot;21  diff permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;21.  diff&lt;/h1&gt;
-&lt;!-- &gt; 표현식 --&gt;
-&lt;p&gt;&lt;strong&gt;Tip!!&lt;/strong&gt;&lt;/p&gt;
-&lt;h2 id=&quot;옵션-11&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%98%B5%EC%85%98-11&quot; aria-label=&quot;옵션 11 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;옵션&lt;/h2&gt;
-&lt;h1 id=&quot;22-kill&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#22-kill&quot; aria-label=&quot;22 kill permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;22. kill&lt;/h1&gt;
-&lt;!-- &gt; 표현식 --&gt;
-&lt;p&gt;&lt;strong&gt;Tip!!&lt;/strong&gt;&lt;/p&gt;
-&lt;h2 id=&quot;옵션-12&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%98%B5%EC%85%98-12&quot; aria-label=&quot;옵션 12 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;옵션&lt;/h2&gt;
-&lt;h1 id=&quot;22-dd&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#22-dd&quot; aria-label=&quot;22 dd permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;22. dd&lt;/h1&gt;
+&lt;h1 id=&quot;16-dd&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#16-dd&quot; aria-label=&quot;16 dd permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;16. dd&lt;/h1&gt;
 &lt;blockquote&gt;
 &lt;p&gt;파일을 변환하고 복사하는 명령어&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -1964,28 +1962,12 @@ ibs = bytes     #한번에 bytes 바이트씩 읽는다.
 obs = bytes     #한번에 bytes 바이트씩 쓴다.
 skip = n        #n*ibs 바이트만큼 무시하고 읽는다.
 seek = n        #n*obs 바이트만큼 무시하고 쓴다.&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h1 id=&quot;23-시그널&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#23-%EC%8B%9C%EA%B7%B8%EB%84%90&quot; aria-label=&quot;23 시그널 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;23 시그널&lt;/h1&gt;
-&lt;!-- &gt; 표현식 --&gt;
-&lt;p&gt;&lt;strong&gt;Tip!!&lt;/strong&gt;&lt;/p&gt;
-&lt;h2 id=&quot;옵션-13&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%98%B5%EC%85%98-13&quot; aria-label=&quot;옵션 13 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;옵션&lt;/h2&gt;
-&lt;p&gt;csh에서 로그아웃 할 때 백그라운드 프로세스를 자동으로 죽이려면 어떤 파일을 참조하면 되는가? - C쉘은로그아웃할 때 홈디렉토리의 ‘.logout’파일을 읽는다.&lt;/p&gt;
-&lt;!-- &gt; 표현식 --&gt;
-&lt;p&gt;&lt;strong&gt;Tip!!&lt;/strong&gt;&lt;/p&gt;
-&lt;h2 id=&quot;옵션-14&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%98%B5%EC%85%98-14&quot; aria-label=&quot;옵션 14 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;옵션&lt;/h2&gt;
-&lt;h1 id=&quot;24-rm&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#24-rm&quot; aria-label=&quot;24 rm permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;24. rm&lt;/h1&gt;
-&lt;!-- &gt; 표현식 --&gt;
-&lt;p&gt;&lt;strong&gt;Tip!!&lt;/strong&gt;&lt;/p&gt;
-&lt;h2 id=&quot;옵션-15&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%98%B5%EC%85%98-15&quot; aria-label=&quot;옵션 15 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;옵션&lt;/h2&gt;
-&lt;h1 id=&quot;25-cat&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#25-cat&quot; aria-label=&quot;25 cat permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;25. cat&lt;/h1&gt;
+&lt;h1 id=&quot;17-cat&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#17-cat&quot; aria-label=&quot;17 cat permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;17. cat&lt;/h1&gt;
 &lt;blockquote&gt;
 &lt;p&gt;cat {옵션} 파일명&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;파일 내용 출력&lt;/p&gt;
-&lt;h1 id=&quot;26-sort&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#26-sort&quot; aria-label=&quot;26 sort permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;26. sort&lt;/h1&gt;
-&lt;!-- &gt; 표현식 --&gt;
-&lt;p&gt;&lt;strong&gt;Tip!!&lt;/strong&gt;&lt;/p&gt;
-&lt;h2 id=&quot;옵션-16&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%98%B5%EC%85%98-16&quot; aria-label=&quot;옵션 16 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;옵션&lt;/h2&gt;
-&lt;h1 id=&quot;27-cron&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#27-cron&quot; aria-label=&quot;27 cron permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;27. cron&lt;/h1&gt;
+&lt;h1 id=&quot;18-cron&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#18-cron&quot; aria-label=&quot;18 cron permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;18. cron&lt;/h1&gt;
 &lt;blockquote&gt;
 &lt;p&gt;unix 운영체제에서 어떤 작업을 특정 시간에 실행시키기 위한 데몬&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -2007,7 +1989,7 @@ seek = n        #n*obs 바이트만큼 무시하고 쓴다.&lt;/code&gt;&lt;/pre
 &lt;li&gt;/etc/cron.deny&lt;/li&gt;
 &lt;li&gt;/etc/con.d/cron.deny&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h1 id=&quot;28-cut&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#28-cut&quot; aria-label=&quot;28 cut permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;28. cut&lt;/h1&gt;
+&lt;h1 id=&quot;19-cut&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#19-cut&quot; aria-label=&quot;19 cut permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;19. cut&lt;/h1&gt;
 &lt;blockquote&gt;
 &lt;p&gt;cut {option} {file}&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -2016,75 +1998,20 @@ seek = n        #n*obs 바이트만큼 무시하고 쓴다.&lt;/code&gt;&lt;/pre
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt; -c : 잘라낼 곳의 위치 지정. (콤마나 하이픈으로 범위 설정 가능)
  -f : 잘라낼 필드 설정
  -d : 필드 구분 문자 지정&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h1 id=&quot;29-tar--gzip&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#29-tar--gzip&quot; aria-label=&quot;29 tar  gzip permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;29. tar / gzip&lt;/h1&gt;
+&lt;h1 id=&quot;20-tar--gzip&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#20-tar--gzip&quot; aria-label=&quot;20 tar  gzip permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;20. tar / gzip&lt;/h1&gt;
 &lt;p&gt;tar : gzip 명령이 포함된 압축 툴
 gzip : 파일 압축 명령어&lt;/p&gt;
-&lt;h1 id=&quot;30-split&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#30-split&quot; aria-label=&quot;30 split permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;30. split&lt;/h1&gt;
-&lt;!-- &gt; 표현식 --&gt;
-&lt;p&gt;&lt;strong&gt;Tip!!&lt;/strong&gt;&lt;/p&gt;
-&lt;h2 id=&quot;옵션-17&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%98%B5%EC%85%98-17&quot; aria-label=&quot;옵션 17 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;옵션&lt;/h2&gt;
-&lt;h1 id=&quot;31-mount&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#31-mount&quot; aria-label=&quot;31 mount permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;31. mount&lt;/h1&gt;
-&lt;!-- &gt; 표현식 --&gt;
-&lt;p&gt;&lt;strong&gt;Tip!!&lt;/strong&gt;&lt;/p&gt;
-&lt;h2 id=&quot;옵션-18&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%98%B5%EC%85%98-18&quot; aria-label=&quot;옵션 18 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;옵션&lt;/h2&gt;
-&lt;h1 id=&quot;32-nohup&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#32-nohup&quot; aria-label=&quot;32 nohup permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;32. nohup&lt;/h1&gt;
-&lt;!-- &gt; 표현식 --&gt;
-&lt;p&gt;&lt;strong&gt;Tip!!&lt;/strong&gt;&lt;/p&gt;
-&lt;h2 id=&quot;옵션-19&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%98%B5%EC%85%98-19&quot; aria-label=&quot;옵션 19 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;옵션&lt;/h2&gt;
-&lt;h1 id=&quot;33-apt-get--yum&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#33-apt-get--yum&quot; aria-label=&quot;33 apt get  yum permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;33. apt-get / yum&lt;/h1&gt;
-&lt;!-- &gt; 표현식 --&gt;
-&lt;p&gt;&lt;strong&gt;Tip!!&lt;/strong&gt;&lt;/p&gt;
-&lt;h2 id=&quot;옵션-20&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%98%B5%EC%85%98-20&quot; aria-label=&quot;옵션 20 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;옵션&lt;/h2&gt;
-&lt;h1 id=&quot;34-basename&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#34-basename&quot; aria-label=&quot;34 basename permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;34. basename&lt;/h1&gt;
-&lt;!-- &gt; 표현식 --&gt;
-&lt;p&gt;&lt;strong&gt;Tip!!&lt;/strong&gt;&lt;/p&gt;
-&lt;h2 id=&quot;옵션-21&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%98%B5%EC%85%98-21&quot; aria-label=&quot;옵션 21 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;옵션&lt;/h2&gt;
-&lt;h1 id=&quot;35-net-tools&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#35-net-tools&quot; aria-label=&quot;35 net tools permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;35. net tools&lt;/h1&gt;
-&lt;!-- &gt; 표현식 --&gt;
-&lt;p&gt;&lt;strong&gt;Tip!!&lt;/strong&gt;&lt;/p&gt;
-&lt;h2 id=&quot;옵션-22&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%98%B5%EC%85%98-22&quot; aria-label=&quot;옵션 22 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;옵션&lt;/h2&gt;
-&lt;h1 id=&quot;36-ulimit&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#36-ulimit&quot; aria-label=&quot;36 ulimit permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;36. ulimit&lt;/h1&gt;
-&lt;!-- &gt; 표현식 --&gt;
-&lt;p&gt;&lt;strong&gt;Tip!!&lt;/strong&gt;&lt;/p&gt;
-&lt;h2 id=&quot;옵션-23&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%98%B5%EC%85%98-23&quot; aria-label=&quot;옵션 23 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;옵션&lt;/h2&gt;
-&lt;h1 id=&quot;37-wc&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#37-wc&quot; aria-label=&quot;37 wc permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;37. wc&lt;/h1&gt;
+&lt;h1 id=&quot;21-wc&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#21-wc&quot; aria-label=&quot;21 wc permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;21. wc&lt;/h1&gt;
 &lt;blockquote&gt;
 &lt;p&gt;wc {옵션} {파일}
 각각의 파일에 대한 줄(line), 단어(word), 문자(char), 바이트(byte) 수를 알려준다.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h2 id=&quot;옵션-24&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%98%B5%EC%85%98-24&quot; aria-label=&quot;옵션 24 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;옵션&lt;/h2&gt;
+&lt;h2 id=&quot;옵션-6&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%98%B5%EC%85%98-6&quot; aria-label=&quot;옵션 6 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;옵션&lt;/h2&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;-c : byte 수를 알려준다.
 -m : 문자 수를 알려준다.
 -l : 줄 수를 알려준다.
 -L : 가장 긴 줄의 길이를 알려준다.&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h1 id=&quot;38-devzero&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#38-devzero&quot; aria-label=&quot;38 devzero permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;38. /dev/zero&lt;/h1&gt;
-&lt;!-- &gt; 표현식 --&gt;
-&lt;p&gt;&lt;strong&gt;Tip!!&lt;/strong&gt;&lt;/p&gt;
-&lt;h2 id=&quot;옵션-25&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%98%B5%EC%85%98-25&quot; aria-label=&quot;옵션 25 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;옵션&lt;/h2&gt;
-&lt;h1 id=&quot;39-dns-서버-변경---etcresolveconf&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#39-dns-%EC%84%9C%EB%B2%84-%EB%B3%80%EA%B2%BD---etcresolveconf&quot; aria-label=&quot;39 dns 서버 변경   etcresolveconf permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;39. DNS 서버 변경 -&gt; /etc/resolve.conf&lt;/h1&gt;
-&lt;!-- &gt; 표현식 --&gt;
-&lt;p&gt;&lt;strong&gt;Tip!!&lt;/strong&gt;&lt;/p&gt;
-&lt;h2 id=&quot;옵션-26&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%98%B5%EC%85%98-26&quot; aria-label=&quot;옵션 26 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;옵션&lt;/h2&gt;
-&lt;h1 id=&quot;40-cd&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#40-cd&quot; aria-label=&quot;40 cd permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;40. cd&lt;/h1&gt;
-&lt;!-- &gt; 표현식 --&gt;
-&lt;p&gt;&lt;strong&gt;Tip!!&lt;/strong&gt;&lt;/p&gt;
-&lt;h2 id=&quot;옵션-27&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%98%B5%EC%85%98-27&quot; aria-label=&quot;옵션 27 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;옵션&lt;/h2&gt;
-&lt;h1 id=&quot;41-ipv6&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#41-ipv6&quot; aria-label=&quot;41 ipv6 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;41. IPv6&lt;/h1&gt;
-&lt;!-- &gt; 표현식 --&gt;
-&lt;p&gt;&lt;strong&gt;Tip!!&lt;/strong&gt;&lt;/p&gt;
-&lt;h2 id=&quot;옵션-28&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%98%B5%EC%85%98-28&quot; aria-label=&quot;옵션 28 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;옵션&lt;/h2&gt;
-&lt;h1 id=&quot;42--lsmod&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#42--lsmod&quot; aria-label=&quot;42  lsmod permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;42.  lsmod&lt;/h1&gt;
-&lt;!-- &gt; 표현식 --&gt;
-&lt;p&gt;&lt;strong&gt;Tip!!&lt;/strong&gt;&lt;/p&gt;
-&lt;h2 id=&quot;옵션-29&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%98%B5%EC%85%98-29&quot; aria-label=&quot;옵션 29 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;옵션&lt;/h2&gt;
-&lt;h1 id=&quot;43-ulimit&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#43-ulimit&quot; aria-label=&quot;43 ulimit permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;43. ulimit&lt;/h1&gt;
-&lt;!-- &gt; 표현식 --&gt;
-&lt;p&gt;&lt;strong&gt;Tip!!&lt;/strong&gt;&lt;/p&gt;
-&lt;h2 id=&quot;옵션-30&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%98%B5%EC%85%98-30&quot; aria-label=&quot;옵션 30 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;옵션&lt;/h2&gt;
-&lt;h1 id=&quot;44-메일-프로토콜-smtp-pop3&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#44-%EB%A9%94%EC%9D%BC-%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C-smtp-pop3&quot; aria-label=&quot;44 메일 프로토콜 smtp pop3 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;44. 메일 프로토콜 (SMTP, POP3)&lt;/h1&gt;
-&lt;p&gt;&lt;strong&gt;Tip!!&lt;/strong&gt;&lt;/p&gt;
-&lt;h2 id=&quot;옵션-31&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%98%B5%EC%85%98-31&quot; aria-label=&quot;옵션 31 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;옵션&lt;/h2&gt;
-&lt;h1 id=&quot;45-tree&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#45-tree&quot; aria-label=&quot;45 tree permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;45. Tree&lt;/h1&gt;
+&lt;h1 id=&quot;22-tree&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#22-tree&quot; aria-label=&quot;22 tree permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;22. Tree&lt;/h1&gt;
 &lt;p&gt;tree 명령어는 기본적으로 존재하는 명령어가 아니므로 apt이나 yum을 이용해 설치한다.&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;$ tree --help&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;명령어로 트리의 옵션을 볼 수 있다.
@@ -2147,11 +2074,8 @@ gzip : 파일 압축 명령어&lt;/p&gt;
       /&gt;
   &lt;/a&gt;
     &lt;/span&gt;&lt;/p&gt;
-&lt;h1 id=&quot;46-rsync-명령어&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#46-rsync-%EB%AA%85%EB%A0%B9%EC%96%B4&quot; aria-label=&quot;46 rsync 명령어 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;46. Rsync 명령어&lt;/h1&gt;
-&lt;p&gt;&lt;a href=&quot;https://jhnyang.tistory.com/287&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://jhnyang.tistory.com/287&lt;/a&gt;&lt;/p&gt;
-&lt;h1 id=&quot;47-linux-파이프-라인&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#47-linux-%ED%8C%8C%EC%9D%B4%ED%94%84-%EB%9D%BC%EC%9D%B8&quot; aria-label=&quot;47 linux 파이프 라인 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;47. Linux 파이프 라인&lt;/h1&gt;
-&lt;p&gt;일단 오늘 해결
-&lt;a href=&quot;https://velog.io/@issac/SSH-%EC%A0%91%EC%86%8D%EC%8B%9C-RSA-%EA%B3%B5%EC%9C%A0%ED%82%A4-%EC%B6%A9%EB%8F%8C-%EB%AC%B8%EC%A0%9C-%ED%95%B4%EA%B2%B0&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;요거 보고 해결함 ㅋ&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Linux 문제 풀이2]]></title><description><![CDATA[1.소유자가 george이고 그룹이 others일때 data파일의 소유자와 그룹을 동시에 변경하시오. 2.현재 로그인한 사용자의 목록에서 2016­01­07에 접속한 사용자를 출력하시오. 3.접근권한이 755인 data 디렉토리를 생성하시오(명령어 …]]></description><link>https://hohshho.github.io/linuxProblem2/</link><guid isPermaLink="false">https://hohshho.github.io/linuxProblem2/</guid><pubDate>Sun, 21 Feb 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;1.소유자가 george이고 그룹이 others일때 data파일의 소유자와 그룹을 동시에 변경하시오.&lt;/p&gt;
+&lt;h1 id=&quot;23-rsync&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#23-rsync&quot; aria-label=&quot;23 rsync permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;23. Rsync&lt;/h1&gt;
+&lt;p&gt;추가로 계속 정리할 예정이다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Linux 문제 풀이2]]></title><description><![CDATA[1.소유자가 george이고 그룹이 others일때 data파일의 소유자와 그룹을 동시에 변경하시오. 2.현재 로그인한 사용자의 목록에서 2016­01­07에 접속한 사용자를 출력하시오. 3.접근권한이 755인 data 디렉토리를 생성하시오(명령어 …]]></description><link>https://hohshho.github.io/linuxProblem2/</link><guid isPermaLink="false">https://hohshho.github.io/linuxProblem2/</guid><pubDate>Sun, 21 Feb 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;1.소유자가 george이고 그룹이 others일때 data파일의 소유자와 그룹을 동시에 변경하시오.&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;$ &lt;span class=&quot;token function&quot;&gt;chown&lt;/span&gt; georage:others data&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;2.현재 로그인한 사용자의 목록에서 2016­01­07에 접속한 사용자를 출력하시오.&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;$ &lt;span class=&quot;token function&quot;&gt;who&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;grep&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;2016-01-07&apos;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
@@ -2255,580 +2179,4 @@ test21의 &lt;span class=&quot;token number&quot;&gt;7&lt;/span&gt;번째 필드
 &lt;p&gt;49.listen되고 있는 포트의 네트워크 정보상태를 출력하시오.&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;$ &lt;span class=&quot;token function&quot;&gt;netstat&lt;/span&gt; -tnlp&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;50.bash에서 2MB보다 큰 파일을 만들지 못하게 하는 명령어를 작성하시오.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;$ &lt;span class=&quot;token builtin class-name&quot;&gt;ulimit&lt;/span&gt; -f &lt;span class=&quot;token number&quot;&gt;2000&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[Linux 문제 풀이1]]></title><description><![CDATA[수정된지 100일이 지난 파일 목록을 출력하시오. (명령어 : find) (a)에서 (b)의 결과를 얻으시오 (명령어: ll)
- 명령어가 저장되는 history 파일의 경로는 어디인가 저장된 히스토리를 파일명 ‘myhistory.log’ 으로 저장하…]]></description><link>https://hohshho.github.io/linuxProblem1/</link><guid isPermaLink="false">https://hohshho.github.io/linuxProblem1/</guid><pubDate>Sat, 20 Feb 2021 00:00:00 GMT</pubDate><content:encoded>&lt;ol&gt;
-&lt;li&gt;수정된지 100일이 지난 파일 목록을 출력하시오. (명령어 : find)&lt;/li&gt;
-&lt;/ol&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;$ &lt;span class=&quot;token function&quot;&gt;find&lt;/span&gt; -mtime +100&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;ol start=&quot;2&quot;&gt;
-&lt;li&gt;(a)에서 (b)의 결과를 얻으시오 (명령어: ll)
-&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/ee9688b69f0347b9a418056bca95df17/d0e73/2%EB%B2%88.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 44.5945945945946%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAYAAAAywQxIAAAACXBIWXMAABJ0AAASdAHeZh94AAACRklEQVQoz0WRS09TURSFLwkt2PZin7fQh7RiWkUKRYjigFcJpEBti6EJhIISJHFAeAyQRCID/AkkxH+gDnCMCSNfty1hyNg4aoRC6Exg8Hl6GuNJdvbe6+yzcvZaytXVFaenJba337K6usLy8jJLS0usr6/LvLJSxdbW1ni9ucmbrS1WBbaxscErMbO4uMj8/HOmpqY5Pj5GQZyTkxNut9yhvr4Og8GAwWjEarVSU1ODUdS1tbWYzGa8Xh/NzQGMYuam1YbL6UBRTCJuiFDY3/9cJTw7O6Mj2ommubDbHVgsqnzodrtFNNLU5MHj8RAMBgmFw2guFx6vF7/Ph938GM3SIQkPDg6qhOfn5/QPDBKJtNHa2ip+4iXa+UD0EdlHIu2y7urqpqenh2AgIPD7tIt5RzqK9rIfSyrE1+9fqoTX19cUCgVyuZzMhUKenK6Tz+clpus/ZK70R0dHHB4eyroyq//8hv5bR/+lc1G+QLm8/EOxWGR2bo6R4WFisRi9vX2kJ56STqcZHx+XdSqZJJlKCWyCwYEBRsfGSIi7/odZhh49Ixru4+OH99Uflkol7onVKto4nE5hgkFqZzKZaGhoQFVVqW0gEKRFmGe32YTebhrdGsrQLZRpP0q3wu673f+EofBd8VjFLNysEDmdLuqEw/96VRD7/H5pimoxo1UM0wShqqDYFGnKzs5OlbBcLrOw8EKuVVkxHo8zmcmIteIkEk8EliAl1p2ZmSE7O8tofJSUkCOTmWQklmVsOEu0rZ29vU/8BT6Ob8keCbnGAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;2 &quot;
-        title=&quot;2 &quot;
-        src=&quot;/static/ee9688b69f0347b9a418056bca95df17/fcda8/2%EB%B2%88.png&quot;
-        srcset=&quot;/static/ee9688b69f0347b9a418056bca95df17/12f09/2%EB%B2%88.png 148w,
-/static/ee9688b69f0347b9a418056bca95df17/e4a3f/2%EB%B2%88.png 295w,
-/static/ee9688b69f0347b9a418056bca95df17/fcda8/2%EB%B2%88.png 590w,
-/static/ee9688b69f0347b9a418056bca95df17/d0e73/2%EB%B2%88.png 671w&quot;
-        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;$ ll -rt&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;ol start=&quot;3&quot;&gt;
-&lt;li&gt;명령어가 저장되는 history 파일의 경로는 어디인가&lt;/li&gt;
-&lt;/ol&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;$ ~/.bash_history&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;ol start=&quot;4&quot;&gt;
-&lt;li&gt;저장된 히스토리를 파일명 ‘myhistory.log’ 으로 저장하시오&lt;/li&gt;
-&lt;/ol&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;$ &lt;span class=&quot;token function&quot;&gt;history&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; myhistory.log&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;ol start=&quot;5&quot;&gt;
-&lt;li&gt;아래 디렉토리의 소유자/그룹을 하위 디렉토리, 파일까지 전부 nobody 로 변경하시오. (명령어:chown)
-&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/2cecd9b0daaa47391ef87760c1933257/32056/5%EB%B2%88.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 22.972972972972975%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAFCAYAAABFA8wzAAAACXBIWXMAABJ0AAASdAHeZh94AAABU0lEQVQY0x2Q2U7CYBSE/6pQaYEiLdAW2UwJiUskCt6JUhDiihdoyqKJNCkEXsOn8B30FT//cHEu5sycmZMRvt9jOBzS6/ncdrv0+31GoxHtVov7h0d8v0unc8NsNuPx6Zn38ZjB4I4Hyb2+juhcd7i6uqTZPKfdbiPShoFpmqRTKYxMBkPicrmMEIK87ZBKJonFVc5OT7Edl0a9jqqqWFZe6g5R9zPsxaytfjtusUilUsZ1HbLS2HYcjo9PUONxjrw6rmNzkDVleouSDLq8uKBQKFAqVfC8Km6+RdEckE0UiIkdxH4isf1K1xIIRUHTdGq1IzS5t/K2NHTQdZ2656HpSWrVKrs7Cqm0gZOzUHI5RKOB8GoopSxiMp2yWi2JooggCJhMpiyXS95kV4tFyFx2FwQTNps1izBks14zlTfzzw/C+Rfj7w9efiNe/iLef0L+AR6nmU+VnnGZAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;5 &quot;
-        title=&quot;5 &quot;
-        src=&quot;/static/2cecd9b0daaa47391ef87760c1933257/fcda8/5%EB%B2%88.png&quot;
-        srcset=&quot;/static/2cecd9b0daaa47391ef87760c1933257/12f09/5%EB%B2%88.png 148w,
-/static/2cecd9b0daaa47391ef87760c1933257/e4a3f/5%EB%B2%88.png 295w,
-/static/2cecd9b0daaa47391ef87760c1933257/fcda8/5%EB%B2%88.png 590w,
-/static/2cecd9b0daaa47391ef87760c1933257/32056/5%EB%B2%88.png 602w&quot;
-        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;$ &lt;span class=&quot;token function&quot;&gt;chown&lt;/span&gt; -R nobody:nobody ./*&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;ol start=&quot;6&quot;&gt;
-&lt;li&gt;temp 디렉토리의 파일 중, 하루가 지난 파일을 삭제하시오 (명령어: find)&lt;/li&gt;
-&lt;/ol&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;$ &lt;span class=&quot;token function&quot;&gt;find&lt;/span&gt; /temp -ctime +0 -type f -exec &lt;span class=&quot;token function&quot;&gt;rm&lt;/span&gt; -f &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;\&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;ol start=&quot;7&quot;&gt;
-&lt;li&gt;screen 명령어를 사용하여, 서버와의 연결이 비정상종료되더라도, session은 유지한 채 작업을 할 수 있다. 이
-때 단축키를 사용하여 screen에서 빠져 나오시오.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;CTRL + a + d&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;ol start=&quot;8&quot;&gt;
-&lt;li&gt;자신이 사용하고 있는 tty를 출력하시오.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token function&quot;&gt;tty&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;ol start=&quot;9&quot;&gt;
-&lt;li&gt;아래 그림과 같이 단계적인 디렉토리를 한번에 생성하시오.
-&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 191px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/88e342e043555a7fab6270c36ef20d8e/c540e/9%EB%B2%88.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 54.72972972972974%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAABJ0AAASdAHeZh94AAABQklEQVQoz52SzWrCQBSF8zeJySSYRWlLu2pLqS3S4LtEs7AIBaH0gRREUfBFfI7sQly6dSfJ6dxrQxWUBgOHe5Mz98tJZjSoa7VaYTweYzabYTqd1hatH41GSNOUMCiKAho1H59DGJoG7UJNJhMG7na7PXD49Y3A96Ar0zAMmKbJqvrDeijbthm4WCyOgf1+nw3p+7DUoHBctNtv/yajl1Cdz+fHwG63y0azGUJYJlzpo/XyfDkwSRI2dF3naqiFjuNACAFbiZ61Wq9oOHY9YK/XY8OyrL8BBQ+CANLz+P49iuDY4mTSswkrYJW0Em2AJyUnEr+JHx6fcHN9dXpT4jiudTwargsp94mjTgf3d7enEw4GAzbCMISvdvqcPPX5JOrpyNAvobnlcnkM3Gw2yLIMeZ7X1nq95kpz2+2WgWVZ4gebjKyNIxYF8AAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;9 &quot;
-        title=&quot;9 &quot;
-        src=&quot;/static/88e342e043555a7fab6270c36ef20d8e/c540e/9%EB%B2%88.png&quot;
-        srcset=&quot;/static/88e342e043555a7fab6270c36ef20d8e/12f09/9%EB%B2%88.png 148w,
-/static/88e342e043555a7fab6270c36ef20d8e/c540e/9%EB%B2%88.png 191w&quot;
-        sizes=&quot;(max-width: 191px) 100vw, 191px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token function&quot;&gt;mkdir&lt;/span&gt; -p &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;/2/3/4&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;ol start=&quot;10&quot;&gt;
-&lt;li&gt;grep 명령어의 위치를 출력하시오.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;$ &lt;span class=&quot;token function&quot;&gt;which&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;grep&lt;/span&gt;
-
-$ &lt;span class=&quot;token function&quot;&gt;whereis&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;grep&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;ol start=&quot;11&quot;&gt;
-&lt;li&gt;상위디렉토리로 이동하는 ‘cd..’ 를 ‘pd’로 정의하시오. (alias)&lt;/li&gt;
-&lt;/ol&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token builtin class-name&quot;&gt;alias&lt;/span&gt; &lt;span class=&quot;token assign-left variable&quot;&gt;pd&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;cd..&apos;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;ol start=&quot;12&quot;&gt;
-&lt;li&gt;이전에 친 ‘vi mytest’ 명령어를 다시 출력하는 방법은 무엇인가.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;$ &lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt;
-
-$ &lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;history에 명령어 번호&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;ol start=&quot;13&quot;&gt;
-&lt;li&gt;아래 출력결과를 현재 경로 내에 result.txt 파일로 저장하시오.
-&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/2e7d0cf3e1ec744017dc4f5f0cd8aa1c/5fd3e/13%EB%B2%88.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 33.78378378378378%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAHCAYAAAAIy204AAAACXBIWXMAABJ0AAASdAHeZh94AAABlUlEQVQoz22RzW7TUBSE3aRu09ipExOcxHYTuw2pmtQBIZAQbJBgkV9UktvETquGVlmzYNtF8xS8AA+AxAt+HBsJIWAxmqt75s7M0dW2X7eoz4r5QnF3N+f+PiZJblguV4zHIwaDAaPRLx4Oh7/5z3M6T3kymaBdXM4wLQPDKKJpGrmclvHfyOXy/73/B3G8IgxCfM+j0XCp112O2208z8Uqlznr9jgoFHj1+g1hGNKP+vh+qm3Qf9oXvUexaLCzo6HrOtp8rrJhrVajUqlgWRae71OtVkVYpBUEItyldx6Jpk6n0xGTVGtLQIDjtDBMj/zuvkC2uFwsJNHPTG3bzpCaOI6DaZqcSNu9PZ3nL17SbLaIoohA5q7ryizErXd5bL2lfFAjn6588XGWtUsNSqVS1sqXh+HxCXalzJPTMx5JSLd3nrVqS0DavnR4SOvoCNNpsB8+Qw9OKTR9tIeHLXG8ZL1es5C20+mEOElQSsl5ytX1tfzikE+3tyzjmM1mk+lnasZKJXz4onj3/Yb3P9aMv13xE9SLz8ENhoR/AAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;13 &quot;
-        title=&quot;13 &quot;
-        src=&quot;/static/2e7d0cf3e1ec744017dc4f5f0cd8aa1c/fcda8/13%EB%B2%88.png&quot;
-        srcset=&quot;/static/2e7d0cf3e1ec744017dc4f5f0cd8aa1c/12f09/13%EB%B2%88.png 148w,
-/static/2e7d0cf3e1ec744017dc4f5f0cd8aa1c/e4a3f/13%EB%B2%88.png 295w,
-/static/2e7d0cf3e1ec744017dc4f5f0cd8aa1c/fcda8/13%EB%B2%88.png 590w,
-/static/2e7d0cf3e1ec744017dc4f5f0cd8aa1c/5fd3e/13%EB%B2%88.png 594w&quot;
-        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;$ ll &lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; result.txt&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;ol start=&quot;14&quot;&gt;
-&lt;li&gt;5개의 백그라운드(background) 작업 중, 3번 작업을 포그라운드(foreground)로 가져오시오.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;$ &lt;span class=&quot;token function&quot;&gt;fg&lt;/span&gt; %3&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;ol start=&quot;15&quot;&gt;
-&lt;li&gt;이름 ‘vi’ 프로세스를 찾아 종료시키시오. (‘vi’ 프로세스 id는 9140으로 가정한다.)&lt;/li&gt;
-&lt;/ol&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;$ &lt;span class=&quot;token function&quot;&gt;ps&lt;/span&gt; -ef &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;grep&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;vi&lt;/span&gt;
-
-$ &lt;span class=&quot;token function&quot;&gt;kill&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;9140&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;ol start=&quot;16&quot;&gt;
-&lt;li&gt;(a)에서 (b)의 결과를 얻으시오 (명령어: ll)
-&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/324191f7406d18b256193e3e92bb8781/4b446/16%EB%B2%88.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 19.594594594594593%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAECAYAAACOXx+WAAAACXBIWXMAABJ0AAASdAHeZh94AAABAklEQVQY01XOW0vCYADG8VcQkQLbpmCYiYkgIjp2uGgEW0JrTJp5gCJQysMO9j3tKm/8Qv9ewou6+MHDc/M84nA4MJlM8DwP3/cZjUYEQUAUjXkej3mUOQxDXG+IadkYpsnAMND/MCyLdqfDbrdD7PdflEolcrkcxWKRsqahaWWq1Sr1qxqKqnKhKFxqKg31HKWQ50wIxEleKpzyg+sivuVDXdfp9Xr0+31sW76Qq4OBznB4z63jYJkWtmNy51t0u21a9WtuGo1fLandbFKrVHhfLhHH45E0TVksFqxWH8TxljiNyT4zMtmv12s2my2vL29Mp3NpxnT232w+5ymKSJKEH56miR/XpXOcAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;16 &quot;
-        title=&quot;16 &quot;
-        src=&quot;/static/324191f7406d18b256193e3e92bb8781/fcda8/16%EB%B2%88.png&quot;
-        srcset=&quot;/static/324191f7406d18b256193e3e92bb8781/12f09/16%EB%B2%88.png 148w,
-/static/324191f7406d18b256193e3e92bb8781/e4a3f/16%EB%B2%88.png 295w,
-/static/324191f7406d18b256193e3e92bb8781/fcda8/16%EB%B2%88.png 590w,
-/static/324191f7406d18b256193e3e92bb8781/4b446/16%EB%B2%88.png 877w&quot;
-        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;$ ll -d&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;ol start=&quot;17&quot;&gt;
-&lt;li&gt;‘test.txt’ 파일에서 상단 10줄을 읽어 오류만 ‘error.txt’ 에 저장하시오.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;$ &lt;span class=&quot;token function&quot;&gt;head&lt;/span&gt; test.txt &lt;span class=&quot;token operator&quot;&gt;&lt;span class=&quot;token file-descriptor important&quot;&gt;2&lt;/span&gt;&gt;&lt;/span&gt; error.txt&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;ol start=&quot;18&quot;&gt;
-&lt;li&gt;‘test.txt’ 파일에 ‘link_test’ 이름으로 심볼릭 링크를 생성하시오.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;$ &lt;span class=&quot;token function&quot;&gt;ln&lt;/span&gt; -s test.txt link_test&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;ol start=&quot;19&quot;&gt;
-&lt;li&gt;(a)에서 (b)의 결과를 얻으시오 (명령어: du)
-&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/9db02ce1fe619f115d9c5cd0337f9617/4597d/19%EB%B2%88.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 57.432432432432435%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAABJ0AAASdAHeZh94AAAB20lEQVQoz7WST2saQRjGRyHauroawSi6Ztd/NH9MlM1B0qb3kEN6l+TiF2g+QXqTBiWFVfGyIdHtFhUikpCA38Fv4NVF2x486MHk8nR2FJJCKTm0Az/emfeZfZaZecj3Hz9xePgByeQmJYlEIoF0Oo1UKgVZlvFmbQ3v9/awRTVZ3mF6JpPBxsYmwsIqQsEgHA4HcrkczEHG4zF2376D378Cn88HjuMgShIkUUQkEkUoJCC1vQ2J9uLxOLxeLxK0CuEwhFURK34fLFYrstns3HAymUCKRLBkW2J/IoTA6XSBo3Oed8NiscDtWUYgEKDmQdjoPifnwivXa3ASB8/6MoiV4GD/YG44m82gXqgoFosoFAo4O/sMRSmhUlZQqZSRz+dxfv4F1WqVritsn6IojDLVS+USTj+dotlszg3xjwcZDkcwDAMDk8EC4xmLtbHgufb03YDNh6MRiKZ/Q037iqu6hsuaxupv1F7GZa2Ouqb/hyNPp1P0ej202200Gg3c3N6i2+2i0+ng7u4e7etrduGtVovVP2Fquq6j3++DPD4+4OjomMbBxiLDuz0QaQYFQYDdbme9l2K+PDvyx5MTGlyRhdoMciwWQzQapXl0smya/b/B8zwzVFUVvwBXnTJb3XkOeAAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;19 &quot;
-        title=&quot;19 &quot;
-        src=&quot;/static/9db02ce1fe619f115d9c5cd0337f9617/fcda8/19%EB%B2%88.png&quot;
-        srcset=&quot;/static/9db02ce1fe619f115d9c5cd0337f9617/12f09/19%EB%B2%88.png 148w,
-/static/9db02ce1fe619f115d9c5cd0337f9617/e4a3f/19%EB%B2%88.png 295w,
-/static/9db02ce1fe619f115d9c5cd0337f9617/fcda8/19%EB%B2%88.png 590w,
-/static/9db02ce1fe619f115d9c5cd0337f9617/4597d/19%EB%B2%88.png 631w&quot;
-        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;$ &lt;span class=&quot;token function&quot;&gt;du&lt;/span&gt; -ah&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;ol start=&quot;20&quot;&gt;
-&lt;li&gt;현재 디렉토리의 모든 파일에서 ‘mail’ 이라는 패턴이 들어간 파일의 이름을 출력하라. (명령어 : grep)&lt;/li&gt;
-&lt;/ol&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;$ &lt;span class=&quot;token function&quot;&gt;grep&lt;/span&gt; -l &lt;span class=&quot;token string&quot;&gt;&apos;mail&apos;&lt;/span&gt; *&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;ol&gt;
-&lt;li&gt;‘m’으로 시작하는 모든 파일에서 ‘hamster’ 를 포함하는 모든 행을 찾으시오.(명령어 : grep)&lt;/li&gt;
-&lt;/ol&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;$ &lt;span class=&quot;token function&quot;&gt;grep&lt;/span&gt; -n hamster m*&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;ol start=&quot;22&quot;&gt;
-&lt;li&gt;현재 디렉토리 내의 ‘test.txt’ 파일에서 ‘:’ 구분자를 이용하여 3번째 필드를 출력하라 (명령어 : awk)&lt;/li&gt;
-&lt;/ol&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;$ &lt;span class=&quot;token function&quot;&gt;awk&lt;/span&gt; -F: &lt;span class=&quot;token string&quot;&gt;&apos;{ print &lt;span class=&quot;token variable&quot;&gt;$3&lt;/span&gt; }&apos;&lt;/span&gt; test.txt&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;ol start=&quot;23&quot;&gt;
-&lt;li&gt;현재 디렉토리 내의 ‘test.txt’ 파일에서 1행에서 3행까지 출력하라. (명령어 : sed)&lt;/li&gt;
-&lt;/ol&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;$ &lt;span class=&quot;token function&quot;&gt;sed&lt;/span&gt; -n &lt;span class=&quot;token string&quot;&gt;&apos;1,3p&apos;&lt;/span&gt; test.txt&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;ol start=&quot;24&quot;&gt;
-&lt;li&gt;vi 에디터의 탭간격을 4로 설정하시오. (vi 에디터를 실행시켰다고 가정)&lt;/li&gt;
-&lt;/ol&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;:set &lt;span class=&quot;token assign-left variable&quot;&gt;sts&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;4&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;ol start=&quot;25&quot;&gt;
-&lt;li&gt;다음 vi 화면에서 ‘if’를 ‘testif’ 로 한번에 변경하시오.
-&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/2b3d423f8b83db6f9e92c426fb375fe4/1cfc2/25%EB%B2%88.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 57.432432432432435%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAABJ0AAASdAHeZh94AAAB8klEQVQoz3VT247aMBCNxDVAS+5xbCchBCcblt2qVf8EnriIf4aw7/Ajp2ODWKndPhzPyMocnzMzsTabDTq9ATjn8DwPbhDCD3yTO64L2x5i+BfsEcXhEIPBwGA0GsGyLKzXa1i73Q6T71PkxQJcZsiyHLOiAEsS+L4P3/Pv8QsEQWAQx7Eh3u/3REhHv9cjAg6ZzkipQJZmkDKFEAJRFFGxZ1Q/4wMuOdDQpN1OF9vtFpZm7ff7EES0rBr8WL7jRb2irmusVm9QSoGnDCJnFGODRMbmLmIhwigA4zG14qFQH1qu7pngEvN8gYTs5qUwxUxEVBAhCH1TrJXpPNAxut+xhCwP+0S4+yTUsqfTKSbfJnB9B1mZkJLIIIy0Rc/A9Vw4jmPwX8uaUDeZxQySp0hi6mOWYa5mKKsZ5hUNqpSQGYeQnL7j1NvYuNIIwxDd7oPwcDiYFfDpFUFW35vfWDW/8Pb6E02zRFW/mKhUhVTS0BJNmPxD2KPB6o15DsXz7r0pZwVUuYCqSlSqxpzWqa4bk2e0Bdqqbo2x7Hxa7nQ6d4XH4xHj8RgxYyhySZPO0agMDVnV+1gUZLksKKcdLYSxnNBPoFXpldJgVGvbNrRb63a74Xw+4/LxgbZtKSc849mgNWhxaS+4XL7G6XTC9XrFH6sSUdZEfsRhAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;25 &quot;
-        title=&quot;25 &quot;
-        src=&quot;/static/2b3d423f8b83db6f9e92c426fb375fe4/fcda8/25%EB%B2%88.png&quot;
-        srcset=&quot;/static/2b3d423f8b83db6f9e92c426fb375fe4/12f09/25%EB%B2%88.png 148w,
-/static/2b3d423f8b83db6f9e92c426fb375fe4/e4a3f/25%EB%B2%88.png 295w,
-/static/2b3d423f8b83db6f9e92c426fb375fe4/fcda8/25%EB%B2%88.png 590w,
-/static/2b3d423f8b83db6f9e92c426fb375fe4/efc66/25%EB%B2%88.png 885w,
-/static/2b3d423f8b83db6f9e92c426fb375fe4/1cfc2/25%EB%B2%88.png 900w&quot;
-        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;:%s/if/testif/g&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;ol&gt;
-&lt;li&gt;실행중인 터미널의 사이즈를 구하시오.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;$ stty size&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;ol start=&quot;27&quot;&gt;
-&lt;li&gt;로그인 하고 있는 모든 사용자를 출력하시오.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;$ &lt;span class=&quot;token function&quot;&gt;who&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;ol start=&quot;28&quot;&gt;
-&lt;li&gt;현재 서버의 메모리와 캐시사용량을 mb 단위로 출력하시오.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;$ &lt;span class=&quot;token function&quot;&gt;free&lt;/span&gt; -m&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;ol start=&quot;29&quot;&gt;
-&lt;li&gt;현재 디렉토리에 linuxwr.txt라는 파일을 만드는 alias를 작성하시오. (alias명 : linuxtest)&lt;/li&gt;
-&lt;/ol&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;$ &lt;span class=&quot;token builtin class-name&quot;&gt;alias&lt;/span&gt; &lt;span class=&quot;token assign-left variable&quot;&gt;linux&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;touch linuxwr.txt&quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;ol start=&quot;30&quot;&gt;
-&lt;li&gt;포그라운드(foreground)로 실행중인 프로세스를 일시 중지하는 단축키는 무엇인가.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;CTRL + Z&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;ol start=&quot;31&quot;&gt;
-&lt;li&gt;아래 리스트에서 ‘6자리 단어이자, 대소문자 구분없이 ‘y’ 가 포함되는’ 단어의 개수를 출력하라.
-(명령어:more)
-&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 180px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/be803e8685acbfec6d70364b717f3deb/e9ff0/31%EB%B2%88.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 139.1891891891892%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAcCAYAAABh2p9gAAAACXBIWXMAABJ0AAASdAHeZh94AAAFCUlEQVRIx4VVWU9bRxg1iIDZfG3j7V5f7+AFYxubWE7YvBuD2dP2of0JVaU+Vu1zJEhf0khdVKlKIyJaBJSdkOalEW3VPlbtE8+EJY3UFNLSNsDpN0MIjWoTS+O5nvGce77vO98ZxfHxMUp+aO/o6OiFcbp+cur/ZxXs648nT7C19QC/PX6MR49+xd7+Pvb29lDsVYeHT3FU5EWnxBR/7v+Or++u4u233sQnn36G9959BxO3J/Dhxx9hbm4BX059gc9v3sTM9BRu3bqF+eU1/PP0sERAx1D8/dcBfvn5J9yemMA39+/zQ9//8CPW1+9j7c5drH/3Lea/msW9e/ewsryE5dU1bD7YwsOHu9jZ2cHu7i62t7dxcHBwFvL169eh0Whgs9lgtVrhcDhgtcjQGwx8zel08jW+TvtGo/H5kCQJlZWVmJ2dPQO8evUqKquUEE1G1AlqtLd3It83gPZYFNFL7chmsmi/fAmJZIbW2qBUKiEIAurr6zkRhUKBqampM8Br4+OorqmBWRJhlMxoi7TB7w8g0hqC2+OlZz9CoRDCrWG4HDYO1NDQwIeBoigvL8f09PQZ4DgHrIVFNkOSLYiEW+Hz+eH3EVhLAB6Ph+YQWvw+JNMZxKJtUAsqaLVa6PV6zvBFwLFx1NbVQzZLMFsdKPT1orM7iXhXBwpDo0gnutHc7CdgN8KRi8Q0CI36PEBiqFRWc0CdTg9ZlinZIkyiCK+vmQpjRSAYRpPTDrNsRVOTiwCF8wFrautgp4M2lwc9WSpCVxyvXhlBrrcfQ/0FRKMxdHd2YHB4BJlUHFpiqCkFyIpy4UIlRGKkUat55YwmE/9tNpsp8XqSjouKJtHeyT5jx+aigGNjY6hXqeBxN8EoyhgeGkQinUc+m0G+MIiedAIDQ8PwNjlRV1dH1dU+By0ZclVVFUxMrCYRHq8HTW4vHFYZssUKp8POBW4hsRtJJqdgJQEZQ5WggYNyKJmtvIqFK6/jjVeGkM72opDPon9gEJl0CuGQHyqKhmmwZMiMYSUxlChnBqMJbgqd6S7Y0gwfycVht5Eum6n17DyHTNgqQXgZQzXsVgv0RpEE7OcAraEgUpkM2tou0oggFAygs7OLWjFHbJOIxWIQjYYigMSwXiXARjkSZTuSyQS64wkkursIMEs9nMLIyCgVJ0l7SaRSadrr5JEwhmVlZcWFbbVYKCQtl4pMLciKYLPZT3qcZKSjvLFwmTGwkNUksZI5PDUHkYoyOjpCzHrQn88hRUXJUTHyvb0IB/1cNmrqEkEQXiYb5YlsqDCNLheXB2tBFz2zdmSzyFjqDWhsbOSFYgyZ2xQtilrTAHejE3pRQvRiFJc7ulDo7cHgyGvoy6bQNzCEQk+O2A8jEU8inewixxGKA3KGZJom0zNhu93cpSXWfuSPDrud2JtI7B50tF/izGWyOu15rceE3eh0QLI4yJ1jaCWTZbJoJZMNR8JkZ3EEmj3crVmogqDmBSydw2f2ZTBJ8Hq9XIc+nw8tLS0nwvYHqZddHIx1ybnm8MGNG/zC4aGJZrKqKCKUR3aPeL0EGgggl82R/dufV1an0/FhorRUVFRgZmbmPwyvvc9DYaZZXatCPB6nopBwiZHb4+P3STAYoq7Q0/1RxgFOBzvHGE5OTp4Bbmxs0KU+h5WVFSwtLdFYpjt4GfMLC1imeXFxEfPz81ikPfYftsZmNlZXV/nZzc1NDvgv52yalFVindAAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;31 &quot;
-        title=&quot;31 &quot;
-        src=&quot;/static/be803e8685acbfec6d70364b717f3deb/e9ff0/31%EB%B2%88.png&quot;
-        srcset=&quot;/static/be803e8685acbfec6d70364b717f3deb/12f09/31%EB%B2%88.png 148w,
-/static/be803e8685acbfec6d70364b717f3deb/e9ff0/31%EB%B2%88.png 180w&quot;
-        sizes=&quot;(max-width: 180px) 100vw, 180px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token function&quot;&gt;more&lt;/span&gt; list &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;grep&lt;/span&gt; -w &lt;span class=&quot;token string&quot;&gt;&apos;......&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt; -ic &lt;span class=&quot;token string&quot;&gt;&apos;y&apos;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;ol start=&quot;32&quot;&gt;
-&lt;li&gt;‘diff -u b a’ 명령어를 이용하여 아래와 같은 결과를 도출하였다. 결과값을 가지고 a파일을 만드시오.
-&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 480px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/efcbe28a60d40e55dc59740c31cafe1f/e85cb/32%EB%B2%88.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 40.54054054054054%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAICAYAAAD5nd/tAAAACXBIWXMAABJ0AAASdAHeZh94AAABYklEQVQoz5WRwU7CQBRFCwSQ4gJoSwptCVbaipUSJIpBXSqEHTsTfoAgwSiEnfADbtnws8dnF+oSFjdvZjJz37lvlM3XFvPeJHgMsCyH667Ly8sVvd4FjUaPx4c7PM/D931arRau62KaJtVqlUqlEq9rtRrZbJbtdosyX8xRFAXDNOLa8BpEbQ/bqcjFcxzbQtON2Miybc7OXK47HdpRRCQNisUiN7d35PMqb28LlM/PDXlVRStpqGoOzw+EKKDZDKlaFuWyQUnThd5C13U5swkvmwRBQCDUhUKBVtTm5CTLx8e7GG42MXpdCBzHRs3lxDhPvV6PiY/RcrlEeZ3NKAldt9vlXEwPeZhIJH71s0+n03+G6/VaImmEYUipWCCVSomScU0mkwcpk8nEhqvVCmU6ncpAT/FlJmVDPzrmf83n8sG73Y7xeMxMok8mE56fnxgOhwwGg4M1Go3o9/vs93u+AZ0U3mQuAwWhAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;32 &quot;
-        title=&quot;32 &quot;
-        src=&quot;/static/efcbe28a60d40e55dc59740c31cafe1f/e85cb/32%EB%B2%88.png&quot;
-        srcset=&quot;/static/efcbe28a60d40e55dc59740c31cafe1f/12f09/32%EB%B2%88.png 148w,
-/static/efcbe28a60d40e55dc59740c31cafe1f/e4a3f/32%EB%B2%88.png 295w,
-/static/efcbe28a60d40e55dc59740c31cafe1f/e85cb/32%EB%B2%88.png 480w&quot;
-        sizes=&quot;(max-width: 480px) 100vw, 480px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token function&quot;&gt;diff&lt;/span&gt; -u b a &lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; a&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;ol start=&quot;33&quot;&gt;
-&lt;li&gt;당일 오후 1시로 알람을 지정한 뒤, 프로세스를 죽이시오 (PID는 9140으로 가정한다.)&lt;/li&gt;
-&lt;/ol&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token function&quot;&gt;kill&lt;/span&gt; -14 &lt;span class=&quot;token number&quot;&gt;9999&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt; at &lt;span class=&quot;token number&quot;&gt;13&lt;/span&gt;:00&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;ol start=&quot;34&quot;&gt;
-&lt;li&gt;10G의 더미파일(빈파일)을 만들고자 한다. 흰색을 채우시오. (파일명은 ‘mailplug’로 지정한다.)
-&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/1021cea85c672e910e9f9aedc3d2ad0e/40040/34%EB%B2%88.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 6.756756756756756%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAABCAYAAADeko4lAAAACXBIWXMAABJ0AAASdAHeZh94AAAAVElEQVQI1w3LsQ2AIBRAQZcTCokN4C9IGICKHUxYRRoZARrCWk+7a27Ld0ZFxa41MR6kdGLMhfeCc44Qwm+PiNDay5yTMQa9d9ZalFKw1v7HUOvDBwAsL7qgEouEAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;34 &quot;
-        title=&quot;34 &quot;
-        src=&quot;/static/1021cea85c672e910e9f9aedc3d2ad0e/fcda8/34%EB%B2%88.png&quot;
-        srcset=&quot;/static/1021cea85c672e910e9f9aedc3d2ad0e/12f09/34%EB%B2%88.png 148w,
-/static/1021cea85c672e910e9f9aedc3d2ad0e/e4a3f/34%EB%B2%88.png 295w,
-/static/1021cea85c672e910e9f9aedc3d2ad0e/fcda8/34%EB%B2%88.png 590w,
-/static/1021cea85c672e910e9f9aedc3d2ad0e/40040/34%EB%B2%88.png 616w&quot;
-        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;$ &lt;span class=&quot;token function&quot;&gt;dd&lt;/span&gt; &lt;span class=&quot;token assign-left variable&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;/dev/zero &lt;span class=&quot;token assign-left variable&quot;&gt;of&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;파일명 &lt;span class=&quot;token assign-left variable&quot;&gt;bs&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;1GB &lt;span class=&quot;token assign-left variable&quot;&gt;count&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;10&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;ol start=&quot;35&quot;&gt;
-&lt;li&gt;시그널 이름 중 ‘SIGQUIT’ 는 몇 번에 해당하는가?  &lt;/li&gt;
-&lt;/ol&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;a. 19 b.17 c.15 d.3 e.1&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token number&quot;&gt;3&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;ol start=&quot;36&quot;&gt;
-&lt;li&gt;
-&lt;p&gt;csh 에서 로그아웃할 때 백그라운드 프로세스들을 자동으로 죽일 때, 어느 파일을 참조하는가?&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;a. .logout b. .bash_history c. .bashrc d. .bash_logout e. hamster&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;정답 : a&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;$ ~/logout&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;ol start=&quot;37&quot;&gt;
-&lt;li&gt;grep 을 사용하여 마침표로 시작되는 줄을 찾으시오.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;$ &lt;span class=&quot;token function&quot;&gt;grep&lt;/span&gt; ^&lt;span class=&quot;token punctuation&quot;&gt;\&lt;/span&gt;. &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;찾을 파일/디렉토리 명&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;ol start=&quot;38&quot;&gt;
-&lt;li&gt;디렉토리 내에서 가장 새로운 파일의 이름을 출력하는 방법은 무엇인가 (명령어: ls)&lt;/li&gt;
-&lt;/ol&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;$ &lt;span class=&quot;token function&quot;&gt;ls&lt;/span&gt; -t1 &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;head&lt;/span&gt; -1&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;ol start=&quot;39&quot;&gt;
-&lt;li&gt;연결되지 않은 심볼릭 링크 찾아내는 방법은 무엇인가 (명령어: find)&lt;/li&gt;
-&lt;/ol&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;$ &lt;span class=&quot;token function&quot;&gt;find&lt;/span&gt; -L &lt;span class=&quot;token builtin class-name&quot;&gt;.&lt;/span&gt; -type l&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;ol start=&quot;40&quot;&gt;
-&lt;li&gt;‘rm’ 명령어 사용시, 바로 삭제시키지 않고 한번 더 물어본 후 삭제시키고자 할 때 사용하는 옵션은?&lt;/li&gt;
-&lt;/ol&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;$ &lt;span class=&quot;token function&quot;&gt;rm&lt;/span&gt; -l &lt;span class=&quot;token function&quot;&gt;file&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;ol start=&quot;41&quot;&gt;
-&lt;li&gt;‘cat’ 명령어 옵션 중, ‘tab과 행바꿈 문자를 제외한 제어 문자를 ^ 형태로 출력해 주는’ 옵션은?&lt;/li&gt;
-&lt;/ol&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;$ &lt;span class=&quot;token function&quot;&gt;cat&lt;/span&gt; -v &lt;span class=&quot;token function&quot;&gt;file&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;ol start=&quot;42&quot;&gt;
-&lt;li&gt;0.0.0.0 에서 999.999.999.999 까지 표현할 수 있는 정규표현식을 작성하시오.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;$ &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;-9&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1,3&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;\&lt;/span&gt;.&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;-9&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1,3&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;\&lt;/span&gt;.&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;-9&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1,3&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;ol start=&quot;43&quot;&gt;
-&lt;li&gt;‘egrep’ 명령어를 이용하여 ‘testfile’ 내 ‘숫자 3이 한 번 이상 등장하는 행을 출력하시오’.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;$ &lt;span class=&quot;token function&quot;&gt;egrep&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;3+&apos;&lt;/span&gt; testfile&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;ol start=&quot;44&quot;&gt;
-&lt;li&gt;디렉토리 구조는 아래와 같다. a.py 를 vi 편집기로 연 후, 빠져 나오지 않은 채, b.py 로 전환하시오.
-(cf. a.py 파일을 연 후, :q 명령은 내리지 않는다.)  &lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 479px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/6e679c8f04383851e1898f43ee3fbc7d/a9b70/44%EB%B2%88.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 12.162162162162163%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAACCAYAAABYBvyLAAAACXBIWXMAABJ0AAASdAHeZh94AAAAkElEQVQI1x3KywqCQACFYd/BRU0a2MLLTEOaKKSQ99zY1kcR8gHE3vpvaHf4z2dt20aaphTFgyzLzb6T5Tld19H3A03bMo4jw/AiSRLmeeZZVebreU+T6QOtMWVZ8t13rGVZcJwTF8/DcV3E8YAQAq01Sl+RShHfYoIgwLZt6rrhbJzv+4RhiJTqb2UUsa4ffrDkQrgzNfsZAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;44 &quot;
-        title=&quot;44 &quot;
-        src=&quot;/static/6e679c8f04383851e1898f43ee3fbc7d/a9b70/44%EB%B2%88.png&quot;
-        srcset=&quot;/static/6e679c8f04383851e1898f43ee3fbc7d/12f09/44%EB%B2%88.png 148w,
-/static/6e679c8f04383851e1898f43ee3fbc7d/e4a3f/44%EB%B2%88.png 295w,
-/static/6e679c8f04383851e1898f43ee3fbc7d/a9b70/44%EB%B2%88.png 479w&quot;
-        sizes=&quot;(max-width: 479px) 100vw, 479px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;:e b.py&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;ol start=&quot;45&quot;&gt;
-&lt;li&gt;파일의 제일 앞부분에 있는 100개의 문자를 삭제하시오 (명령어 : dd)&lt;/li&gt;
-&lt;/ol&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token function&quot;&gt;dd&lt;/span&gt; &lt;span class=&quot;token assign-left variable&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;input file이름&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token assign-left variable&quot;&gt;of&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;output file이름&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token assign-left variable&quot;&gt;ibs&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt; slip100 &lt;span class=&quot;token assign-left variable&quot;&gt;conv&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;cotrunc&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;ol start=&quot;46&quot;&gt;
-&lt;li&gt;‘test.log’ 파일을 정렬하여, 동일 디렉토리 내 ‘result.log’ 에 작성하시오. (명령어 : sort)&lt;/li&gt;
-&lt;/ol&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;$ &lt;span class=&quot;token function&quot;&gt;sort&lt;/span&gt; -o result.log test.log&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;ol start=&quot;47&quot;&gt;
-&lt;li&gt;백그라운드로 실행중인 프로세스나 현재 중지된 프로세스 목록을 PID와 같이 출력하라.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;$ &lt;span class=&quot;token function&quot;&gt;jobs&lt;/span&gt; -l&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;ol start=&quot;48&quot;&gt;
-&lt;li&gt;현재 등록된 crontab에 등록된 작업을 출력하시오&lt;/li&gt;
-&lt;/ol&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;$ &lt;span class=&quot;token function&quot;&gt;crontab&lt;/span&gt; -l&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;ol start=&quot;49&quot;&gt;
-&lt;li&gt;아래 crontab 에 대해 맞는 설명은?
-&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 308px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/02e52b445f2c7b31e5265de4258c9830/2ece4/49%EB%B2%88.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 15.54054054054054%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAADCAYAAACTWi8uAAAACXBIWXMAABJ0AAASdAHeZh94AAAAsUlEQVQI12WLTQ6CMBCFu2sUiTvFiDF4Nk08FPJTFhRMoGsCJC2oZ2CJB+AKz6YaNi6+zPvmzZBhGNC2LZRShq7rNGp2pV1KiaZpvq5zXdfGpfa+782uqipM0wRyvlxhWQtQSkEXS6ztFQghfziOY6bruvC8E46HPezf7Wa7M1kUBcjj+UKSMDAWg/MMGecIght8358JwxB5nusbhjRNUZYCpX5mcaS7SHd3CCHwHkd8ACywlvzcBeugAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;49 &quot;
-        title=&quot;49 &quot;
-        src=&quot;/static/02e52b445f2c7b31e5265de4258c9830/2ece4/49%EB%B2%88.png&quot;
-        srcset=&quot;/static/02e52b445f2c7b31e5265de4258c9830/12f09/49%EB%B2%88.png 148w,
-/static/02e52b445f2c7b31e5265de4258c9830/e4a3f/49%EB%B2%88.png 295w,
-/static/02e52b445f2c7b31e5265de4258c9830/2ece4/49%EB%B2%88.png 308w&quot;
-        sizes=&quot;(max-width: 308px) 100vw, 308px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt; a. 새벽 4시부터 낮12까지 30분 간격으로 로그파일 삭제.
- b. 매주 일요일, 새벽4시 30분과 낮12시 30분에, 로그파일 삭제.
- c. 매월 4일, 12일에 매시간 30분에 로그파일 삭제
- d. 새벽4시와 낮 12시, 30분에 로그파일 삭제
- e. 매월 30일 새벽4시와 낮12시에 로그파일 삭제&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;정답 : d&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;매일 &lt;span class=&quot;token number&quot;&gt;4&lt;/span&gt;시 &lt;span class=&quot;token number&quot;&gt;30&lt;/span&gt;분 &lt;span class=&quot;token number&quot;&gt;12&lt;/span&gt;시 &lt;span class=&quot;token number&quot;&gt;30&lt;/span&gt;분에 홈디렉토리의 모든 로그파일 삭제&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;ol&gt;
-&lt;li&gt;vi 편집기내에서 문서 최상단으로 커서를 위치시키는 명령어는?&lt;/li&gt;
-&lt;/ol&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;gg
-
-1G&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item></channel></rss>
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;$ &lt;span class=&quot;token builtin class-name&quot;&gt;ulimit&lt;/span&gt; -f &lt;span class=&quot;token number&quot;&gt;2000&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item></channel></rss>
