@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Just Do It! | Feed]]></title><description><![CDATA[웹 개발 블로그입니다. ]]></description><link>https://hohshho.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 20 Apr 2021 15:56:01 GMT</lastBuildDate><item><title><![CDATA[Rsync 정리]]></title><description><![CDATA[Rsync정리]]></description><link>https://hohshho.github.io/Rsync/</link><guid isPermaLink="false">https://hohshho.github.io/Rsync/</guid><pubDate>Wed, 21 Apr 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Rsync정리&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Just Do It! | Feed]]></title><description><![CDATA[웹 개발 블로그입니다. ]]></description><link>https://hohshho.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 20 Apr 2021 16:02:20 GMT</lastBuildDate><item><title><![CDATA[Rsync 정리]]></title><description><![CDATA[Rsync정리]]></description><link>https://hohshho.github.io/Rsync/</link><guid isPermaLink="false">https://hohshho.github.io/Rsync/</guid><pubDate>Wed, 21 Apr 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Rsync정리&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://skibis.tistory.com/16&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;&lt;/a&gt;  &lt;/p&gt;</content:encoded></item><item><title><![CDATA[정규 표현식 정리]]></title><description><![CDATA[정규 표현식 정리]]></description><link>https://hohshho.github.io/RegEx/</link><guid isPermaLink="false">https://hohshho.github.io/RegEx/</guid><pubDate>Wed, 21 Apr 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;정규 표현식 정리&lt;/p&gt;</content:encoded></item><item><title><![CDATA[git flow 및 git cli 명령어 정리]]></title><description><![CDATA[Git 명령어 정리 Git, Git flow 명령어 Git commit Git Branch 생성 및 checkout Git Branch 삭제 Git Branch 확인 Git Branch 상태 확인 이미 Merge한 브랜치 목록을 확인한다. Git l…]]></description><link>https://hohshho.github.io/gitCommand/</link><guid isPermaLink="false">https://hohshho.github.io/gitCommand/</guid><pubDate>Tue, 20 Apr 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Git 명령어 정리&lt;/p&gt;
 &lt;h1 id=&quot;git-git-flow-명령어&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#git-git-flow-%EB%AA%85%EB%A0%B9%EC%96%B4&quot; aria-label=&quot;git git flow 명령어 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Git, Git flow 명령어&lt;/h1&gt;
 &lt;h3 id=&quot;git-commit&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#git-commit&quot; aria-label=&quot;git commit permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Git commit&lt;/h3&gt;
@@ -117,8 +117,8 @@ release : 배포 전 테스트를 통해 버그를 찾아내는 브랜치&lt;/co
 배포와 SaaS의 개발 방법론인 12-Factors를 정리하는 글을 작성할 예정이다.&lt;/p&gt;
 &lt;h1 id=&quot;reference&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#reference&quot; aria-label=&quot;reference permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Reference&lt;/h1&gt;
 &lt;p&gt;&lt;a href=&quot;https://nvie.com/posts/a-successful-git-branching-model/&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;git flow 참고 자료&lt;/a&gt;&lt;br&gt;
-&lt;a href=&quot;https://guides.github.com/introduction/flow/&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;github flow 참고 자료&lt;/a&gt;&lt;br&gt;
-&lt;a href=&quot;https://about.gitlab.com/topics/version-control/what-is-gitlab-flow/&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;gitlab flow 참고 자료&lt;/a&gt;  &lt;/p&gt;</content:encoded></item><item><title><![CDATA[Codeigniter 학습]]></title><description><![CDATA[codeigniter3를 공부해보자 codeigniter3 1. CI 동작  index.php CI가 동작하기 위한 기반 리소스 초기화 Router 모듈 동작 결정
+&lt;a href=&quot;https://guides.github.com/introduction/flow/&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;github flow 참고 자료(공식 홈페이지)&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;https://about.gitlab.com/topics/version-control/what-is-gitlab-flow/&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;gitlab flow 참고 자료(공식 홈페이지)&lt;/a&gt;  &lt;/p&gt;</content:encoded></item><item><title><![CDATA[Codeigniter 학습]]></title><description><![CDATA[codeigniter3를 공부해보자 codeigniter3 1. CI 동작  index.php CI가 동작하기 위한 기반 리소스 초기화 Router 모듈 동작 결정
 2.1) 캐시 파일 존재 -> 캐시 파일 전송 Security 모듈이 Controll…]]></description><link>https://hohshho.github.io/phpNginxCI_4/</link><guid isPermaLink="false">https://hohshho.github.io/phpNginxCI_4/</guid><pubDate>Mon, 01 Mar 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;codeigniter3를 공부해보자&lt;/p&gt;
 &lt;h1 id=&quot;codeigniter3&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#codeigniter3&quot; aria-label=&quot;codeigniter3 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;codeigniter3&lt;/h1&gt;
 &lt;h1 id=&quot;1-ci-동작&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#1-ci-%EB%8F%99%EC%9E%91&quot; aria-label=&quot;1 ci 동작 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;1. CI 동작&lt;/h1&gt;
@@ -1454,30 +1454,214 @@ root /{원하는 경로}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;텍스트 모드 부팅 설정 (더 빨라짐)&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token function&quot;&gt;sudo&lt;/span&gt; systemctl set-default multi-user.target&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;&lt;a href=&quot;https://m.blog.naver.com/skddms/220575084716&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;putty로 virtualbox 연결하기 - 숭숭이님 블로그&lt;/a&gt;&lt;br&gt;
-&lt;a href=&quot;https://hyoje420.tistory.com/51&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;[Vim]vim 설정하기 - heyhyo님 블로그&lt;/a&gt;  &lt;/p&gt;</content:encoded></item><item><title><![CDATA[쉘 스크립트 첫 줄에 [#!/bin/bash]를 쓰는 이유]]></title><description><![CDATA[#!/bin/bash를 왜 쓸까 bash파일은 주석을 #으로 단다. bash스크립트 파일 문제 풀면서 별 생각없이 #!/bin/bash 부분이 그냥 표시해주는 부분인 줄 알았는데 #!/bin/bash를 꼭 달아줘야 한다고 한다. "#!"는 Sheba…]]></description><link>https://hohshho.github.io/whyBash/</link><guid isPermaLink="false">https://hohshho.github.io/whyBash/</guid><pubDate>Tue, 23 Feb 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;binbash를-왜-쓸까&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#binbash%EB%A5%BC-%EC%99%9C-%EC%93%B8%EA%B9%8C&quot; aria-label=&quot;binbash를 왜 쓸까 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;#!/bin/bash를 왜 쓸까&lt;/h1&gt;
-&lt;p&gt;bash파일은 주석을 #으로 단다.&lt;/p&gt;
-&lt;p&gt;bash스크립트 파일 문제 풀면서 별 생각없이 #!/bin/bash 부분이 그냥 표시해주는 부분인 줄 알았는데&lt;/p&gt;
-&lt;p&gt;#!/bin/bash를 꼭 달아줘야 한다고 한다.&lt;/p&gt;
-&lt;p&gt;&quot;#!&quot;는 &lt;strong&gt;Shebang&lt;/strong&gt;이라고 부르고, 실행 가능한 쉘 스크립트라는 것을 나타내는 특별한 표시자이다.  &lt;/p&gt;
-&lt;p&gt;&quot;#!&quot; 뒤에 나오는 것은 경로명으로, 스크립트에 들어있는 명령어를 해석할 위치를 나타낸다.&lt;br&gt;
-&lt;strong&gt;정확히 Full PATH로 작성해야한다.&lt;/strong&gt;  &lt;/p&gt;
-&lt;p&gt;이 명령어 해석기가 주석은 무시하면서 스크립트의 첫번째 줄부터 명령어를 실행시킨다.&lt;/p&gt;
-&lt;h2 id=&quot;쉘-스크립트의-구조&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%89%98-%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%EC%9D%98-%EA%B5%AC%EC%A1%B0&quot; aria-label=&quot;쉘 스크립트의 구조 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;쉘 스크립트의 구조&lt;/h2&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;#!인터프리터(Interpreter)&lt;/span&gt;
-
-&lt;span class=&quot;token comment&quot;&gt;#&lt;/span&gt;
-&lt;span class=&quot;token comment&quot;&gt;# 주석(Comment)&lt;/span&gt;
-&lt;span class=&quot;token comment&quot;&gt;#&lt;/span&gt;
-
-함수명&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-  명령
-  &lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;.
+&lt;a href=&quot;https://hyoje420.tistory.com/51&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;[Vim]vim 설정하기 - heyhyo님 블로그&lt;/a&gt;  &lt;/p&gt;</content:encoded></item><item><title><![CDATA[bash 문제 풀이]]></title><description><![CDATA[bash 20문제 풀이 풀이 현재 자기신의 pc(linux기준)의 cpu모델명, Os 종류 및 버전, kernel 버전을 출력하시오. 매주 일요일, 새벽4시 30분과 낮12시 30분에, /tmp/* 를 삭제하는 crontab 
+예) * * * * *…]]></description><link>https://hohshho.github.io/bashMission/</link><guid isPermaLink="false">https://hohshho.github.io/bashMission/</guid><pubDate>Tue, 23 Feb 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;bash 20문제 풀이&lt;/p&gt;
+&lt;h2 id=&quot;풀이&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%ED%92%80%EC%9D%B4&quot; aria-label=&quot;풀이 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;풀이&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;현재 자기신의 pc(linux기준)의 cpu모델명, Os 종류 및 버전, kernel 버전을 출력하시오.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token function&quot;&gt;cat&lt;/span&gt; /proc/cpuinfo &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;egrep&lt;/span&gt;  &lt;span class=&quot;token string&quot;&gt;&apos;model name&apos;&lt;/span&gt;
+&lt;span class=&quot;token function&quot;&gt;cat&lt;/span&gt; /etc/issue
+&lt;span class=&quot;token function&quot;&gt;uname&lt;/span&gt; -r&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ol start=&quot;2&quot;&gt;
+&lt;li&gt;매주 일요일, 새벽4시 30분과 낮12시 30분에, /tmp/* 를 삭제하는 crontab
+예) * * * * * 실행문&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token function&quot;&gt;cat&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;crontab&lt;/span&gt; -l&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token builtin class-name&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;30 4,12 * * * rm /tmp/*&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;crontab&lt;/span&gt;
+&lt;span class=&quot;token function&quot;&gt;crontab&lt;/span&gt; -l&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ol start=&quot;3&quot;&gt;
+&lt;li&gt;정수인자 2개를 받아 인자 개수 검증 후 4칙연산별 함수를 구현하여 결과값을 모두 &lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token function-name function&quot;&gt;add&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+	&lt;span class=&quot;token builtin class-name&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;token assign-left variable&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token variable&quot;&gt;$1&lt;/span&gt;+&lt;span class=&quot;token variable&quot;&gt;$2&lt;/span&gt;
+	&lt;span class=&quot;token builtin class-name&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;&lt;span class=&quot;token variable&quot;&gt;$1&lt;/span&gt; + &lt;span class=&quot;token variable&quot;&gt;$2&lt;/span&gt; : &lt;span class=&quot;token variable&quot;&gt;${value}&lt;/span&gt;&quot;&lt;/span&gt;
 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
 
-명령1&lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;Command&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
-명령2&lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;
-명령3&lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token function-name function&quot;&gt;minus&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+	&lt;span class=&quot;token builtin class-name&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;token assign-left variable&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token variable&quot;&gt;$1&lt;/span&gt;-&lt;span class=&quot;token variable&quot;&gt;$2&lt;/span&gt;
+	&lt;span class=&quot;token builtin class-name&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;&lt;span class=&quot;token variable&quot;&gt;$1&lt;/span&gt; - &lt;span class=&quot;token variable&quot;&gt;$2&lt;/span&gt; : &lt;span class=&quot;token variable&quot;&gt;${value}&lt;/span&gt;&quot;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
 
-흐름제어 &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;Flow Control&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token function-name function&quot;&gt;multiply&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+	&lt;span class=&quot;token builtin class-name&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;token assign-left variable&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token variable&quot;&gt;$1&lt;/span&gt;*&lt;span class=&quot;token variable&quot;&gt;$2&lt;/span&gt;
+	&lt;span class=&quot;token builtin class-name&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;&lt;span class=&quot;token variable&quot;&gt;$1&lt;/span&gt; * &lt;span class=&quot;token variable&quot;&gt;$2&lt;/span&gt; : &lt;span class=&quot;token variable&quot;&gt;${value}&lt;/span&gt;&quot;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
 
-함수 호출&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item></channel></rss>
+&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token function-name function&quot;&gt;divide&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+	&lt;span class=&quot;token builtin class-name&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;token assign-left variable&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token variable&quot;&gt;$1&lt;/span&gt;/&lt;span class=&quot;token variable&quot;&gt;$2&lt;/span&gt;
+	&lt;span class=&quot;token builtin class-name&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;&lt;span class=&quot;token variable&quot;&gt;$1&lt;/span&gt; / &lt;span class=&quot;token variable&quot;&gt;$2&lt;/span&gt; : &lt;span class=&quot;token variable&quot;&gt;${value}&lt;/span&gt;&quot;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;token function&quot;&gt;add&lt;/span&gt; &lt;span class=&quot;token variable&quot;&gt;$1&lt;/span&gt; &lt;span class=&quot;token variable&quot;&gt;$2&lt;/span&gt;
+minus &lt;span class=&quot;token variable&quot;&gt;$1&lt;/span&gt; &lt;span class=&quot;token variable&quot;&gt;$2&lt;/span&gt;
+multiply &lt;span class=&quot;token variable&quot;&gt;$1&lt;/span&gt; &lt;span class=&quot;token variable&quot;&gt;$2&lt;/span&gt;
+divide &lt;span class=&quot;token variable&quot;&gt;$1&lt;/span&gt; &lt;span class=&quot;token variable&quot;&gt;$2&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ol start=&quot;4&quot;&gt;
+&lt;li&gt;2초마다 현재시간을 출력하는 스크립트를 작성하세요.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;(3번 실행되도록 작성)&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token assign-left variable&quot;&gt;number&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt; &lt;span class=&quot;token variable&quot;&gt;$number&lt;/span&gt; -le &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;do&lt;/span&gt;
+	&lt;span class=&quot;token function&quot;&gt;date&lt;/span&gt;
+	&lt;span class=&quot;token variable&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;((&lt;/span&gt;number&lt;span class=&quot;token operator&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;))&lt;/span&gt;&lt;/span&gt;
+	&lt;span class=&quot;token function&quot;&gt;sleep&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;done&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ol start=&quot;5&quot;&gt;
+&lt;li&gt;첨부파일 lastlog를 이용하여 한번도 로그인한 적 없는 사용자를 삭제하는 명령어를 문자열로 아래와 같이 출력.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;token builtin class-name&quot;&gt;read&lt;/span&gt; A B C D E F G H I
+&lt;span class=&quot;token keyword&quot;&gt;do&lt;/span&gt;
+	&lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;&lt;span class=&quot;token variable&quot;&gt;$B&lt;/span&gt;&quot;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;~ &lt;span class=&quot;token string&quot;&gt;&quot;**Never&quot;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;then&lt;/span&gt;
+		&lt;span class=&quot;token builtin class-name&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;userdel -r &quot;&lt;/span&gt; &lt;span class=&quot;token variable&quot;&gt;$A&lt;/span&gt;
+	&lt;span class=&quot;token keyword&quot;&gt;fi&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;done&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt; lastlog&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ol start=&quot;6&quot;&gt;
+&lt;li&gt;첨부파일 lastlog를 이용하여 로그인한 적 없는 사용자를 제외하고 년 월 일 시간 사용자계정 순서로 아래와 같이 출력 i&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;token builtin class-name&quot;&gt;read&lt;/span&gt; A B C D E F G H I
+&lt;span class=&quot;token keyword&quot;&gt;do&lt;/span&gt;
+	&lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;&lt;span class=&quot;token variable&quot;&gt;$B&lt;/span&gt;&quot;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;~ &lt;span class=&quot;token string&quot;&gt;&quot;pts&quot;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;then&lt;/span&gt;
+		&lt;span class=&quot;token builtin class-name&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;token variable&quot;&gt;${I&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt;0&lt;span class=&quot;token operator&quot;&gt;:-&lt;/span&gt;1}&lt;/span&gt; &lt;span class=&quot;token variable&quot;&gt;$E&lt;/span&gt; &lt;span class=&quot;token variable&quot;&gt;$F&lt;/span&gt; &lt;span class=&quot;token variable&quot;&gt;$G&lt;/span&gt; &lt;span class=&quot;token variable&quot;&gt;$A&lt;/span&gt;
+	&lt;span class=&quot;token keyword&quot;&gt;fi&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;done&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt; lastlog&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ol start=&quot;7&quot;&gt;
+&lt;li&gt;첨부파일 lastlog를 이용하여 ntp와 firenwo user 라인사이에 ‘end of system user’라인 삽입.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token function&quot;&gt;sed&lt;/span&gt; -i&lt;span class=&quot;token string&quot;&gt;&apos;&apos;&lt;/span&gt; -r -e &lt;span class=&quot;token string&quot;&gt;&quot;/ntp/a&lt;span class=&quot;token entity&quot; title=&quot;\e&quot;&gt;\e&lt;/span&gt;nd of system user&quot;&lt;/span&gt; lastlog
+&lt;span class=&quot;token function&quot;&gt;cat&lt;/span&gt; lastlog&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ol start=&quot;8&quot;&gt;
+&lt;li&gt;첨부파일 checkpassword를 이용하여 09:59:57부터 10:21:45까지의 라인만 출력&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token function&quot;&gt;cat&lt;/span&gt; checkpassword &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;awk&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;/[9]:59:5[7-9]/&apos;&lt;/span&gt;
+&lt;span class=&quot;token function&quot;&gt;cat&lt;/span&gt; checkpassword &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;awk&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;/[10]:[0-1][0-9]:[0-5][0-9]/&apos;&lt;/span&gt;
+&lt;span class=&quot;token function&quot;&gt;cat&lt;/span&gt; checkpassword &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;awk&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;/[10]:2[0-1]:[0-3][0-9]/&apos;&lt;/span&gt;
+&lt;span class=&quot;token function&quot;&gt;cat&lt;/span&gt; checkpassword &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;awk&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;/[10]:21:4[0-5]/&apos;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ol start=&quot;9&quot;&gt;
+&lt;li&gt;첨부파일 checkpassword를 이용하여 121.156.118.254를 pop3.mailplug.co.kr로, 14.36.253.67는 office.ip.wiro.kr로 치환하여 출력&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token function&quot;&gt;cat&lt;/span&gt; checkpassword &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;sed&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;s/121.156.118.254/pop3.mailplug.co.kr/g&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;sed&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;s/14.36.253.67/office.ip.wiro.kr/g&apos;&lt;/span&gt; checkpassword&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ol start=&quot;10&quot;&gt;
+&lt;li&gt;첨부파일 maillog를 이용하여 root@ma10.mailplug.co.kr에서 수신된 메일의 수를 출력&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token assign-left variable&quot;&gt;index&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;token builtin class-name&quot;&gt;read&lt;/span&gt; line
+&lt;span class=&quot;token keyword&quot;&gt;do&lt;/span&gt;
+	&lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;&lt;span class=&quot;token variable&quot;&gt;$line&lt;/span&gt;&quot;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;~ &lt;span class=&quot;token string&quot;&gt;&quot;from &amp;lt;root@ma10.mailplug.co.kr&gt;&quot;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;then&lt;/span&gt;
+		&lt;span class=&quot;token builtin class-name&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;token assign-left variable&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token variable&quot;&gt;$index&lt;/span&gt;+1
+		&lt;span class=&quot;token assign-left variable&quot;&gt;index&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token variable&quot;&gt;$value&lt;/span&gt;
+	&lt;span class=&quot;token keyword&quot;&gt;fi&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;done&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt; maillog
+
+&lt;span class=&quot;token builtin class-name&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;token variable&quot;&gt;$index&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ol start=&quot;11&quot;&gt;
+&lt;li&gt;첨부파일 maillog를 이용하여 시간별 총 용량만 아래와 같이 출력(bytes)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;token builtin class-name&quot;&gt;read&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;time&lt;/span&gt; byte
+&lt;span class=&quot;token keyword&quot;&gt;do&lt;/span&gt;
+	&lt;span class=&quot;token builtin class-name&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;&lt;span class=&quot;token variable&quot;&gt;$time&lt;/span&gt; &lt;span class=&quot;token variable&quot;&gt;$byte&lt;/span&gt;&quot;&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;done&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt; maillog &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;grep&lt;/span&gt; bytes &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;awk&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;{print &lt;span class=&quot;token variable&quot;&gt;$3&lt;/span&gt;&quot;:&quot;&lt;span class=&quot;token variable&quot;&gt;$11&lt;/span&gt;}&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;awk&lt;/span&gt; -F &lt;span class=&quot;token string&quot;&gt;&quot;:&quot;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;{arr[&lt;span class=&quot;token variable&quot;&gt;$1&lt;/span&gt;]+=&lt;span class=&quot;token variable&quot;&gt;$4&lt;/span&gt;} END { for (i in arr) {print i &quot;&lt;span class=&quot;token entity&quot; title=&quot;\t&quot;&gt;\t&lt;/span&gt;&quot; arr[i]}}&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;sort&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;awk&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;{ if(&lt;span class=&quot;token variable&quot;&gt;$1&lt;/span&gt;~&quot;(0[0-9])&quot;) {sub(/0/,&quot;&quot;)} print &lt;span class=&quot;token variable&quot;&gt;$1&lt;/span&gt; &quot;시&lt;span class=&quot;token entity&quot; title=&quot;\t&quot;&gt;\t&lt;/span&gt;&quot; &lt;span class=&quot;token variable&quot;&gt;$2&lt;/span&gt;}&apos;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ol start=&quot;12&quot;&gt;
+&lt;li&gt;첨부파일 conf를 이용하여 ; 로된 주석라인과 공백라인을 제외한 라인 출력&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token function&quot;&gt;cat&lt;/span&gt; conf &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;egrep&lt;/span&gt; -v ^&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;:space:&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;*$ &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;grep&lt;/span&gt; -v &lt;span class=&quot;token string&quot;&gt;&quot;;&quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ol start=&quot;13&quot;&gt;
+&lt;li&gt;ps 명령어를 이용하여 pid값이 낮은순에서 높은순으로 정렬하여 출력&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token function&quot;&gt;ps&lt;/span&gt; -ef --sort&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;+pid &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ol start=&quot;14&quot;&gt;
+&lt;li&gt;첨부파일 nginx를 이용하여 접근을 한 국가별 카운트와 국가명 출력.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;token builtin class-name&quot;&gt;read&lt;/span&gt; A B C D E F line
+&lt;span class=&quot;token keyword&quot;&gt;do&lt;/span&gt;
+	geoiplookup &lt;span class=&quot;token variable&quot;&gt;$F&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;ip&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;done&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt; nginx
+
+&lt;span class=&quot;token function&quot;&gt;grep&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;&apos;&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;ip&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;awk&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;{print &lt;span class=&quot;token variable&quot;&gt;$1&lt;/span&gt;,&lt;span class=&quot;token variable&quot;&gt;$2&lt;/span&gt;,&lt;span class=&quot;token variable&quot;&gt;$3&lt;/span&gt;,&lt;span class=&quot;token variable&quot;&gt;$4&lt;/span&gt;,&lt;span class=&quot;token variable&quot;&gt;$5&lt;/span&gt;,&lt;span class=&quot;token variable&quot;&gt;$6&lt;/span&gt;,&lt;span class=&quot;token variable&quot;&gt;$7&lt;/span&gt;}&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;sort&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;uniq&lt;/span&gt; -c &lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; 14result
+&lt;span class=&quot;token function&quot;&gt;cat&lt;/span&gt; 14result
+&lt;span class=&quot;token function&quot;&gt;rm&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;ip&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ol start=&quot;15&quot;&gt;
+&lt;li&gt;첨부파일 nginx를 이용하여 3번 이상 접근한 국가별 카운트와 국가명 출력&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token function&quot;&gt;cat&lt;/span&gt; 14result &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;awk&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;{if (&lt;span class=&quot;token variable&quot;&gt;$1&lt;/span&gt;&gt;3) {print &lt;span class=&quot;token variable&quot;&gt;$0&lt;/span&gt;}}&apos;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ol start=&quot;16&quot;&gt;
+&lt;li&gt;반복문을 이용하여 1M의 용량을 가진 파일부터 10M까지의 총 10개 파일 생성(1M씩 증가)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;token for-or-select variable&quot;&gt;time&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;01&lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;do&lt;/span&gt;
+	truncate -s &lt;span class=&quot;token variable&quot;&gt;${time}&lt;/span&gt;M ./&lt;span class=&quot;token variable&quot;&gt;${time}&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;file&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;done&lt;/span&gt;
+
+&lt;span class=&quot;token function&quot;&gt;find&lt;/span&gt; ./ -name &lt;span class=&quot;token string&quot;&gt;&quot;*file&quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ol start=&quot;17&quot;&gt;
+&lt;li&gt;16번에서 생성한 파일 중 5M이상의 파일의 생성시간을 2017년 12월 31일로 변경&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token function&quot;&gt;find&lt;/span&gt; ./ -type f -size +5M -exec &lt;span class=&quot;token function&quot;&gt;touch&lt;/span&gt; -t &lt;span class=&quot;token string&quot;&gt;&quot;201712310000&quot;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;\&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ol start=&quot;18&quot;&gt;
+&lt;li&gt;17번에서 만든 파일 중 2017년 12월 31일 이후에 만들어진 파일을 찾아 해당파일명.new로 변경&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token function&quot;&gt;find&lt;/span&gt; -type f -newermt &lt;span class=&quot;token string&quot;&gt;&apos;2017-12-31&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;grep&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;file&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;xargs&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;rename&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;s/file/file.new/&apos;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ol start=&quot;19&quot;&gt;
+&lt;li&gt;아래 그림을 test.c 파일로 작성 후 result.exe란 파일로 컴파일하여 실행하고 출력값을 test.txt로 저장&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;gcc -o result test.c
+./result &lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; test.txt
+&lt;span class=&quot;token builtin class-name&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;test.txt 파일 내용&quot;&lt;/span&gt;
+&lt;span class=&quot;token function&quot;&gt;cat&lt;/span&gt; test.txt&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ol start=&quot;20&quot;&gt;
+&lt;li&gt;121.156.118.15서버의 오픈 된 포트를 확인 후 해당 포트로 통신이 가능한지 모니터링하는 스크립트를 작성&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;token builtin class-name&quot;&gt;:&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;do&lt;/span&gt;
+	nmap -sT &lt;span class=&quot;token number&quot;&gt;121.156&lt;/span&gt;.118.15
+	&lt;span class=&quot;token function&quot;&gt;sleep&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;5&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;done&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;모든 bash 파일 실행&lt;/p&gt;
+&lt;p&gt;result.bash&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;token for-or-select variable&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;19&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;do&lt;/span&gt;
+	&lt;span class=&quot;token function&quot;&gt;bash&lt;/span&gt; &lt;span class=&quot;token variable&quot;&gt;$i&lt;/span&gt;.bash &lt;span class=&quot;token number&quot;&gt;5&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;5&lt;/span&gt;
+	&lt;span class=&quot;token builtin class-name&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot; &quot;&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;done&lt;/span&gt;
+&lt;span class=&quot;token function&quot;&gt;rm&lt;/span&gt; 01file.new 02file.new 03file.new 04file.new 05file.new 06file 07file 08file 09file 10file
+
+&lt;span class=&quot;token function&quot;&gt;bash&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;20&lt;/span&gt;.bash&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&quot;배운-부분&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EB%B0%B0%EC%9A%B4-%EB%B6%80%EB%B6%84&quot; aria-label=&quot;배운 부분 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;배운 부분&lt;/h2&gt;
+&lt;p&gt;2번&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;매주 일요일 부분을 빠트림&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;6번&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Window와 Linux는 개행 방식이 다르다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;window&lt;/th&gt;
+&lt;th&gt;Unix(Linux 및 Mac)&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;\r\n&lt;/td&gt;
+&lt;td&gt;\n&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;strong&gt;vscode같은 곳에서 연결해서 사용한다면 관련된 설정 해줘야 한다.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;17번&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;문제를 보면 5M이상임. -size +4M으로 작성해야 한다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;주의할점&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;dd 명령어 사용 시 input / output에 주의해라!&lt;/li&gt;
+&lt;li&gt;chown 명령어 사용 시 -R 옵션 줄 때 ./* 같이 경로를 정확히 사용 (/ 이렇게 주면 큰일난다.)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;중요한 명령어와 개념&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;find, ls, du, awk, sed, free, chown, chmod, 리눅스 권한부분은 상당히 중요!&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item></channel></rss>
