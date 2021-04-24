@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
-<url> <loc>https://hohshho.github.io/Rsync/</loc> <lastmod>2021-04-21</lastmod> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://hohshho.github.io/RegEx/</loc> <lastmod>2021-04-21</lastmod> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://hohshho.github.io/RegEx/</loc> <lastmod>2021-04-24</lastmod> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://hohshho.github.io/Rsync/</loc> <lastmod>2021-04-24</lastmod> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://hohshho.github.io/gitCommand/</loc> <lastmod>2021-04-20</lastmod> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://hohshho.github.io/gitflow/</loc> <lastmod>2021-04-20</lastmod> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://hohshho.github.io/phpNginxCI_4/</loc> <lastmod>2021-03-01</lastmod> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://hohshho.github.io/SQLite/</loc> <lastmod>2021-02-26</lastmod> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://hohshho.github.io/phpNginxCI_3/</loc> <lastmod>2021-02-25</lastmod> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://hohshho.github.io/phpNginxCI_2/</loc> <lastmod>2021-03-01</lastmod> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://hohshho.github.io/phpNginxCI_1/</loc> <lastmod>2021-02-24</lastmod> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://hohshho.github.io/phpNginxCI_2/</loc> <lastmod>2021-03-01</lastmod> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://hohshho.github.io/bashMission/</loc> <lastmod>2021-02-23</lastmod> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://hohshho.github.io/whyBash/</loc> <lastmod>2021-02-23</lastmod> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://hohshho.github.io/linuxStudy/</loc> <lastmod>2021-02-22</lastmod> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -18,8 +18,8 @@
 <url> <loc>https://hohshho.github.io/MST/</loc> <lastmod>2021-02-08</lastmod> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://hohshho.github.io/slidingWindow/</loc> <lastmod>2021-02-03</lastmod> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://hohshho.github.io/prefixSum/</loc> <lastmod>2021-02-02</lastmod> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://hohshho.github.io/primeNumber/</loc> <lastmod>2021-02-01</lastmod> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://hohshho.github.io/twoPoint/</loc> <lastmod>2021-02-01</lastmod> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://hohshho.github.io/primeNumber/</loc> <lastmod>2021-02-01</lastmod> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://hohshho.github.io/backjoon15686/</loc> <lastmod>2021-01-29</lastmod> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://hohshho.github.io/unionFind/</loc> <lastmod>2021-01-29</lastmod> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://hohshho.github.io/tree/</loc> <lastmod>2021-01-28</lastmod> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
