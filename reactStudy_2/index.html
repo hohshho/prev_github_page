@@ -930,7 +930,7 @@ createHandle : 객체를 리턴하는 함수. 해당 객체에 추가하고 싶�
 </ul>
 <h2 id="usememo" style="position:relative;"><a href="#usememo" aria-label="usememo permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>useMemo()</h2>
 <blockquote>
-<p>함수에 의해 나온 결과값을 메모리에 저장해서 컴포넌트가 반복적으로 렌더링 되어도 이미 가져온 결과값을 메모리에서 꺼내와 재사용</p>
+<p>함수에 의해 나온 결과값을 메모리에 저장해서 컴포넌트가 반복적으로 렌더링 되어도 이미 가져온 결과값을 메모리에서 꺼내와 재사용 (값을 반환)</p>
 </blockquote>
 <p>React.memo가 props, state에 의해 re-render를 관리한다면<br>
 useMemo는 함수의 결과 값을 memoizing하여 연산을 관리한다</p>
@@ -940,7 +940,7 @@ useMemo는 함수의 결과 값을 memoizing하여 연산을 관리한다</p>
   console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"DemoList RUNNING"</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre></div>
 <h2 id="usecallback" style="position:relative;"><a href="#usecallback" aria-label="usecallback permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>useCallback()</h2>
 <blockquote>
-<p>특정 함수를 새로 만들지 않고 재사용하고 싶을때 사용</p>
+<p>특정 함수를 새로 만들지 않고 재사용하고 싶을때 사용 (함수를 반환)</p>
 </blockquote>
 <div class="gatsby-highlight" data-language="jsx"><pre class="language-jsx"><code class="language-jsx"><span class="token keyword">const</span> changeTitleHandler <span class="token operator">=</span> <span class="token function">useCallback</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
     <span class="token function">setListTitle</span><span class="token punctuation">(</span><span class="token string">'New Title'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
@@ -948,6 +948,7 @@ useMemo는 함수의 결과 값을 memoizing하여 연산을 관리한다</p>
 <p>dependency 배열에는 useEffect와 동일하게 어떤값이 변경되면 다시 생성할지에 대한 값들이 들어감</p>
 <p>useEffect내부에 함수를 사용할 경우, 디펜던시 배열에 함수를 추가하면 무한 루프가 발생<br>
 -> 즉, useCallback 함수는 useEffect내부에서 사용하는 함수를 useCallback으로 감싸 동일한 객체를 사용할 수 있도록 사용</p>
+<p>useCallback(fn, deps)은 useMemo(() => fn, deps)와 같음</p>
 <h2 id="usestate-usereducer" style="position:relative;"><a href="#usestate-usereducer" aria-label="usestate usereducer permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>useState, useReducer</h2>
 <blockquote>
 <p>컴포넌트가 초기화 될 때만 갱신된다.</p>
