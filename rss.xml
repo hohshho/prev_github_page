@@ -1,4 +1,47 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Just Do It! | Feed]]></title><description><![CDATA[웹 개발 블로그입니다. ]]></description><link>https://hohshho.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 22 Sep 2022 08:46:53 GMT</lastBuildDate><item><title><![CDATA[자바 ORM 표준 JPA 프로그래밍 (기본편) - 김영한]]></title><description><![CDATA[JPA (JAVA Persistence API) 자바 ORM 기술 표준 ORM(Object-relational mapping) 프레임 워크가 중간에서 매핑 JPA는 APP과 JDBC 사이에서 동작 패러다임의 불일치 해결 JPA는 인터페이스 모음 ->…]]></description><link>https://hohshho.github.io/JPA1/</link><guid isPermaLink="false">https://hohshho.github.io/JPA1/</guid><pubDate>Sun, 18 Sep 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;jpa-java-persistence-api&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#jpa-java-persistence-api&quot; aria-label=&quot;jpa java persistence api permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;JPA (JAVA Persistence API)&lt;/h1&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Just Do It! | Feed]]></title><description><![CDATA[웹 개발 블로그입니다. ]]></description><link>https://hohshho.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 27 Sep 2022 14:01:36 GMT</lastBuildDate><item><title><![CDATA[실전! 스프링 부트와 JPA 활용2 - API 개발과 성능 최적화]]></title><description><![CDATA[Reference 실전! 스프링 부트와 JPA 활용2 API 개발과 성능 최적화]]></description><link>https://hohshho.github.io/JPA_3/</link><guid isPermaLink="false">https://hohshho.github.io/JPA_3/</guid><pubDate>Tue, 27 Sep 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;reference&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#reference&quot; aria-label=&quot;reference permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Reference&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.inflearn.com/course/%EC%8A%A4%ED%94%84%EB%A7%81%EB%B6%80%ED%8A%B8-JPA-API%EA%B0%9C%EB%B0%9C-%EC%84%B1%EB%8A%A5%EC%B5%9C%EC%A0%81%ED%99%94&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;실전! 스프링 부트와 JPA 활용2 API 개발과 성능 최적화&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[실전! 스프링 부트와 JPA 활용1 - 웹 애플리케이션 개발]]></title><description><![CDATA[테이블, 엔티티 설계 시 주의사항 다대다 관계 사용x -> 일대다, 다대일로 풀어서 사용 외래키가 있는 곳을 연관관계의 주인으로 설정 getter는 가급적 열어두고 setter는 비즈니스 메서드를 별도로 작성해 변경지점이 명확히 설계 값 타입 사용시…]]></description><link>https://hohshho.github.io/JPA_2/</link><guid isPermaLink="false">https://hohshho.github.io/JPA_2/</guid><pubDate>Mon, 26 Sep 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;테이블-엔티티-설계-시-주의사항&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%ED%85%8C%EC%9D%B4%EB%B8%94-%EC%97%94%ED%8B%B0%ED%8B%B0-%EC%84%A4%EA%B3%84-%EC%8B%9C-%EC%A3%BC%EC%9D%98%EC%82%AC%ED%95%AD&quot; aria-label=&quot;테이블 엔티티 설계 시 주의사항 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;테이블, 엔티티 설계 시 주의사항&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;다대다 관계 사용x -&gt; 일대다, 다대일로 풀어서 사용&lt;/li&gt;
+&lt;li&gt;외래키가 있는 곳을 연관관계의 주인으로 설정&lt;/li&gt;
+&lt;li&gt;getter는 가급적 열어두고 setter는 비즈니스 메서드를 별도로 작성해 변경지점이 명확히 설계&lt;/li&gt;
+&lt;li&gt;값 타입 사용시 &lt;strong&gt;Immutable&lt;/strong&gt; 하게 설계&lt;/li&gt;
+&lt;li&gt;연관관계는 지연로딩 설정&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&quot;계층형-구조&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EA%B3%84%EC%B8%B5%ED%98%95-%EA%B5%AC%EC%A1%B0&quot; aria-label=&quot;계층형 구조 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;계층형 구조&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Controller : 웹 계층&lt;/li&gt;
+&lt;li&gt;Service : 비즈니스 로직, 트랜잭션 처리&lt;/li&gt;
+&lt;li&gt;Repository : JPA 사용 계층&lt;/li&gt;
+&lt;li&gt;Domain : 엔티티가 모여있는 계층&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;서비스, 리포지토리 계층 개발 -&gt; 테스트 케이스 작성 후 검증 -&gt; 웹 계층 적용&lt;/p&gt;
+&lt;h1 id=&quot;어노테이션&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%96%B4%EB%85%B8%ED%85%8C%EC%9D%B4%EC%85%98&quot; aria-label=&quot;어노테이션 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;어노테이션&lt;/h1&gt;
+&lt;p&gt;Repository 관련&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;java&quot;&gt;&lt;pre class=&quot;language-java&quot;&gt;&lt;code class=&quot;language-java&quot;&gt;&lt;span class=&quot;token annotation punctuation&quot;&gt;@Repository&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// 빈으로 등록, JPA 예외를 스프링 기반 예외로 변환&lt;/span&gt;
+&lt;span class=&quot;token annotation punctuation&quot;&gt;@PersistenceUnit&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// 엔티티 매니저 팩토리(EntityManagerFactory) 주입&lt;/span&gt;
+&lt;span class=&quot;token annotation punctuation&quot;&gt;@PersistenceContext&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// 엔티티 매니저(EntityManager) 주입&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// -&gt; SpringBoot 사용 시 @Autowird지원&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// -&gt; @RequiredArgsConstruct 사용해 생성자 주입 가능&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Service 관련&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;java&quot;&gt;&lt;pre class=&quot;language-java&quot;&gt;&lt;code class=&quot;language-java&quot;&gt;&lt;span class=&quot;token annotation punctuation&quot;&gt;@Service&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;// 트랜잭션, 영속성 컨텍스트&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// 데이터의 변경이 없는 읽기 전용 메서드에 사용&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// 영속성 컨텍스트를 플러시 않아 약간의 성능 향상(읽기 전용에는 다 적용)&lt;/span&gt;
+&lt;span class=&quot;token annotation punctuation&quot;&gt;@Transactional&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;readOnly&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token boolean&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Test 관련&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;java&quot;&gt;&lt;pre class=&quot;language-java&quot;&gt;&lt;code class=&quot;language-java&quot;&gt;&lt;span class=&quot;token annotation punctuation&quot;&gt;@RunWith&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;SpringRunner&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// Junit4 스프링과 테스트 통합&lt;/span&gt;
+&lt;span class=&quot;token annotation punctuation&quot;&gt;@ExtendWith&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;SpringExtension&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// Junit5&lt;/span&gt;
+
+&lt;span class=&quot;token annotation punctuation&quot;&gt;@SpringBootTest&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// 스프링 부트 띄우고 테스트 - @Autowired시 필요&lt;/span&gt;
+&lt;span class=&quot;token annotation punctuation&quot;&gt;@Transactional&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// 테스트를 실행할 때마다 트랜잭션 시작 - 테스트 종료 시 롤백&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h1 id=&quot;reference&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#reference&quot; aria-label=&quot;reference permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Reference&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.inflearn.com/course/%EC%8A%A4%ED%94%84%EB%A7%81%EB%B6%80%ED%8A%B8-JPA-%ED%99%9C%EC%9A%A9-1&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;실전! 스프링 부트와 JPA 활용1 - 김영한&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://handr95.tistory.com/16&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;[JUnit] 경고: Runner org.junit.internal.runners.ErrorReportingRunner&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[자바 ORM 표준 JPA 프로그래밍 (기본편) - 김영한]]></title><description><![CDATA[JPA (JAVA Persistence API) 자바 ORM 기술 표준 ORM(Object-relational mapping) 프레임 워크가 중간에서 매핑 JPA는 APP과 JDBC 사이에서 동작 패러다임의 불일치 해결 JPA는 인터페이스 모음 ->…]]></description><link>https://hohshho.github.io/JPA_1/</link><guid isPermaLink="false">https://hohshho.github.io/JPA_1/</guid><pubDate>Sun, 18 Sep 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;jpa-java-persistence-api&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#jpa-java-persistence-api&quot; aria-label=&quot;jpa java persistence api permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;JPA (JAVA Persistence API)&lt;/h1&gt;
 &lt;blockquote&gt;
 &lt;p&gt;자바 ORM 기술 표준&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -201,7 +244,7 @@ ex) MySQLDialect, OracleDialect, H2Dialect&lt;/li&gt;
 
 &lt;span class=&quot;token comment&quot;&gt;// 자동 생성&lt;/span&gt;
 &lt;span class=&quot;token comment&quot;&gt;// AUTO : 사용하는 DB에 따라 자동 지정 (기본값)&lt;/span&gt;
-&lt;span class=&quot;token annotation punctuation&quot;&gt;@GeneratedVal&lt;/span&gt;용&lt;span class=&quot;token function&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;strategy &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;GenerationType&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token constant&quot;&gt;AUTO&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token annotation punctuation&quot;&gt;@GeneratedValue&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;strategy &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;GenerationType&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token constant&quot;&gt;AUTO&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
 
 &lt;span class=&quot;token comment&quot;&gt;// SEQUENCE : 데이터베이스 시퀀스 오브젝트 사용&lt;/span&gt;
 &lt;span class=&quot;token annotation punctuation&quot;&gt;@Entity&lt;/span&gt;
@@ -342,6 +385,7 @@ ex) MySQLDialect, OracleDialect, H2Dialect&lt;/li&gt;
 &lt;p&gt;양방향 매핑 규칙&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;외래키&lt;/strong&gt;가 있는 곳을 &lt;strong&gt;연관관계 주인&lt;/strong&gt;으로 지정&lt;/li&gt;
+&lt;li&gt;연관관계 주인 값이 변경 시 외래키를 변경&lt;/li&gt;
 &lt;li&gt;연관관계 주인 -&gt; 외래키 관리(&lt;strong&gt;등록, 수정&lt;/strong&gt;)&lt;/li&gt;
 &lt;li&gt;주인이 아닌 쪽은 &lt;strong&gt;읽기&lt;/strong&gt;만 가능 -&gt; mappedBy 속성으로 주인 지정&lt;/li&gt;
 &lt;/ul&gt;
@@ -565,13 +609,15 @@ em.getReference() - DB의 조회를 미루는 가짜(프록시) 엔티티 객체
 &lt;p&gt;엔티티 타입 : @Entity 정의, 데이터가 변해도 식별자로 추적 가능
 값 타입 : 자바 기본 타입이나 객체, 식별자가 없어 추적 불가&lt;/p&gt;
 &lt;h2 id=&quot;값-타입-종류&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EA%B0%92-%ED%83%80%EC%9E%85-%EC%A2%85%EB%A5%98&quot; aria-label=&quot;값 타입 종류 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;값 타입 종류&lt;/h2&gt;
+&lt;p&gt;생명주기를 엔티티에 의존&lt;/p&gt;
+&lt;h3 id=&quot;1-기본-값-타입&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#1-%EA%B8%B0%EB%B3%B8-%EA%B0%92-%ED%83%80%EC%9E%85&quot; aria-label=&quot;1 기본 값 타입 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;1. 기본 값 타입&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;생명주기를 엔티티의 의존&lt;/li&gt;
-&lt;li&gt;기본 값 타입&lt;/li&gt;
 &lt;li&gt;값타입 공유 x -&gt; 복사해 사용&lt;/li&gt;
 &lt;li&gt;생명주기를 엔티티에 의존&lt;/li&gt;
 &lt;li&gt;불변 객체로 만들어 사용&lt;/li&gt;
-&lt;li&gt;임베디드(복합 값) 타입&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;2-임베디드복합-값-타입&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#2-%EC%9E%84%EB%B2%A0%EB%94%94%EB%93%9C%EB%B3%B5%ED%95%A9-%EA%B0%92-%ED%83%80%EC%9E%85&quot; aria-label=&quot;2 임베디드복합 값 타입 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;2. 임베디드(복합 값) 타입&lt;/h3&gt;
+&lt;ul&gt;
 &lt;li&gt;새로운 값 타입을 정의할 수 있음&lt;/li&gt;
 &lt;li&gt;재사용성, 높은 응집도&lt;/li&gt;
 &lt;li&gt;해당 값 타입만 사용하는 메소드 만들 수 있음&lt;/li&gt;
@@ -589,12 +635,12 @@ em.getReference() - DB의 조회를 미루는 가짜(프록시) 엔티티 객체
 &lt;span class=&quot;token annotation punctuation&quot;&gt;@Embedded&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// 값 타입을 사용하는 곳에 사용&lt;/span&gt;
 
 &lt;span class=&quot;token annotation punctuation&quot;&gt;@AttributeOverrides&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// 한 엔티티에서 같은 값 타입을 사용하면 어노테이션 사용해서 재정의&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;ol start=&quot;3&quot;&gt;
-&lt;li&gt;컬렉션 값 타입&lt;/li&gt;
+&lt;h3 id=&quot;3-컬렉션-값-타입&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#3-%EC%BB%AC%EB%A0%89%EC%85%98-%EA%B0%92-%ED%83%80%EC%9E%85&quot; aria-label=&quot;3 컬렉션 값 타입 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;3. 컬렉션 값 타입&lt;/h3&gt;
+&lt;ul&gt;
 &lt;li&gt;컬렉션을 저장하기 위한 별도의 테이블 필요&lt;/li&gt;
 &lt;li&gt;일반 엔티티와 동일하게 지연로딩 사용 가능&lt;/li&gt;
 &lt;li&gt;값 타입 컬렉션은 &lt;strong&gt;영속성 전이 + 고아 객체 제거&lt;/strong&gt; 기능을 필수로 가짐&lt;/li&gt;
-&lt;/ol&gt;
+&lt;/ul&gt;
 &lt;p&gt;&lt;strong&gt;제약 사항&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;식별자 개념 없다.&lt;/li&gt;
@@ -681,14 +727,53 @@ query&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span clas
 &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;
 &lt;span class=&quot;token keyword&quot;&gt;SELECT&lt;/span&gt; M&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; T&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;FROM&lt;/span&gt; MEMBER M
 &lt;span class=&quot;token keyword&quot;&gt;INNER&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;JOIN&lt;/span&gt; TEAM T &lt;span class=&quot;token keyword&quot;&gt;ON&lt;/span&gt; M&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;TEAM_ID&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;T&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;ID&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3 id=&quot;named-쿼리&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#named-%EC%BF%BC%EB%A6%AC&quot; aria-label=&quot;named 쿼리 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Named 쿼리&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;DISTINCT&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;SQL에 DISTINCT를 추가&lt;/li&gt;
+&lt;li&gt;애플리케이션에서 같은 식별자를 가진 엔티티 중복 제거&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;한계&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;패치 조인은 기본적으로 모든 연관 그래프 가지고 오는 개념&lt;/li&gt;
+&lt;li&gt;패치 조인 대상에는 별칭을 줄 수 없다&lt;/li&gt;
+&lt;li&gt;둘 이상의 컬렉션은 패치 조인 할 수 없다&lt;/li&gt;
+&lt;li&gt;컬렉션을 패치 조인하면 페이징 API를 사용할 수 없다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;다형성-쿼리&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EB%8B%A4%ED%98%95%EC%84%B1-%EC%BF%BC%EB%A6%AC&quot; aria-label=&quot;다형성 쿼리 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;다형성 쿼리&lt;/h3&gt;
+&lt;p&gt;Type : 조회 대상을 특정 자식으로 한정&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sql&quot;&gt;&lt;pre class=&quot;language-sql&quot;&gt;&lt;code class=&quot;language-sql&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;-- [JPQL]&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;select&lt;/span&gt; i &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; Item i
+&lt;span class=&quot;token keyword&quot;&gt;where&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;i&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;IN&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;Book&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; Movie&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;-- [SQL]&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;select&lt;/span&gt; i &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; i
+&lt;span class=&quot;token keyword&quot;&gt;where&lt;/span&gt; i&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;DTYPE &lt;span class=&quot;token operator&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;‘B’&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; ‘M’&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;TREAT : 상속 구조에서 부모 타입을 특정 자식 타입으로 다룰 때 사용&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sql&quot;&gt;&lt;pre class=&quot;language-sql&quot;&gt;&lt;code class=&quot;language-sql&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;-- [JPQL]&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;select&lt;/span&gt; i &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; Item i
+&lt;span class=&quot;token keyword&quot;&gt;where&lt;/span&gt; treat&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;i &lt;span class=&quot;token keyword&quot;&gt;as&lt;/span&gt; Book&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;auther &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; ‘kim’
+
+&lt;span class=&quot;token comment&quot;&gt;-- [SQL]&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;select&lt;/span&gt; i&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; Item i
+&lt;span class=&quot;token keyword&quot;&gt;where&lt;/span&gt; i&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;DTYPE &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; ‘B’ &lt;span class=&quot;token operator&quot;&gt;and&lt;/span&gt; i&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;auther &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; ‘kim’&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3 id=&quot;named-쿼리정적-쿼리&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#named-%EC%BF%BC%EB%A6%AC%EC%A0%95%EC%A0%81-%EC%BF%BC%EB%A6%AC&quot; aria-label=&quot;named 쿼리정적 쿼리 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Named 쿼리(정적 쿼리)&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;미리 정의해서 이름을 부여해두고 사용하는 JPQL&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;어노테이션, XML 정의&lt;/li&gt;
+&lt;li&gt;어플리케이션 로딩 시점에 초기화 후 재사용, &lt;strong&gt;쿼리 검증&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;p&gt;Tip!!&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;JPA에서 타입 비교시 instance of(객체 비교) 사용&lt;/li&gt;
+&lt;li&gt;벌크 연산 수행 후 영속성 컨텍스트 초기화(em.clear()) 필수!&lt;/li&gt;
+&lt;li&gt;다대다 연관관계 사용 x -&gt; 일대다, 다대일로 관계를 풀어서 사용&lt;br&gt;
+(보통 중간에 매핑 테이블 필요 ex - category - gategory_item - item)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h1 id=&quot;reference&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#reference&quot; aria-label=&quot;reference permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Reference&lt;/h1&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;&quot;&gt;인프런 - 김영한 자바 ORM 표준 JPA 프로그래밍 (기본편)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.inflearn.com/course/ORM-JPA-Basic&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;자바 ORM 표준 JPA 프로그래밍 (기본편) - 김영한&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://ict-nroo.tistory.com/131&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;JPA - 프록시란?&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</content:encoded></item><item><title><![CDATA[React Redux, Routing]]></title><description><![CDATA[Redux 자바스크립트로 구동되는 어플리케이션에서 예측 가능한 상태관리를 도와주는 상태관리 라이브러리 State state는 크게 3가지로 구분할 수 있다. 구분 설명 방법 Local State 하나의 컴포넌트에 영향을 미치는 상태 useState(…]]></description><link>https://hohshho.github.io/reactStudy_3/</link><guid isPermaLink="false">https://hohshho.github.io/reactStudy_3/</guid><pubDate>Mon, 05 Sep 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;redux&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#redux&quot; aria-label=&quot;redux permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Redux&lt;/h1&gt;
 &lt;blockquote&gt;
@@ -2247,15 +2332,9 @@ map&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=
 &lt;h1 id=&quot;reference&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#reference&quot; aria-label=&quot;reference permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Reference&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;[인프런]김영한 스프링 MVC 1 강의&lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[React 핵심 기능]]></title><description><![CDATA[【한글자막】 React 완벽 가이드 with Redux, Next.js, TypeScript
-
-를 정리한다 이번 포스팅에서는 리액트의 핵심원리에 대해 정리한다. 리액트는 사용자 인터페이스를 구축하는 자바스크립트 라이브러리 왜 리액트를 사용하는가 Ja…]]></description><link>https://hohshho.github.io/reactStudy_1/</link><guid isPermaLink="false">https://hohshho.github.io/reactStudy_1/</guid><pubDate>Mon, 15 Aug 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;a href=&quot;https://www.udemy.com/course/best-react/&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;
-【한글자막】 React 완벽 가이드 with Redux, Next.js, TypeScript
-&lt;/a&gt;
-를 정리한다&lt;/p&gt;
-&lt;p&gt;이번 포스팅에서는 리액트의 핵심원리에 대해 정리한다.&lt;/p&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[React 핵심 기능]]></title><description><![CDATA[이번 포스팅에서는 리액트의 핵심원리에 대해 정리!! 리액트는 사용자 인터페이스를 구축하는 자바스크립트 라이브러리 왜 리액트를 사용하는가 Javascript는 브라우저 내 DOM조작, 이를 통해 화면을 랜더링한다. 리액트는 컴포넌트 기반의 UI 라이브…]]></description><link>https://hohshho.github.io/reactStudy_1/</link><guid isPermaLink="false">https://hohshho.github.io/reactStudy_1/</guid><pubDate>Mon, 15 Aug 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;이번 포스팅에서는 리액트의 핵심원리에 대해 정리!!&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;리액트는 사용자 인터페이스를 구축하는 자바스크립트 라이브러리&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;리액트는 &lt;strong&gt;사용자 인터페이스를 구축하는 자바스크립트 라이브러리&lt;/strong&gt;&lt;/p&gt;
 &lt;h1 id=&quot;왜-리액트를-사용하는가&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%99%9C-%EB%A6%AC%EC%95%A1%ED%8A%B8%EB%A5%BC-%EC%82%AC%EC%9A%A9%ED%95%98%EB%8A%94%EA%B0%80&quot; aria-label=&quot;왜 리액트를 사용하는가 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;왜 리액트를 사용하는가&lt;/h1&gt;
 &lt;p&gt;Javascript는 브라우저 내 DOM조작, 이를 통해 화면을 랜더링한다.&lt;/p&gt;
 &lt;p&gt;리액트는 컴포넌트 기반의 UI 라이브러리로 자바스크립트를 유용하게 이용할 수 있게 도와준다.&lt;/p&gt;
@@ -2965,250 +3044,4 @@ ex) DB Connection pool, Network Socket&lt;/p&gt;
 &lt;h1 id=&quot;test-tip&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#test-tip&quot; aria-label=&quot;test tip permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Test Tip!!&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;Assertions 객체는 상단에 선언하고 사용하는게 좋다.&lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[스프링 입문 강의 정리 - 김영한]]></title><description><![CDATA[Spring Maven / Gradle - 프로젝트 의존성 관리 도구 Controller에서 리턴 값으로 문자를 반환 시 viewResolver 화면을 찾아서 처리한다. resources:templates/ +{ViewName}+ .html 해당 경…]]></description><link>https://hohshho.github.io/SpringStudy_1/</link><guid isPermaLink="false">https://hohshho.github.io/SpringStudy_1/</guid><pubDate>Wed, 02 Feb 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;spring&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#spring&quot; aria-label=&quot;spring permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Spring&lt;/h1&gt;
-&lt;p&gt;&lt;strong&gt;Maven / Gradle&lt;/strong&gt; - 프로젝트 의존성 관리 도구&lt;/p&gt;
-&lt;p&gt;Controller에서 리턴 값으로 문자를 반환 시 viewResolver 화면을 찾아서 처리한다.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;resources:templates/ +{ViewName}+ .html&lt;/strong&gt;&lt;br&gt;
-해당 경로를 기본적으로 읽는다.&lt;/p&gt;
-&lt;h2 id=&quot;build&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#build&quot; aria-label=&quot;build permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;build&lt;/h2&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;markdown&quot;&gt;&lt;pre class=&quot;language-markdown&quot;&gt;&lt;code class=&quot;language-markdown&quot;&gt;&lt;span class=&quot;token list punctuation&quot;&gt;1.&lt;/span&gt; .gradlew build
-&lt;span class=&quot;token list punctuation&quot;&gt;2.&lt;/span&gt; cd build/libs
-&lt;span class=&quot;token list punctuation&quot;&gt;3.&lt;/span&gt; jar파일 실행&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h2 id=&quot;api&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#api&quot; aria-label=&quot;api permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;API&lt;/h2&gt;
-&lt;blockquote&gt;
-&lt;p&gt;@RequestBody 어노테이션 사용&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;viewResolver 대신 HttpMessageConverter 동작&lt;/li&gt;
-&lt;li&gt;기본 문자 처리 : StringHttpMessageConverter&lt;/li&gt;
-&lt;li&gt;기본 객체 처리 : MappingJackson2HttpMessageConverter&lt;br&gt;
-++ 응답을 위한 여러 HttpMessageConverter가 포함되어 있다.&lt;/li&gt;
-&lt;li&gt;HTTP Header&lt;/li&gt;
-&lt;li&gt;서버의 반환 정보
-=&gt; HttpMessageConverter가 선택된다.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;일반적인-웹-어플리케이션-구조&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%9D%BC%EB%B0%98%EC%A0%81%EC%9D%B8-%EC%9B%B9-%EC%96%B4%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98-%EA%B5%AC%EC%A1%B0&quot; aria-label=&quot;일반적인 웹 어플리케이션 구조 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;일반적인 웹 어플리케이션 구조&lt;/h2&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;컨트롤러 -&gt; 서비스 -&gt; 레포지토리 -&gt; db
-            도메인&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Controller : MVC 컨트롤러&lt;br&gt;
-Service : 비즈니스 로직&lt;br&gt;
-Repository : DB접근, 도메인 객체 저장 및 관리&lt;br&gt;
-Domain : 비즈니스 도메인 객체&lt;/p&gt;
-&lt;h2 id=&quot;테스트-케이스-작성&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%ED%85%8C%EC%8A%A4%ED%8A%B8-%EC%BC%80%EC%9D%B4%EC%8A%A4-%EC%9E%91%EC%84%B1&quot; aria-label=&quot;테스트 케이스 작성 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;테스트 케이스 작성&lt;/h2&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Junit&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;di의존성-주입&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#di%EC%9D%98%EC%A1%B4%EC%84%B1-%EC%A3%BC%EC%9E%85&quot; aria-label=&quot;di의존성 주입 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;DI(의존성 주입)&lt;/h2&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Service에서 직접 객체를 선언해 사용하지 않고 외부에서 객체를 만들어 전달해 사용&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;컴포넌트 스캔과 자동 의존관계 설정 -&gt; 스프링 부트 어노테이션&lt;br&gt;
-ex) Controller, Repository, Service, Autowired&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;@Autowired를 통한 DI는 helloConroller , memberService 등과 같이
-스프링이 관리하는 객체에서만 동작한다.&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;ul&gt;
-&lt;li&gt;Bean객체는 Singleton으로 관리&lt;/li&gt;
-&lt;li&gt;DI에는 필드 주입, setter 주입(수정자를 통한 주입), 생성자 주입 3가지 방법&lt;br&gt;
-(의존관계가 실행중에 동적으로 변하는 경우는 거의 없으므로 생성자 주입을 권장한다.)&lt;/li&gt;
-&lt;li&gt;정형화 되지 않거나, &lt;strong&gt;상황에 따라 구현 클래스 변경&lt;/strong&gt;하는 경우 설정(@Configuration)을 통해 스프링 빈 등록&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;생성자 주입&lt;/strong&gt;&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;java&quot;&gt;&lt;pre class=&quot;language-java&quot;&gt;&lt;code class=&quot;language-java&quot;&gt;&lt;span class=&quot;token annotation punctuation&quot;&gt;@Controller&lt;/span&gt;
-&lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;MemberController&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;token keyword&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;final&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;MemberService&lt;/span&gt; memberService&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-
-    &lt;span class=&quot;token annotation punctuation&quot;&gt;@Autowired&lt;/span&gt;
-    &lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;MemberController&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;MemberService&lt;/span&gt; memberService&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;memberService &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; memberService&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h2 id=&quot;생성자-주입의-장점&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%83%9D%EC%84%B1%EC%9E%90-%EC%A3%BC%EC%9E%85%EC%9D%98-%EC%9E%A5%EC%A0%90&quot; aria-label=&quot;생성자 주입의 장점 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;생성자 주입의 장점&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;의존관계 설정이 되지 않으면 객체 생성 불가&lt;br&gt;
--&gt; &lt;strong&gt;컴파일 타임에 인지 가능, NPE(Null Point Exception) 방지&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;필드 final 변수로 사용&lt;br&gt;
--&gt; &lt;strong&gt;런타임에 객체 불변성 보장&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;테스트 코드작성 용이&lt;br&gt;
--&gt; &lt;strong&gt;스프링에서 순환참조 확인가능&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;h2&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#h2&quot; aria-label=&quot;h2 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;H2&lt;/h2&gt;
-&lt;p&gt;h2 설치 하면 처음엔 파일을 읽는데 서버로 읽게 경로를 수정해준다.&lt;br&gt;
-jdbc:h2:tcp://localhost/~/test&lt;/p&gt;
-&lt;h2 id=&quot;test&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#test&quot; aria-label=&quot;test permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Test&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Test 코드 작성 시, 편의에 따라 필드주입 사용 (의존관계가 별로 중요하지 않을 경우)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;@Transaction&lt;/strong&gt; : DB Transaction을 시작하고 롤백해줘서 DB에 영향을 주지 않는다.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;@SpringBootTest&lt;/strong&gt; : Spring Container, Test 함께 실행&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id=&quot;스프링-db-접근-기술&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%8A%A4%ED%94%84%EB%A7%81-db-%EC%A0%91%EA%B7%BC-%EA%B8%B0%EC%88%A0&quot; aria-label=&quot;스프링 db 접근 기술 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;스프링 DB 접근 기술&lt;/h1&gt;
-&lt;h2 id=&quot;1-순수-jdpc&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#1-%EC%88%9C%EC%88%98-jdpc&quot; aria-label=&quot;1 순수 jdpc permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;1. 순수 Jdpc&lt;/h2&gt;
-&lt;h2 id=&quot;2-jdbctemplate&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#2-jdbctemplate&quot; aria-label=&quot;2 jdbctemplate permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;2. JdbcTemplate&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;순수 Jdpc를 Template Method패턴으로 반복코드 제거 (sql은 직접 작성)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;3-jpa&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#3-jpa&quot; aria-label=&quot;3 jpa permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;3. JPA&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;반복 코드 제거 (SQL까지) -&gt; 개발 생산성 향상&lt;/li&gt;
-&lt;li&gt;SQL과 데이터 중심의 설계 -&gt; 객체 중심의 설계로 패러다임을 전환&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;사용&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%82%AC%EC%9A%A9&quot; aria-label=&quot;사용 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;사용&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;dependency, application.properties 추가&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;applicationproperties&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#applicationproperties&quot; aria-label=&quot;applicationproperties permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;application.properties&lt;/h3&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;markdown&quot;&gt;&lt;pre class=&quot;language-markdown&quot;&gt;&lt;code class=&quot;language-markdown&quot;&gt;show-sql : JPA가 생성하는 SQL을 출력한다.
-ddl-auto : 테이블을 자동으로 생성하는 기능 제공
--&gt; none / create(entity정보를 바탕으로 테이블 생성)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h1 id=&quot;aopaspect-oriented-programming&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#aopaspect-oriented-programming&quot; aria-label=&quot;aopaspect oriented programming permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;AOP(Aspect Oriented Programming)&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;특정 로직을 공통적으로 적용해야 하는 경우&lt;br&gt;
-ex) 시간 체크&lt;/li&gt;
-&lt;li&gt;공통 관심 사항 vs 핵심 관심 사항 분리&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id=&quot;tip&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#tip&quot; aria-label=&quot;tip permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Tip!!&lt;/h1&gt;
-&lt;h2 id=&quot;intellij&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#intellij&quot; aria-label=&quot;intellij permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;IntelliJ&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Preferences - gradle 에서 Build and run 옵션 Intellij로 변경하면 빨라진다.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;spring-1&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#spring-1&quot; aria-label=&quot;spring 1 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Spring&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;null 반환 대신 Optional로 감싸서 반환해라&lt;br&gt;
--&gt; &lt;strong&gt;클라이언트에서 해당 값 사용&lt;/strong&gt;,&lt;br&gt;
--&gt; Optional 함수 사용 가능 // ifPresent&lt;/li&gt;
-&lt;li&gt;동시성 문제 때문에 long, map 대신 다른 변수 사용한다.&lt;/li&gt;
-&lt;li&gt;Test 전체 실행 시, 순서 보장이 안된다.&lt;br&gt;
--&gt; Test case를 작성 시 &lt;strong&gt;순서에 영향 받지 않아야 한다.&lt;/strong&gt;&lt;br&gt;
--&gt; &lt;strong&gt;@AfterEach&lt;/strong&gt;, &lt;strong&gt;@BeforeEach&lt;/strong&gt; : Test가 끝날 때 마다 실행시켜주는 Call back method&lt;/li&gt;
-&lt;li&gt;Service naming -&gt; 비즈니스 로직에 맞게&lt;br&gt;
-Repository naming -&gt; 조금 더 개발자스럽게&lt;/li&gt;
-&lt;li&gt;HashMap 대신 실무에서는 동시성 문제가 고려해 &lt;strong&gt;ConcurrentHashMap, AtomicLong&lt;/strong&gt; 사용 고려&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&quot;문제-상황-해결&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EB%AC%B8%EC%A0%9C-%EC%83%81%ED%99%A9-%ED%95%B4%EA%B2%B0&quot; aria-label=&quot;문제 상황 해결 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;문제 상황 해결&lt;/h2&gt;
-&lt;p&gt;애플리 케이션을 실행시켜 주면 중간에 이상한 로그들이 보였는데
-&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/4901913d56461128af7f09354863b826/8e464/debug.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 36.486486486486484%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAHCAYAAAAIy204AAAACXBIWXMAABYlAAAWJQFJUiTwAAAAwklEQVQoz42SWwqEMAxFux2rfdqXHWRw/4u6k6QKgwyMH4eAkOPNVfU+DqScEWKE9wHOe1jnvvCP4V3Vto51XZFJGkka6KEnkTELtNbQ00RzGvMBKpWKvm3Y9x29dxGnlERurR1SYp7nR6hMwlIKWmsya60CSz2lDcGLeCxo4XrJL1SujWQVG6Vk6QVLuQqWMk5qMA8SVl4uIr3OZRGfzF1yumVZMEmX+i9nwkb9vVBpRpKFEOSrx5PxB/Dp7oaFufEB84rZMUvTMUQAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;debug&quot;
-        title=&quot;debug&quot;
-        src=&quot;/static/4901913d56461128af7f09354863b826/fcda8/debug.png&quot;
-        srcset=&quot;/static/4901913d56461128af7f09354863b826/12f09/debug.png 148w,
-/static/4901913d56461128af7f09354863b826/e4a3f/debug.png 295w,
-/static/4901913d56461128af7f09354863b826/fcda8/debug.png 590w,
-/static/4901913d56461128af7f09354863b826/efc66/debug.png 885w,
-/static/4901913d56461128af7f09354863b826/c83ae/debug.png 1180w,
-/static/4901913d56461128af7f09354863b826/8e464/debug.png 5034w&quot;
-        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;spring-boot-starter로 프로젝트는 dependency들을 해결하기 위해 많은 class를 가지고 있으며,&lt;br&gt;
-이를 자동으로 해결해 주는 것을 autoconfiguration이라고 한다.&lt;/p&gt;
-&lt;p&gt;starter에서 classpath내의 class들을 훑으며 프로젝트에 필요한 클래스 등을 판별하는데,&lt;br&gt;
-프로젝트에 필요한 클래스라면 matched를, 프로젝트에 필요 없는 클래스라면 did not match&lt;br&gt;
-알려주는 로그&lt;br&gt;
-(문제 x)&lt;/p&gt;</content:encoded></item><item><title><![CDATA[좋은 코드를 위한 생각정리]]></title><description><![CDATA[오랜만에 포스팅이다. 이전 글에서 정리 하기로 했던 부분은 프론트 관련 내용은 천천히 정리하고.... 코드를 짜면서 고민이 많이 들었던 부분부터 생각정리 해보려고 한다. 개발자는 독자(동료, 미래의 나)가 있는 글(코드)을 작성하는데  독자가 있는 …]]></description><link>https://hohshho.github.io/cleancode/</link><guid isPermaLink="false">https://hohshho.github.io/cleancode/</guid><pubDate>Sun, 02 Jan 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;오랜만에 포스팅이다.&lt;/p&gt;
-&lt;p&gt;이전 글에서 정리 하기로 했던 부분은 프론트 관련 내용은 천천히 정리하고....&lt;/p&gt;
-&lt;p&gt;코드를 짜면서 고민이 많이 들었던 부분부터 생각정리 해보려고 한다.&lt;/p&gt;
-&lt;p&gt;개발자는 독자(동료, 미래의 나)가 있는 글(코드)을 작성하는데 &lt;/p&gt;
-&lt;p&gt;독자가 있는 만큼 읽기 좋은 코드로 작성해야 한다.&lt;/p&gt;
-&lt;p&gt;사람이 짜니 항상 똑같을 수는 없겠지만 어느정도 가이드는 필요하니 생각정리 해보자&lt;/p&gt;
-&lt;h1 id=&quot;분기-처리&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EB%B6%84%EA%B8%B0-%EC%B2%98%EB%A6%AC&quot; aria-label=&quot;분기 처리 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;분기 처리&lt;/h1&gt;
-&lt;h2 id=&quot;1-여러-조건-처리시-배열-활용&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#1-%EC%97%AC%EB%9F%AC-%EC%A1%B0%EA%B1%B4-%EC%B2%98%EB%A6%AC%EC%8B%9C-%EB%B0%B0%EC%97%B4-%ED%99%9C%EC%9A%A9&quot; aria-label=&quot;1 여러 조건 처리시 배열 활용 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;1. 여러 조건 처리시 배열 활용&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;Java&lt;/strong&gt;&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;asList / contains 사용  &lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;java&quot;&gt;&lt;pre class=&quot;language-java&quot;&gt;&lt;code class=&quot;language-java&quot;&gt;&lt;span class=&quot;token class-name&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; fruits &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;apple&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;orange&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;banana&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;token class-name&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;out&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;Arrays&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;asList&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;fruits&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;contains&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;apple&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// true&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;equals 사용 &lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;java&quot;&gt;&lt;pre class=&quot;language-java&quot;&gt;&lt;code class=&quot;language-java&quot;&gt;&lt;span class=&quot;token class-name&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; arr &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;apple&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;orange&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;banana&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;String&lt;/span&gt; s &lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; arr&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-&lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;s&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;equals&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;apple&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-&lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;strong&gt;Javascript&lt;/strong&gt;  &lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; fruits &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;Banana&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Orange&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Apple&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Mango&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;token comment&quot;&gt;// console.log( fruits.includes(&apos;Banana&apos;) ); &lt;/span&gt;
-console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt; fruits&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;indexOf&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;Banana&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; 
-&lt;span class=&quot;token comment&quot;&gt;// includes 함수는 IE에서 동작하지 않으니 indexOf 함수를 사용&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;&lt;strong&gt;Python&lt;/strong&gt;  &lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;python&quot;&gt;&lt;pre class=&quot;language-python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;fruits &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;Apple&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;Banana&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;Orange&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
-&lt;span class=&quot;token keyword&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;Apple&apos;&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;in&lt;/span&gt; fruits&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h2 id=&quot;2-조기-리턴-사용&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#2-%EC%A1%B0%EA%B8%B0-%EB%A6%AC%ED%84%B4-%EC%82%AC%EC%9A%A9&quot; aria-label=&quot;2 조기 리턴 사용 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;2. 조기 리턴 사용&lt;/h2&gt;
-&lt;p&gt;예외 상황에 대해 먼저 빠져나가게 하는 것&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;http://blog.cowkite.com/blog/2102231449/&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;if only VS if else - 개발요정님 블로그&lt;/a&gt;&lt;br&gt;
-추가로 해당부분을 잘 정리한 글이 있어서 링크 남긴다.&lt;/p&gt;
-&lt;h2 id=&quot;3-조건식이-직접-관련된-부분-간소화&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#3-%EC%A1%B0%EA%B1%B4%EC%8B%9D%EC%9D%B4-%EC%A7%81%EC%A0%91-%EA%B4%80%EB%A0%A8%EB%90%9C-%EB%B6%80%EB%B6%84-%EA%B0%84%EC%86%8C%ED%99%94&quot; aria-label=&quot;3 조건식이 직접 관련된 부분 간소화 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;3. 조건식이 직접 관련된 부분 간소화&lt;/h2&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;java&quot;&gt;&lt;pre class=&quot;language-java&quot;&gt;&lt;code class=&quot;language-java&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;float&lt;/span&gt; speed &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;5.0f&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;is_dash&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-  speed &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;10.0f&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
-
-&lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; position &lt;span class=&quot;token operator&quot;&gt;+=&lt;/span&gt; direction &lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt; speed&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;java&quot;&gt;&lt;pre class=&quot;language-java&quot;&gt;&lt;code class=&quot;language-java&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;float&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;speed&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; 
-  &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;is_dash&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;?&lt;/span&gt; &lt;span class=&quot;token constant&quot;&gt;SPEED_DASH&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token constant&quot;&gt;SPEED_NORMAL&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
-
-&lt;span class=&quot;token keyword&quot;&gt;int&lt;/span&gt; postion &lt;span class=&quot;token operator&quot;&gt;+=&lt;/span&gt; direction &lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;speed&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;1번 코드와 2번코드의 다른 점은  &lt;/p&gt;
-&lt;p&gt;열거형 변수를 사용하면서 의미있는 함수명을 사용하여 읽기 편하다.&lt;/p&gt;
-&lt;p&gt;개인적으로는 함수에 조금 더 의미있는 이름을 사용하고 변수에 값을 할당하는 방법 더 좋다고 생각한다.&lt;/p&gt;
-&lt;p&gt;회사에서 주로 사용하는 언어는 php 7버전을 사용해 추가로 적어보면&lt;/p&gt;
-&lt;p&gt;php는 열거형 변수(enum)을 8.0 이후부터 지원한다.&lt;/p&gt;
-&lt;p&gt;비슷하게 사용하기 위해 class로 선언하는 방법이 있다.&lt;/p&gt;
-&lt;h1 id=&quot;중첩문&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%A4%91%EC%B2%A9%EB%AC%B8&quot; aria-label=&quot;중첩문 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;중첩문&lt;/h1&gt;
-&lt;p&gt;for문보단 for-each사용&lt;/p&gt;
-&lt;p&gt;읽기도 좋고, 성능도 좋다(미세하게 ...?)&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://siyoon210.tistory.com/99&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;For-each문은 For문 보다 얼마나 빠를까? - siyoon210님 블로그&lt;/a&gt;&lt;br&gt;
-성능에 관한 포스팅이 있어서 링크 남긴다.&lt;/p&gt;
-&lt;h1 id=&quot;함수&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%ED%95%A8%EC%88%98&quot; aria-label=&quot;함수 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;함수&lt;/h1&gt;
-&lt;ol&gt;
-&lt;li&gt;서술적인 함수 이름 사용&lt;/li&gt;
-&lt;li&gt;작게 만들어라&lt;/li&gt;
-&lt;li&gt;error 처리 시 try-catch문 활용&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h1 id=&quot;주석&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%A3%BC%EC%84%9D&quot; aria-label=&quot;주석 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;주석&lt;/h1&gt;
-&lt;p&gt;&lt;strong&gt;의도, 경고, 중요한 히스토리 정보&lt;/strong&gt;를 담아야 할 경우 사용&lt;/p&gt;
-&lt;h2 id=&quot;특별한-의미를-가지고-있는-주석&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%ED%8A%B9%EB%B3%84%ED%95%9C-%EC%9D%98%EB%AF%B8%EB%A5%BC-%EA%B0%80%EC%A7%80%EA%B3%A0-%EC%9E%88%EB%8A%94-%EC%A3%BC%EC%84%9D&quot; aria-label=&quot;특별한 의미를 가지고 있는 주석 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;특별한 의미를 가지고 있는 주석&lt;/h2&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;1) TODO : 좀더 최적화시키고 리팩토링 가능할 때, 작성하지 못한 코드나 구현하지 못한 코드
-2) FIXME : 문제가 있는것이 확실하지만, 그걸 지금 당장 그것을 수정할 필요는 없을 때.
-3) XXX : 해당 부분에 대해서는 더 생각해볼 필요성이 있을 때. 
-          해당 부분에 질문이 생길 때. 
-          코드에서 문제가 일어날만한 부분을 강조 표기할때.
-          완벽하게 정확히 구현되지 않은 부분이 있을 때.
-          나중에 고쳐야만하는 부분일 때.&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;&lt;a href=&quot;https://deepwelloper.tistory.com/entry/Clean-Code-%EA%B9%A8%EB%81%97%ED%95%9C-%EC%BD%94%EB%93%9C%EC%97%90-%EB%8C%80%ED%95%9C-%EB%8C%80%EA%B0%80%EB%93%A4%EC%9D%98-%EC%9D%98%EA%B2%AC&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;깨끗한 코드에 대한 대가들의 의견 - 토니잡스님 블로그&lt;/a&gt;
-읽고 생각해보면 좋은 말이 많다.... ㅎㅎ&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;시중에 깨끗한 코드를 위한 서적도 많고, 구글링 하면 잘 정리한 글도 많은데&lt;/p&gt;
-&lt;p&gt;중요하게 생각하는 몇가지를 정리해봤다.
-(정리하고 나니 쓸대없는 짓 한거같기도.. ㅋㅋㅋㅋ)&lt;/p&gt;
-&lt;p&gt;대부분의 블로그 글이 클린코드란 책을 정리한 글이 많았는데&lt;/p&gt;
-&lt;p&gt;조금 이해가 가지 않는 부분들이 있어서 책을 한번 보고 추가로 정리를 해야할 것 같다&lt;/p&gt;
-&lt;p&gt;이슈는 항상 넘쳐나니 개발은 빠르게 해야하지만 읽기 좋은 코드를 작성하기 위한 방법은&lt;/p&gt;
-&lt;p&gt;개발을 업으로 삼고 있는 사람들에겐 항상 고민해야 할 문제다.&lt;/p&gt;
-&lt;p&gt;날코딩을 하려하는 나를 다시 한번 혼내자ㅋㅎ&lt;/p&gt;</content:encoded></item></channel></rss>
+&lt;/ul&gt;</content:encoded></item></channel></rss>
