@@ -532,8 +532,28 @@
 <li><a href="/JPA_2/#%ED%85%8C%EC%9D%B4%EB%B8%94-%EC%97%94%ED%8B%B0%ED%8B%B0-%EC%84%A4%EA%B3%84-%EC%8B%9C-%EC%A3%BC%EC%9D%98%EC%82%AC%ED%95%AD">테이블, 엔티티 설계 시 주의사항</a></li>
 <li><a href="/JPA_2/#%EA%B3%84%EC%B8%B5%ED%98%95-%EA%B5%AC%EC%A1%B0">계층형 구조</a></li>
 <li><a href="/JPA_2/#%EC%96%B4%EB%85%B8%ED%85%8C%EC%9D%B4%EC%85%98">어노테이션</a></li>
+<li>
+<p><a href="/JPA_2/#pattern">Pattern</a></p>
+<ul>
+<li><a href="/JPA_2/#1-%EB%8F%84%EB%A9%94%EC%9D%B8-%EB%AA%A8%EB%8D%B8-%ED%8C%A8%ED%84%B4">1. 도메인 모델 패턴</a></li>
+<li><a href="/JPA_2/#2-%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98-%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%ED%8C%A8%ED%84%B4">2. 트랜잭션 스크립트 패턴</a></li>
+</ul>
+</li>
+<li><a href="/JPA_2/#form-%EA%B0%9D%EC%B2%B4-vs-%EC%97%94%ED%8B%B0%ED%8B%B0-%EC%A7%81%EC%A0%91-%EC%82%AC%EC%9A%A9">Form 객체 vs 엔티티 직접 사용</a></li>
+<li>
+<p><a href="/JPA_2/#%EB%B3%80%EA%B2%BD-%EA%B0%90%EC%A7%80dirty-check%EC%99%80-%EB%B3%91%ED%95%A9merge">변경 감지(dirty check)와 병합(Merge)</a></p>
+<ul>
+<li><a href="/JPA_2/#%EA%B2%B0%EB%A1%A0">결론</a></li>
+</ul>
+</li>
+<li>
+<p><a href="/JPA_2/#tip">Tip!!</a></p>
+<ul>
+<li><a href="/JPA_2/#%EA%B0%92-%EA%B2%80%EC%A6%9D">값 검증</a></li>
+</ul>
+</li>
 <li><a href="/JPA_2/#reference">Reference</a></li>
-</ul></div></div><div class="series"><div class="series-head"><span class="head">Post Series</span><div class="icon-wrap"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="layer-group" class="svg-inline--fa fa-layer-group fa-w-16 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M12.41 148.02l232.94 105.67c6.8 3.09 14.49 3.09 21.29 0l232.94-105.67c16.55-7.51 16.55-32.52 0-40.03L266.65 2.31a25.607 25.607 0 0 0-21.29 0L12.41 107.98c-16.55 7.51-16.55 32.53 0 40.04zm487.18 88.28l-58.09-26.33-161.64 73.27c-7.56 3.43-15.59 5.17-23.86 5.17s-16.29-1.74-23.86-5.17L70.51 209.97l-58.1 26.33c-16.55 7.5-16.55 32.5 0 40l232.94 105.59c6.8 3.08 14.49 3.08 21.29 0L499.59 276.3c16.55-7.5 16.55-32.5 0-40zm0 127.8l-57.87-26.23-161.86 73.37c-7.56 3.43-15.59 5.17-23.86 5.17s-16.29-1.74-23.86-5.17L70.29 337.87 12.41 364.1c-16.55 7.5-16.55 32.5 0 40l232.94 105.59c6.8 3.08 14.49 3.08 21.29 0L499.59 404.1c16.55-7.5 16.55-32.5 0-40z"></path></svg></div></div><ul class="series-list"><li class="series-item "><a href="/JPA_1/"><span>자바 ORM 표준 JPA 프로그래밍 (기본편) - 김영한</span><div class="icon-wrap"></div></a></li><li class="series-item current-series"><a aria-current="page" class="" href="/JPA_2/"><span>실전! 스프링 부트와 JPA 활용1 - 웹 애플리케이션 개발</span><div class="icon-wrap"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-left" class="svg-inline--fa fa-angle-left fa-w-8 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><path fill="currentColor" d="M31.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L127.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L201.7 409c-9.4 9.4-24.6 9.4-33.9 0l-136-136c-9.5-9.4-9.5-24.6-.1-34z"></path></svg></div></a></li><li class="series-item "><a href="/JPA_3/"><span>실전! 스프링 부트와 JPA 활용2 - API 개발과 성능 최적화</span><div class="icon-wrap"></div></a></li></ul></div><div class="blog-post-content"><h1 id="테이블-엔티티-설계-시-주의사항" style="position:relative;"><a href="#%ED%85%8C%EC%9D%B4%EB%B8%94-%EC%97%94%ED%8B%B0%ED%8B%B0-%EC%84%A4%EA%B3%84-%EC%8B%9C-%EC%A3%BC%EC%9D%98%EC%82%AC%ED%95%AD" aria-label="테이블 엔티티 설계 시 주의사항 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>테이블, 엔티티 설계 시 주의사항</h1>
+</ul></div></div><div class="series"><div class="series-head"><span class="head">Post Series</span><div class="icon-wrap"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="layer-group" class="svg-inline--fa fa-layer-group fa-w-16 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M12.41 148.02l232.94 105.67c6.8 3.09 14.49 3.09 21.29 0l232.94-105.67c16.55-7.51 16.55-32.52 0-40.03L266.65 2.31a25.607 25.607 0 0 0-21.29 0L12.41 107.98c-16.55 7.51-16.55 32.53 0 40.04zm487.18 88.28l-58.09-26.33-161.64 73.27c-7.56 3.43-15.59 5.17-23.86 5.17s-16.29-1.74-23.86-5.17L70.51 209.97l-58.1 26.33c-16.55 7.5-16.55 32.5 0 40l232.94 105.59c6.8 3.08 14.49 3.08 21.29 0L499.59 276.3c16.55-7.5 16.55-32.5 0-40zm0 127.8l-57.87-26.23-161.86 73.37c-7.56 3.43-15.59 5.17-23.86 5.17s-16.29-1.74-23.86-5.17L70.29 337.87 12.41 364.1c-16.55 7.5-16.55 32.5 0 40l232.94 105.59c6.8 3.08 14.49 3.08 21.29 0L499.59 404.1c16.55-7.5 16.55-32.5 0-40z"></path></svg></div></div><ul class="series-list"><li class="series-item "><a href="/JPA_1/"><span>자바 ORM 표준 JPA 프로그래밍 (기본편)</span><div class="icon-wrap"></div></a></li><li class="series-item current-series"><a aria-current="page" class="" href="/JPA_2/"><span>실전! 스프링 부트와 JPA 활용1 - 웹 애플리케이션 개발</span><div class="icon-wrap"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-left" class="svg-inline--fa fa-angle-left fa-w-8 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><path fill="currentColor" d="M31.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L127.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L201.7 409c-9.4 9.4-24.6 9.4-33.9 0l-136-136c-9.5-9.4-9.5-24.6-.1-34z"></path></svg></div></a></li><li class="series-item "><a href="/JPA_3/"><span>실전! 스프링 부트와 JPA 활용2 - API 개발과 성능 최적화</span><div class="icon-wrap"></div></a></li><li class="series-item "><a href="/JPA_4/"><span>실전 스프링 데이터 JPA</span><div class="icon-wrap"></div></a></li><li class="series-item "><a href="/JPA_5/"><span>실전! Querydsl</span><div class="icon-wrap"></div></a></li></ul></div><div class="blog-post-content"><h1 id="테이블-엔티티-설계-시-주의사항" style="position:relative;"><a href="#%ED%85%8C%EC%9D%B4%EB%B8%94-%EC%97%94%ED%8B%B0%ED%8B%B0-%EC%84%A4%EA%B3%84-%EC%8B%9C-%EC%A3%BC%EC%9D%98%EC%82%AC%ED%95%AD" aria-label="테이블 엔티티 설계 시 주의사항 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>테이블, 엔티티 설계 시 주의사항</h1>
 <ul>
 <li>다대다 관계 사용x -> 일대다, 다대일로 풀어서 사용</li>
 <li>외래키가 있는 곳을 연관관계의 주인으로 설정</li>
@@ -569,14 +589,121 @@
 
 <span class="token annotation punctuation">@SpringBootTest</span> <span class="token comment">// 스프링 부트 띄우고 테스트 - @Autowired시 필요</span>
 <span class="token annotation punctuation">@Transactional</span> <span class="token comment">// 테스트를 실행할 때마다 트랜잭션 시작 - 테스트 종료 시 롤백</span></code></pre></div>
+<h1 id="pattern" style="position:relative;"><a href="#pattern" aria-label="pattern permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Pattern</h1>
+<p>비즈니스 로직에 따른 패턴</p>
+<h2 id="1-도메인-모델-패턴" style="position:relative;"><a href="#1-%EB%8F%84%EB%A9%94%EC%9D%B8-%EB%AA%A8%EB%8D%B8-%ED%8C%A8%ED%84%B4" aria-label="1 도메인 모델 패턴 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>1. 도메인 모델 패턴</h2>
+<ul>
+<li>엔티티가 비즈니스 로직을 가지고 객체지향 특성을 적극 활용</li>
+<li>서비스 계층은 단순히 엔티티에 필요한 요청만 위임</li>
+<li>엔티티에 대해 테스트 코드 작성 가능 (단위 테스트)</li>
+</ul>
+<h2 id="2-트랜잭션-스크립트-패턴" style="position:relative;"><a href="#2-%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98-%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%ED%8C%A8%ED%84%B4" aria-label="2 트랜잭션 스크립트 패턴 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2. 트랜잭션 스크립트 패턴</h2>
+<ul>
+<li>일반적으로 사용하던 패턴</li>
+<li>서비스 계층에서 대부분의 비즈니스 로직 처리</li>
+</ul>
+<h1 id="form-객체-vs-엔티티-직접-사용" style="position:relative;"><a href="#form-%EA%B0%9D%EC%B2%B4-vs-%EC%97%94%ED%8B%B0%ED%8B%B0-%EC%A7%81%EC%A0%91-%EC%82%AC%EC%9A%A9" aria-label="form 객체 vs 엔티티 직접 사용 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Form 객체 vs 엔티티 직접 사용</h1>
+<p>엔티티는 <strong>핵심 비즈니스 로직</strong>만 소유<br>
+-> 화면이나 API에 맞는 <strong>폼 객체</strong>나 <strong>DTO</strong>를 사용<br>
+-> API는 절대 엔티티 반환x -> 엔티티가 변경되면 스펙이 변경되기 때문-> DTO 사용</p>
+<h1 id="변경-감지dirty-check와-병합merge" style="position:relative;"><a href="#%EB%B3%80%EA%B2%BD-%EA%B0%90%EC%A7%80dirty-check%EC%99%80-%EB%B3%91%ED%95%A9merge" aria-label="변경 감지dirty check와 병합merge permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>변경 감지(dirty check)와 병합(Merge)</h1>
+<blockquote>
+<p>JPA는 플러시 할 때 변경 감지가 일어나 업데이트 해준다
+-> 준영속 상태의 엔티티 변경시 문제 발생</p>
+</blockquote>
+<p><strong>준영속 엔티티란?</strong></p>
+<blockquote>
+<p>영속성 컨텍스트가 관리하지 않는 엔티티 -> 기존 식별자를 가지고 있는 엔티티</p>
+</blockquote>
+<p>해결 방법</p>
+<ol>
+<li>변경 감지 기능 사용<br>
+-> 영속성 컨텍스트에서 엔티티를 다시 조회한 후에 데이터 수정하는 방법</li>
+<li>병합 사용<br>
+-> 준영속 상태의 엔티티를 영속 상태로 변경할 때 사용하는 기능</li>
+</ol>
+<div class="gatsby-highlight" data-language="java"><pre class="language-java"><code class="language-java">em<span class="token punctuation">.</span><span class="token function">merge</span><span class="token punctuation">(</span>item<span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre></div>
+<p>병합 동작 방식</p>
+<ol>
+<li>준영속 엔티티의 식별자 값으로 영속 엔티티 조회</li>
+<li>영속 엔티티의 값을 준영속 엔티티로 병합</li>
+<li>트랜잭션 커밋 시점에 변경 감지 기능이 동작해 DB에 UPDATE</li>
+</ol>
+<p>=> 병합 사용 시 모든 필드를 변경, 데이터가 없으면 null로 업데이트</p>
+<h2 id="결론" style="position:relative;"><a href="#%EA%B2%B0%EB%A1%A0" aria-label="결론 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>결론</h2>
+<p>엔티티 변경 시 <strong>변경 감지를 사용</strong>하는 것이 좋다<br>
+-> 트랜잭션이 있는 서비스 계층에서 영속 상태의 엔티티를 조회 -> 변경
+(트랜잭션 커밋 시점 변경 감지 실행)</p>
+<div class="gatsby-highlight" data-language="java"><pre class="language-java"><code class="language-java"><span class="token annotation punctuation">@PostMapping</span><span class="token punctuation">(</span>value <span class="token operator">=</span> <span class="token string">"/items/{itemId}/edit"</span><span class="token punctuation">)</span>
+<span class="token keyword">public</span> <span class="token class-name">String</span> <span class="token function">updateItem</span><span class="token punctuation">(</span><span class="token annotation punctuation">@ModelAttribute</span><span class="token punctuation">(</span><span class="token string">"form"</span><span class="token punctuation">)</span> <span class="token class-name">BookForm</span> form<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token comment">// 변경해야 하는 엔티티 값을 넘겨준다.</span>
+  itemService<span class="token punctuation">.</span><span class="token function">updateItem</span><span class="token punctuation">(</span>form<span class="token punctuation">.</span><span class="token function">getId</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> form<span class="token punctuation">.</span><span class="token function">getName</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> form<span class="token punctuation">.</span><span class="token function">getPrice</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token keyword">return</span> <span class="token string">"redirect:/items"</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token annotation punctuation">@Service</span>
+<span class="token annotation punctuation">@Transactional</span><span class="token punctuation">(</span>readOnly <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">)</span>
+<span class="token annotation punctuation">@RequiredArgsConstructor</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">ItemService</span> <span class="token punctuation">{</span>
+  <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+
+  <span class="token annotation punctuation">@Transactional</span>
+  <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">updateItem</span><span class="token punctuation">(</span><span class="token class-name">Long</span> itemId<span class="token punctuation">,</span> <span class="token class-name">String</span> name<span class="token punctuation">,</span> <span class="token keyword">int</span> price<span class="token punctuation">,</span> <span class="token keyword">int</span> stockQuantity<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token class-name">Item</span> item <span class="token operator">=</span> itemRepository<span class="token punctuation">.</span><span class="token function">findOne</span><span class="token punctuation">(</span>itemId<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    item<span class="token punctuation">.</span><span class="token function">setName</span><span class="token punctuation">(</span>name<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    item<span class="token punctuation">.</span><span class="token function">setPrice</span><span class="token punctuation">(</span>price<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    item<span class="token punctuation">.</span><span class="token function">setStockQuantity</span><span class="token punctuation">(</span>stockQuantity<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+<span class="token punctuation">}</span></code></pre></div>
+<h1 id="tip" style="position:relative;"><a href="#tip" aria-label="tip permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Tip!!</h1>
+<ul>
+<li>테스트 코드 작성 시 스프링, DB없이 순수한 메서드만 단위테스트 하는게 좋다</li>
+<li>@Test(expected = ...) -> junit5에서 사용법 변경 <a href="https://www.baeldung.com/junit-5-migration" target="_blank" rel="nofollow noopener noreferrer">Migrating from JUnit 4 to JUnit 5</a> 참고</li>
+<li>동적 쿼리를 작성 할 때(ex - 검색 기능) JPQL로 구현하면 String 붙여줘서 문자열로 만들어줘야 함<br>
+-> QueryDSL 사용</li>
+</ul>
+<h2 id="값-검증" style="position:relative;"><a href="#%EA%B0%92-%EA%B2%80%EC%A6%9D" aria-label="값 검증 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>값 검증</h2>
+<ul>
+<li>값 검증은 implementation 'org.springframework.boot:spring-boot-starter-validation' 추가</li>
+</ul>
+<div class="gatsby-highlight" data-language="java"><pre class="language-java"><code class="language-java"><span class="token comment">// @Valid 어노테이션 사용해 값 검증</span>
+<span class="token comment">// @Valid 어노테이션 사용한 부분에 BindingResult 사용해주면 에러를 result값으로 생성</span>
+<span class="token comment">// -> 화면에 노출 가능</span>
+<span class="token keyword">public</span> <span class="token class-name">String</span> <span class="token function">create</span><span class="token punctuation">(</span><span class="token annotation punctuation">@Valid</span> <span class="token class-name">MemberForm</span> form<span class="token punctuation">,</span> <span class="token class-name">BindingResult</span> result<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token punctuation">,</span><span class="token punctuation">,</span><span class="token punctuation">,</span>
+ <span class="token punctuation">}</span></code></pre></div>
 <h1 id="reference" style="position:relative;"><a href="#reference" aria-label="reference permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Reference</h1>
 <ul>
 <li><a href="https://www.inflearn.com/course/%EC%8A%A4%ED%94%84%EB%A7%81%EB%B6%80%ED%8A%B8-JPA-%ED%99%9C%EC%9A%A9-1" target="_blank" rel="nofollow noopener noreferrer">실전! 스프링 부트와 JPA 활용1 - 김영한</a></li>
 <li><a href="https://handr95.tistory.com/16" target="_blank" rel="nofollow noopener noreferrer">[JUnit] 경고: Runner org.junit.internal.runners.ErrorReportingRunner</a></li>
+<li><a href="https://www.baeldung.com/junit-5-migration" target="_blank" rel="nofollow noopener noreferrer">Migrating from JUnit 4 to JUnit 5</a></li>
 </ul></div></div><div class="social-share"><ul><li class="social-share-item email"><button aria-label="email" class="react-share__ShareButton" style="background-color:transparent;border:none;padding:0;font:inherit;color:inherit;cursor:pointer"><svg viewBox="0 0 64 64" width="24" height="24"><circle cx="32" cy="32" r="31" fill="#7f7f7f"></circle><path d="M17,22v20h30V22H17z M41.1,25L32,32.1L22.9,25H41.1z M20,39V26.6l12,9.3l12-9.3V39H20z" fill="white"></path></svg></button></li><li class="social-share-item facebook"><button aria-label="facebook" class="react-share__ShareButton" style="background-color:transparent;border:none;padding:0;font:inherit;color:inherit;cursor:pointer"><svg viewBox="0 0 64 64" width="24" height="24"><circle cx="32" cy="32" r="31" fill="#3b5998"></circle><path d="M34.1,47V33.3h4.6l0.7-5.3h-5.3v-3.4c0-1.5,0.4-2.6,2.6-2.6l2.8,0v-4.8c-0.5-0.1-2.2-0.2-4.1-0.2 c-4.1,0-6.9,2.5-6.9,7V28H24v5.3h4.6V47H34.1z" fill="white"></path></svg></button></li><li class="social-share-item twitter"><button aria-label="twitter" class="react-share__ShareButton" style="background-color:transparent;border:none;padding:0;font:inherit;color:inherit;cursor:pointer"><svg viewBox="0 0 64 64" width="24" height="24"><circle cx="32" cy="32" r="31" fill="#00aced"></circle><path d="M48,22.1c-1.2,0.5-2.4,0.9-3.8,1c1.4-0.8,2.4-2.1,2.9-3.6c-1.3,0.8-2.7,1.3-4.2,1.6 C41.7,19.8,40,19,38.2,19c-3.6,0-6.6,2.9-6.6,6.6c0,0.5,0.1,1,0.2,1.5c-5.5-0.3-10.3-2.9-13.5-6.9c-0.6,1-0.9,2.1-0.9,3.3 c0,2.3,1.2,4.3,2.9,5.5c-1.1,0-2.1-0.3-3-0.8c0,0,0,0.1,0,0.1c0,3.2,2.3,5.8,5.3,6.4c-0.6,0.1-1.1,0.2-1.7,0.2c-0.4,0-0.8,0-1.2-0.1 c0.8,2.6,3.3,4.5,6.1,4.6c-2.2,1.8-5.1,2.8-8.2,2.8c-0.5,0-1.1,0-1.6-0.1c2.9,1.9,6.4,2.9,10.1,2.9c12.1,0,18.7-10,18.7-18.7 c0-0.3,0-0.6,0-0.8C46,24.5,47.1,23.4,48,22.1z" fill="white"></path></svg></button></li><li class="social-share-item linkedin"><button aria-label="linkedin" class="react-share__ShareButton" style="background-color:transparent;border:none;padding:0;font:inherit;color:inherit;cursor:pointer"><svg viewBox="0 0 64 64" width="24" height="24"><circle cx="32" cy="32" r="31" fill="#007fb1"></circle><path d="M20.4,44h5.4V26.6h-5.4V44z M23.1,18c-1.7,0-3.1,1.4-3.1,3.1c0,1.7,1.4,3.1,3.1,3.1 c1.7,0,3.1-1.4,3.1-3.1C26.2,19.4,24.8,18,23.1,18z M39.5,26.2c-2.6,0-4.4,1.4-5.1,2.8h-0.1v-2.4h-5.2V44h5.4v-8.6 c0-2.3,0.4-4.5,3.2-4.5c2.8,0,2.8,2.6,2.8,4.6V44H46v-9.5C46,29.8,45,26.2,39.5,26.2z" fill="white"></path></svg></button></li><li class="social-share-item reddit"><button aria-label="reddit" class="react-share__ShareButton" style="background-color:transparent;border:none;padding:0;font:inherit;color:inherit;cursor:pointer"><svg viewBox="0 0 64 64" width="24" height="24"><circle cx="32" cy="32" r="31" fill="#ff4500"></circle><path d="m 52.8165,31.942362 c 0,-2.4803 -2.0264,-4.4965 -4.5169,-4.4965 -1.2155,0 -2.3171,0.4862 -3.128,1.2682 -3.077,-2.0247 -7.2403,-3.3133 -11.8507,-3.4782 l 2.5211,-7.9373 6.8272,1.5997 -0.0102,0.0986 c 0,2.0281 1.6575,3.6771 3.6958,3.6771 2.0366,0 3.6924,-1.649 3.6924,-3.6771 0,-2.0281 -1.6575,-3.6788 -3.6924,-3.6788 -1.564,0 -2.8968,0.9758 -3.4357,2.3443 l -7.3593,-1.7255 c -0.3213,-0.0782 -0.6477,0.1071 -0.748,0.4233 L 32,25.212062 c -4.8246,0.0578 -9.1953,1.3566 -12.41,3.4425 -0.8058,-0.7446 -1.8751,-1.2104 -3.0583,-1.2104 -2.4905,0 -4.5152,2.0179 -4.5152,4.4982 0,1.649 0.9061,3.0787 2.2389,3.8607 -0.0884,0.4794 -0.1462,0.9639 -0.1462,1.4569 0,6.6487 8.1736,12.0581 18.2223,12.0581 10.0487,0 18.224,-5.4094 18.224,-12.0581 0,-0.4658 -0.0493,-0.9248 -0.1275,-1.377 1.4144,-0.7599 2.3885,-2.2304 2.3885,-3.9406 z m -29.2808,3.0872 c 0,-1.4756 1.207,-2.6775 2.6894,-2.6775 1.4824,0 2.6877,1.2019 2.6877,2.6775 0,1.4756 -1.2053,2.6758 -2.6877,2.6758 -1.4824,0 -2.6894,-1.2002 -2.6894,-2.6758 z m 15.4037,7.9373 c -1.3549,1.3481 -3.4816,2.0043 -6.5008,2.0043 l -0.0221,-0.0051 -0.0221,0.0051 c -3.0209,0 -5.1476,-0.6562 -6.5008,-2.0043 -0.2465,-0.2448 -0.2465,-0.6443 0,-0.8891 0.2465,-0.2465 0.6477,-0.2465 0.8942,0 1.105,1.0999 2.9393,1.6337 5.6066,1.6337 l 0.0221,0.0051 0.0221,-0.0051 c 2.6673,0 4.5016,-0.5355 5.6066,-1.6354 0.2465,-0.2465 0.6477,-0.2448 0.8942,0 0.2465,0.2465 0.2465,0.6443 0,0.8908 z m -0.3213,-5.2615 c -1.4824,0 -2.6877,-1.2002 -2.6877,-2.6758 0,-1.4756 1.2053,-2.6775 2.6877,-2.6775 1.4824,0 2.6877,1.2019 2.6877,2.6775 0,1.4756 -1.2053,2.6758 -2.6877,2.6758 z" fill="white"></path></svg></button></li><li class="social-share-item pocket"><button aria-label="pocket" class="react-share__ShareButton" style="background-color:transparent;border:none;padding:0;font:inherit;color:inherit;cursor:pointer"><svg viewBox="0 0 64 64" width="24" height="24"><circle cx="32" cy="32" r="31" fill="#EF3F56"></circle><path d="M41.084 29.065l-7.528 7.882a2.104 2.104 0 0 1-1.521.666 2.106 2.106 0 0 1-1.522-.666l-7.528-7.882c-.876-.914-.902-2.43-.065-3.384.84-.955 2.228-.987 3.1-.072l6.015 6.286 6.022-6.286c.88-.918 2.263-.883 3.102.071.841.938.82 2.465-.06 3.383l-.015.002zm6.777-10.976C47.463 16.84 46.361 16 45.14 16H18.905c-1.2 0-2.289.82-2.716 2.044-.125.363-.189.743-.189 1.125v10.539l.112 2.096c.464 4.766 2.73 8.933 6.243 11.838.06.053.125.102.19.153l.04.033c1.882 1.499 3.986 2.514 6.259 3.014a14.662 14.662 0 0 0 6.13.052c.118-.042.235-.065.353-.087.03 0 .065-.022.098-.042a15.395 15.395 0 0 0 6.011-2.945l.039-.045.18-.153c3.502-2.902 5.765-7.072 6.248-11.852L48 29.674v-10.52c0-.366-.041-.728-.161-1.08l.022.015z" fill="white"></path></svg></button></li></ul></div><aside class="ad"><ins class=" adsbygoogle" style="display:block" data-ad-client="ca-pub-3051862140739045" data-ad-slot="2229974234" data-ad-layout="" data-ad-layout-key="" data-ad-format="auto" data-full-width-responsive="true"></ins></aside></div><div class="toc outside"><ul>
 <li><a href="/JPA_2/#%ED%85%8C%EC%9D%B4%EB%B8%94-%EC%97%94%ED%8B%B0%ED%8B%B0-%EC%84%A4%EA%B3%84-%EC%8B%9C-%EC%A3%BC%EC%9D%98%EC%82%AC%ED%95%AD">테이블, 엔티티 설계 시 주의사항</a></li>
 <li><a href="/JPA_2/#%EA%B3%84%EC%B8%B5%ED%98%95-%EA%B5%AC%EC%A1%B0">계층형 구조</a></li>
 <li><a href="/JPA_2/#%EC%96%B4%EB%85%B8%ED%85%8C%EC%9D%B4%EC%85%98">어노테이션</a></li>
+<li>
+<p><a href="/JPA_2/#pattern">Pattern</a></p>
+<ul>
+<li><a href="/JPA_2/#1-%EB%8F%84%EB%A9%94%EC%9D%B8-%EB%AA%A8%EB%8D%B8-%ED%8C%A8%ED%84%B4">1. 도메인 모델 패턴</a></li>
+<li><a href="/JPA_2/#2-%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98-%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%ED%8C%A8%ED%84%B4">2. 트랜잭션 스크립트 패턴</a></li>
+</ul>
+</li>
+<li><a href="/JPA_2/#form-%EA%B0%9D%EC%B2%B4-vs-%EC%97%94%ED%8B%B0%ED%8B%B0-%EC%A7%81%EC%A0%91-%EC%82%AC%EC%9A%A9">Form 객체 vs 엔티티 직접 사용</a></li>
+<li>
+<p><a href="/JPA_2/#%EB%B3%80%EA%B2%BD-%EA%B0%90%EC%A7%80dirty-check%EC%99%80-%EB%B3%91%ED%95%A9merge">변경 감지(dirty check)와 병합(Merge)</a></p>
+<ul>
+<li><a href="/JPA_2/#%EA%B2%B0%EB%A1%A0">결론</a></li>
+</ul>
+</li>
+<li>
+<p><a href="/JPA_2/#tip">Tip!!</a></p>
+<ul>
+<li><a href="/JPA_2/#%EA%B0%92-%EA%B2%80%EC%A6%9D">값 검증</a></li>
+</ul>
+</li>
 <li><a href="/JPA_2/#reference">Reference</a></li>
 </ul></div></main><footer><span>© 2022 Ian </span></footer></div><div id="top" style="opacity:0;pointer-events:none"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-double-up" class="svg-inline--fa fa-angle-double-up fa-w-10 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M177 255.7l136 136c9.4 9.4 9.4 24.6 0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9 0L160 351.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9 0L7 425.7c-9.4-9.4-9.4-24.6 0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1zm-34-192L7 199.7c-9.4 9.4-9.4 24.6 0 33.9l22.6 22.6c9.4 9.4 24.6 9.4 33.9 0l96.4-96.4 96.4 96.4c9.4 9.4 24.6 9.4 33.9 0l22.6-22.6c9.4-9.4 9.4-24.6 0-33.9l-136-136c-9.2-9.4-24.4-9.4-33.8 0z"></path></svg></div></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script>
   

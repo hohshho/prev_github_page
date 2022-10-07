@@ -532,7 +532,7 @@
 <p>일단 <strong>이분탐색</strong>은 탐색 기법으로 <strong>원하는 탐색 범위를 두 부분으로 분할</strong>해서 찾는 방식이다<br>
 -> O(logN)의 시간 복잡도를 가지고 있다.</p>
 <p><strong>파라매트릭 서치</strong>는 <strong>최적화 문제 -> 결정문제로 바꾸어 푸는 것</strong>을 말한다.<br>
-(문제 상황을 만족하는 특정한 값 - 최소값, 최대값) </p>
+(문제 상황을 만족하는 특정한 값 - 최소값, 최대값)</p>
 <p>백준 2110번 문제가 쉽게 이해하기 좋은 문제인 것 같다.</p>
 <p><span
       class="gatsby-resp-image-wrapper"
@@ -611,27 +611,27 @@
 		<span class="token keyword">int</span> <span class="token class-name">N</span> <span class="token operator">=</span> <span class="token class-name">Integer</span><span class="token punctuation">.</span><span class="token function">parseInt</span><span class="token punctuation">(</span>inputNK<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 		<span class="token keyword">long</span> <span class="token class-name">K</span> <span class="token operator">=</span> <span class="token class-name">Long</span><span class="token punctuation">.</span><span class="token function">parseLong</span><span class="token punctuation">(</span>inputNK<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 		<span class="token keyword">long</span> max <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
-		
+
 		<span class="token keyword">long</span><span class="token punctuation">[</span><span class="token punctuation">]</span> houseArr <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token keyword">long</span><span class="token punctuation">[</span><span class="token class-name">N</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
-		
+
 		<span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span> i<span class="token operator">&lt;</span><span class="token class-name">N</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
 			houseArr<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token class-name">Long</span><span class="token punctuation">.</span><span class="token function">parseLong</span><span class="token punctuation">(</span>br<span class="token punctuation">.</span><span class="token function">readLine</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 			max <span class="token operator">=</span> max <span class="token operator">></span> houseArr<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">?</span> max <span class="token operator">:</span> houseArr<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>
 		<span class="token punctuation">}</span>
 		<span class="token class-name">Arrays</span><span class="token punctuation">.</span><span class="token function">sort</span><span class="token punctuation">(</span>houseArr<span class="token punctuation">)</span><span class="token punctuation">;</span>
-		
+
 		max <span class="token operator">=</span> <span class="token class-name">Psearch</span><span class="token punctuation">(</span>houseArr<span class="token punctuation">,</span> <span class="token class-name">K</span><span class="token punctuation">,</span> max<span class="token punctuation">)</span><span class="token punctuation">;</span>
 		<span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>max<span class="token punctuation">)</span><span class="token punctuation">;</span>
 	<span class="token punctuation">}</span>
-	
+
 	<span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">long</span> <span class="token class-name">Psearch</span><span class="token punctuation">(</span><span class="token keyword">long</span><span class="token punctuation">[</span><span class="token punctuation">]</span> houseArr<span class="token punctuation">,</span> <span class="token keyword">long</span> <span class="token class-name">K</span><span class="token punctuation">,</span> <span class="token keyword">long</span> max<span class="token punctuation">)</span> <span class="token punctuation">{</span>
 		<span class="token keyword">long</span> start <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
 		<span class="token keyword">long</span> end <span class="token operator">=</span> max<span class="token punctuation">;</span>
 		<span class="token keyword">long</span> ans <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
-		
+
 		<span class="token keyword">while</span><span class="token punctuation">(</span>start<span class="token operator">&lt;=</span>end<span class="token punctuation">)</span> <span class="token punctuation">{</span>
 			<span class="token keyword">long</span> mid <span class="token operator">=</span> <span class="token punctuation">(</span>start<span class="token operator">+</span>end<span class="token punctuation">)</span><span class="token operator">/</span><span class="token number">2</span><span class="token punctuation">;</span>
-			
+
 			<span class="token keyword">if</span><span class="token punctuation">(</span><span class="token function">checkHouse</span><span class="token punctuation">(</span>houseArr<span class="token punctuation">,</span> mid<span class="token punctuation">,</span> <span class="token class-name">K</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
 				start <span class="token operator">=</span> mid<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">;</span>
 				ans <span class="token operator">=</span> ans <span class="token operator">></span> mid <span class="token operator">?</span> ans <span class="token operator">:</span> mid<span class="token punctuation">;</span>
@@ -641,7 +641,7 @@
 		<span class="token punctuation">}</span>
 		<span class="token keyword">return</span> ans<span class="token punctuation">;</span>
 	<span class="token punctuation">}</span>
-	
+
 	<span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">boolean</span> <span class="token function">checkHouse</span><span class="token punctuation">(</span><span class="token keyword">long</span><span class="token punctuation">[</span><span class="token punctuation">]</span> houseArr<span class="token punctuation">,</span> <span class="token keyword">long</span> mid<span class="token punctuation">,</span> <span class="token keyword">long</span> <span class="token class-name">K</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
 		<span class="token keyword">long</span> temp <span class="token operator">=</span> houseArr<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
 		<span class="token keyword">long</span> index <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
@@ -651,7 +651,7 @@
 				temp<span class="token operator">=</span>houseArr<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>
 			<span class="token punctuation">}</span>
 		<span class="token punctuation">}</span>
-		
+
 		<span class="token keyword">if</span><span class="token punctuation">(</span>index <span class="token operator">>=</span><span class="token class-name">K</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span>
 			<span class="token keyword">return</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
 		<span class="token keyword">else</span>
@@ -659,13 +659,13 @@
 	<span class="token punctuation">}</span>
 
 <span class="token punctuation">}</span></code></pre></div>
-<p>이 문제의 포인트는  </p>
+<p>이 문제의 포인트는</p>
 <ol>
 <li>
 <p>공유기 사이 거리를 정한 후, 정한 거리 이상의 간격으로 집에 설치 가능한지 확인</p>
 <ul>
 <li>설치 가능 -> 더 큰 거리값 확인</li>
-<li>설치 불가능 -> 작은 거리값을 확인  </li>
+<li>설치 불가능 -> 작은 거리값을 확인</li>
 </ul>
 </li>
 </ol>
