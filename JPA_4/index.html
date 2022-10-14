@@ -545,9 +545,34 @@
 <li><a href="/JPA_4/#jpa-hint">JPA Hint</a></li>
 <li><a href="/JPA_4/#%EC%82%AC%EC%9A%A9%EC%9E%90-%EC%A0%95%EC%9D%98-%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4">사용자 정의 인터페이스</a></li>
 <li><a href="/JPA_4/#auditing">Auditing</a></li>
+<li><a href="/JPA_4/#domain-class-converter">Domain Class Converter</a></li>
+<li>
+<p><a href="/JPA_4/#%ED%8E%98%EC%9D%B4%EC%A7%95-%EC%A0%95%EB%A0%AC">페이징, 정렬</a></p>
+<ul>
+<li>
+<p><a href="/JPA_4/#%EC%84%A4%EC%A0%95-%EB%B0%A9%EB%B2%95">설정 방법</a></p>
+<ul>
+<li><a href="/JPA_4/#%EB%A9%80%ED%8B%B0-%ED%8E%98%EC%9D%B4%EC%A7%95-%EC%8B%9C">멀티 페이징 시</a></li>
+<li><a href="/JPA_4/#page-1%EB%B6%80%ED%84%B0-%EC%8B%9C%EC%9E%91-%EC%8B%9C">Page 1부터 시작 시</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><a href="/JPA_4/#%EC%8A%A4%ED%94%84%EB%A7%81-%EB%8D%B0%EC%9D%B4%ED%84%B0-jpa-%EA%B5%AC%ED%98%84%EC%B2%B4">스프링 데이터 JPA 구현체</a></p>
+<ul>
+<li>
+<p><a href="/JPA_4/#readonly">readOnly</a></p>
+<ul>
+<li><a href="/JPA_4/#dirty-checking-%EB%AC%B4%EC%8B%9C">Dirty Checking 무시</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="/JPA_4/#%EC%83%88%EB%A1%9C%EC%9A%B4-%EC%97%94%ED%8B%B0%ED%8B%B0-%EA%B5%AC%EB%B6%84">새로운 엔티티 구분</a></li>
 <li><a href="/JPA_4/#tip">Tip!!</a></li>
 <li><a href="/JPA_4/#reference">Reference</a></li>
-</ul></div></div><div class="series"><div class="series-head"><span class="head">Post Series</span><div class="icon-wrap"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="layer-group" class="svg-inline--fa fa-layer-group fa-w-16 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M12.41 148.02l232.94 105.67c6.8 3.09 14.49 3.09 21.29 0l232.94-105.67c16.55-7.51 16.55-32.52 0-40.03L266.65 2.31a25.607 25.607 0 0 0-21.29 0L12.41 107.98c-16.55 7.51-16.55 32.53 0 40.04zm487.18 88.28l-58.09-26.33-161.64 73.27c-7.56 3.43-15.59 5.17-23.86 5.17s-16.29-1.74-23.86-5.17L70.51 209.97l-58.1 26.33c-16.55 7.5-16.55 32.5 0 40l232.94 105.59c6.8 3.08 14.49 3.08 21.29 0L499.59 276.3c16.55-7.5 16.55-32.5 0-40zm0 127.8l-57.87-26.23-161.86 73.37c-7.56 3.43-15.59 5.17-23.86 5.17s-16.29-1.74-23.86-5.17L70.29 337.87 12.41 364.1c-16.55 7.5-16.55 32.5 0 40l232.94 105.59c6.8 3.08 14.49 3.08 21.29 0L499.59 404.1c16.55-7.5 16.55-32.5 0-40z"></path></svg></div></div><ul class="series-list"><li class="series-item "><a href="/JPA_1/"><span>자바 ORM 표준 JPA 프로그래밍 (기본편)</span><div class="icon-wrap"></div></a></li><li class="series-item "><a href="/JPA_2/"><span>실전! 스프링 부트와 JPA 활용1 - 웹 애플리케이션 개발</span><div class="icon-wrap"></div></a></li><li class="series-item "><a href="/JPA_3/"><span>실전! 스프링 부트와 JPA 활용2 - API 개발과 성능 최적화</span><div class="icon-wrap"></div></a></li><li class="series-item current-series"><a aria-current="page" class="" href="/JPA_4/"><span>실전 스프링 데이터 JPA</span><div class="icon-wrap"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-left" class="svg-inline--fa fa-angle-left fa-w-8 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><path fill="currentColor" d="M31.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L127.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L201.7 409c-9.4 9.4-24.6 9.4-33.9 0l-136-136c-9.5-9.4-9.5-24.6-.1-34z"></path></svg></div></a></li><li class="series-item "><a href="/JPA_5/"><span>실전! Querydsl</span><div class="icon-wrap"></div></a></li></ul></div><div class="blog-post-content"><h1 id="공통-인터페이스-설정" style="position:relative;"><a href="#%EA%B3%B5%ED%86%B5-%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4-%EC%84%A4%EC%A0%95" aria-label="공통 인터페이스 설정 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>공통 인터페이스 설정</h1>
+</ul></div></div><div class="series"><div class="series-head"><span class="head">Post Series</span><div class="icon-wrap"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="layer-group" class="svg-inline--fa fa-layer-group fa-w-16 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M12.41 148.02l232.94 105.67c6.8 3.09 14.49 3.09 21.29 0l232.94-105.67c16.55-7.51 16.55-32.52 0-40.03L266.65 2.31a25.607 25.607 0 0 0-21.29 0L12.41 107.98c-16.55 7.51-16.55 32.53 0 40.04zm487.18 88.28l-58.09-26.33-161.64 73.27c-7.56 3.43-15.59 5.17-23.86 5.17s-16.29-1.74-23.86-5.17L70.51 209.97l-58.1 26.33c-16.55 7.5-16.55 32.5 0 40l232.94 105.59c6.8 3.08 14.49 3.08 21.29 0L499.59 276.3c16.55-7.5 16.55-32.5 0-40zm0 127.8l-57.87-26.23-161.86 73.37c-7.56 3.43-15.59 5.17-23.86 5.17s-16.29-1.74-23.86-5.17L70.29 337.87 12.41 364.1c-16.55 7.5-16.55 32.5 0 40l232.94 105.59c6.8 3.08 14.49 3.08 21.29 0L499.59 404.1c16.55-7.5 16.55-32.5 0-40z"></path></svg></div></div><ul class="series-list"><li class="series-item "><a href="/JPA_1/"><span>자바 ORM 표준 JPA 프로그래밍 (기본편)</span><div class="icon-wrap"></div></a></li><li class="series-item "><a href="/JPA_2/"><span>실전! 스프링 부트와 JPA 활용1 - 웹 애플리케이션 개발</span><div class="icon-wrap"></div></a></li><li class="series-item "><a href="/JPA_3/"><span>실전! 스프링 부트와 JPA 활용2 - API 개발과 성능 최적화</span><div class="icon-wrap"></div></a></li><li class="series-item current-series"><a aria-current="page" class="" href="/JPA_4/"><span>실전 스프링 데이터 JPA</span><div class="icon-wrap"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-left" class="svg-inline--fa fa-angle-left fa-w-8 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><path fill="currentColor" d="M31.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L127.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L201.7 409c-9.4 9.4-24.6 9.4-33.9 0l-136-136c-9.5-9.4-9.5-24.6-.1-34z"></path></svg></div></a></li></ul></div><div class="blog-post-content"><h1 id="공통-인터페이스-설정" style="position:relative;"><a href="#%EA%B3%B5%ED%86%B5-%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4-%EC%84%A4%EC%A0%95" aria-label="공통 인터페이스 설정 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>공통 인터페이스 설정</h1>
 <p>@SpringBootApplication위치에 @EnableJpaRepositories설정<br>
 (스프링 부트 사용시 생략 가능)</p>
 <p>JpaRepository를 상속받아 인터페이스 JpaRepository내 구현된 메소드 사용 필요 시 확장<br>
@@ -713,6 +738,111 @@ JPQL 없이 패치 조인</p>
 <span class="token annotation punctuation">@LastModifiedDate</span>
 <span class="token annotation punctuation">@CreatedBy</span>
 <span class="token annotation punctuation">@LastModifiedBy</span></code></pre></div>
+<h1 id="domain-class-converter" style="position:relative;"><a href="#domain-class-converter" aria-label="domain class converter permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Domain Class Converter</h1>
+<blockquote>
+<p>HTTP 파라미터로 넘어온 엔티티의 아이디로 엔티티 객체를 찾아서 바인딩</p>
+</blockquote>
+<div class="gatsby-highlight" data-language="java"><pre class="language-java"><code class="language-java"><span class="token annotation punctuation">@GetMapping</span><span class="token punctuation">(</span><span class="token string">"/members/{id}"</span><span class="token punctuation">)</span>
+<span class="token keyword">public</span> <span class="token class-name">String</span> <span class="token function">findMember</span><span class="token punctuation">(</span><span class="token annotation punctuation">@PathVariable</span><span class="token punctuation">(</span><span class="token string">"id"</span><span class="token punctuation">)</span> <span class="token class-name">Member</span> member<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> member<span class="token punctuation">.</span><span class="token function">getUsername</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre></div>
+<p>도메인 클래스 컨버터로 엔티티를 파라미터로 받으면 <strong>단순 조회용으로 사용</strong><br>
+-> <strong>트랜잭션이 없는 범위에서 엔티티를 조회</strong>하기 때문 (권장x)</p>
+<h1 id="페이징-정렬" style="position:relative;"><a href="#%ED%8E%98%EC%9D%B4%EC%A7%95-%EC%A0%95%EB%A0%AC" aria-label="페이징 정렬 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>페이징, 정렬</h1>
+<blockquote>
+<p>Pageable객체를 파라미터로 받아 페이징, 정렬 기능 사용 가능</p>
+</blockquote>
+<ul>
+<li>org.springframework.data.domain.PageRequest tkdyd</li>
+<li>사용 파라미터 : page(0부터 시작), size, sort</li>
+</ul>
+<h2 id="설정-방법" style="position:relative;"><a href="#%EC%84%A4%EC%A0%95-%EB%B0%A9%EB%B2%95" aria-label="설정 방법 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>설정 방법</h2>
+<p>글로벌 설정 - 스프링 부트 설정</p>
+<div class="gatsby-highlight" data-language="yml"><pre class="language-yml"><code class="language-yml"><span class="token comment"># Application.yml</span>
+<span class="token key atrule">data</span><span class="token punctuation">:</span>
+  <span class="token key atrule">web</span><span class="token punctuation">:</span>
+    <span class="token key atrule">pageable</span><span class="token punctuation">:</span>
+      <span class="token key atrule">default-page-size</span><span class="token punctuation">:</span> <span class="token number">10</span> <span class="token comment"># 기본 페이지 사이즈</span>
+      <span class="token key atrule">max-page-size</span><span class="token punctuation">:</span> <span class="token number">2000</span> <span class="token comment"># 최대 페이지 사이즈</span></code></pre></div>
+<p>개별 설정 - @PageableDefault 어노테이션 사용</p>
+<div class="gatsby-highlight" data-language="java"><pre class="language-java"><code class="language-java"><span class="token annotation punctuation">@RequestMapping</span><span class="token punctuation">(</span>value <span class="token operator">=</span> <span class="token string">"/members_page"</span><span class="token punctuation">,</span> method <span class="token operator">=</span> <span class="token class-name">RequestMethod</span><span class="token punctuation">.</span><span class="token constant">GET</span><span class="token punctuation">)</span>
+<span class="token keyword">public</span> <span class="token class-name">String</span> <span class="token function">list</span><span class="token punctuation">(</span><span class="token annotation punctuation">@PageableDefault</span><span class="token punctuation">(</span>size <span class="token operator">=</span> <span class="token number">12</span><span class="token punctuation">,</span> sort <span class="token operator">=</span> <span class="token string">"username"</span><span class="token punctuation">,</span>
+                    direction <span class="token operator">=</span> <span class="token class-name">Sort<span class="token punctuation">.</span>Direction</span><span class="token punctuation">.</span><span class="token constant">DESC</span><span class="token punctuation">)</span> <span class="token class-name">Pageable</span> pageable<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+<span class="token punctuation">}</span></code></pre></div>
+<h3 id="멀티-페이징-시" style="position:relative;"><a href="#%EB%A9%80%ED%8B%B0-%ED%8E%98%EC%9D%B4%EC%A7%95-%EC%8B%9C" aria-label="멀티 페이징 시 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>멀티 페이징 시</h3>
+<blockquote>
+<p>페이징 정보가 둘이상이면 접두사로 구분 -> @Qualifier에 접두사 추가</p>
+</blockquote>
+<p>ex) /members?member<em>page=0&#x26;order</em>page=1</p>
+<div class="gatsby-highlight" data-language="java"><pre class="language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token class-name">String</span> list <span class="token punctuation">(</span>
+  <span class="token annotation punctuation">@Qualifier</span><span class="token punctuation">(</span><span class="token string">"member"</span><span class="token punctuation">)</span> <span class="token class-name">Pageable</span> memberPageable<span class="token punctuation">,</span>
+  <span class="token annotation punctuation">@Qualifier</span><span class="token punctuation">(</span><span class="token string">"order"</span><span class="token punctuation">)</span> <span class="token class-name">Pageable</span> orderPageable<span class="token punctuation">,</span>
+<span class="token punctuation">)</span></code></pre></div>
+<h3 id="page-1부터-시작-시" style="position:relative;"><a href="#page-1%EB%B6%80%ED%84%B0-%EC%8B%9C%EC%9E%91-%EC%8B%9C" aria-label="page 1부터 시작 시 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Page 1부터 시작 시</h3>
+<ul>
+<li>직접 클래스 만들어 변환 후 PageRequest 생성 -> 레포지토리에서 사용</li>
+<li>응답도 Page 대신 직접 만들어 제공</li>
+</ul>
+<h1 id="스프링-데이터-jpa-구현체" style="position:relative;"><a href="#%EC%8A%A4%ED%94%84%EB%A7%81-%EB%8D%B0%EC%9D%B4%ED%84%B0-jpa-%EA%B5%AC%ED%98%84%EC%B2%B4" aria-label="스프링 데이터 jpa 구현체 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>스프링 데이터 JPA 구현체</h1>
+<blockquote>
+<p>org.springframework.data.jpa.repository.support.SimpleJpaRepository</p>
+</blockquote>
+<ul>
+<li>구현체를 살펴보면 class레벨에 @Repository, @Transactional(readOnly = true) 적용</li>
+<li>save() 같은 경우 readOnly false (default)</li>
+</ul>
+<h2 id="readonly" style="position:relative;"><a href="#readonly" aria-label="readonly permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>readOnly</h2>
+<blockquote>
+<p>기본값은 false 이며 true 로 세팅하는 경우 트랜잭션을 읽기 전용으로 변경</p>
+</blockquote>
+<ul>
+<li>읽기 전용 트랜잭션 내에서 INSERT, UPDATE, DELETE 작업을 해도 반영x</li>
+<li><strong>성능 향상을 위해 사용</strong>하거나 읽기 외 다른 동작 방지위해 사용</li>
+</ul>
+<h3 id="dirty-checking-무시" style="position:relative;"><a href="#dirty-checking-%EB%AC%B4%EC%8B%9C" aria-label="dirty checking 무시 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Dirty Checking 무시</h3>
+<blockquote>
+<p>개발자가 임의로 UPDATE 쿼리를 사용하지 않아도 트랜잭션 커밋 시에 1차 캐시에 저장되어 있는 Entity 와 스냅샷을 비교해서 변경된 부분이 있으면 UPDATE 쿼리를 날려주는 기능</p>
+</blockquote>
+<p>-> readOnly=true 설정 시 스프링 프레임워크가 Hibernate의 FlushMode를 <strong>MANUAL로 설정</strong><br>
+-> 플러시 할 때 일어나는 스냅샷 비교와 같은 무거운 로직 수행x</p>
+<h1 id="새로운-엔티티-구분" style="position:relative;"><a href="#%EC%83%88%EB%A1%9C%EC%9A%B4-%EC%97%94%ED%8B%B0%ED%8B%B0-%EA%B5%AC%EB%B6%84" aria-label="새로운 엔티티 구분 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>새로운 엔티티 구분</h1>
+<p>save() 메서드는</p>
+<ul>
+<li>새로운 엔티티면 저장 - em.persist()</li>
+<li>새로운 엔티티가 아니면 병합 - em.merge()</li>
+</ul>
+<p>객체일 때 <strong>null</strong>로 판단<br>
+자바 기본 타입일 때 <strong>0</strong>으로 판단<br>
+-> 식별자 생성 전략이 @Id만 사용해 <strong>직접 할당</strong>할 때 문제 발생</p>
+<p><strong>Persistable 인터페이스 구현해 새로운 엔티티 판단</strong><br>
+-> 새로운 엔티티인지 확인하는 isNew 함수 구현
+-> @CreatedDate 조합하면 편리하게 확인 가능</p>
+<div class="gatsby-highlight" data-language="java"><pre class="language-java"><code class="language-java"><span class="token annotation punctuation">@Entity</span>
+<span class="token annotation punctuation">@EntityListeners</span><span class="token punctuation">(</span><span class="token class-name">AuditingEntityListener</span><span class="token punctuation">.</span><span class="token keyword">class</span><span class="token punctuation">)</span>
+<span class="token annotation punctuation">@NoArgsConstructor</span><span class="token punctuation">(</span>access <span class="token operator">=</span> <span class="token class-name">AccessLevel</span><span class="token punctuation">.</span><span class="token constant">PROTECTED</span><span class="token punctuation">)</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Item</span> <span class="token keyword">implements</span> <span class="token class-name">Persistable</span> <span class="token punctuation">{</span>
+    <span class="token annotation punctuation">@Id</span>
+    <span class="token keyword">private</span> <span class="token class-name">String</span> id<span class="token punctuation">;</span>
+
+    <span class="token annotation punctuation">@CreatedDate</span>
+    <span class="token keyword">private</span> <span class="token class-name">LocalDateTime</span> createdDate<span class="token punctuation">;</span>
+
+    <span class="token keyword">public</span> <span class="token class-name">Item</span><span class="token punctuation">(</span><span class="token class-name">String</span> id<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>id <span class="token operator">=</span> id<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token class-name">Object</span> <span class="token function">getId</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> id<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token keyword">boolean</span> <span class="token function">isNew</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> createdDate <span class="token operator">==</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre></div>
 <h1 id="tip" style="position:relative;"><a href="#tip" aria-label="tip permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Tip!!</h1>
 <ul>
 <li>gradle 의존관계 확인 command</li>
@@ -742,6 +872,31 @@ JPQL 없이 패치 조인</p>
 <li><a href="/JPA_4/#jpa-hint">JPA Hint</a></li>
 <li><a href="/JPA_4/#%EC%82%AC%EC%9A%A9%EC%9E%90-%EC%A0%95%EC%9D%98-%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4">사용자 정의 인터페이스</a></li>
 <li><a href="/JPA_4/#auditing">Auditing</a></li>
+<li><a href="/JPA_4/#domain-class-converter">Domain Class Converter</a></li>
+<li>
+<p><a href="/JPA_4/#%ED%8E%98%EC%9D%B4%EC%A7%95-%EC%A0%95%EB%A0%AC">페이징, 정렬</a></p>
+<ul>
+<li>
+<p><a href="/JPA_4/#%EC%84%A4%EC%A0%95-%EB%B0%A9%EB%B2%95">설정 방법</a></p>
+<ul>
+<li><a href="/JPA_4/#%EB%A9%80%ED%8B%B0-%ED%8E%98%EC%9D%B4%EC%A7%95-%EC%8B%9C">멀티 페이징 시</a></li>
+<li><a href="/JPA_4/#page-1%EB%B6%80%ED%84%B0-%EC%8B%9C%EC%9E%91-%EC%8B%9C">Page 1부터 시작 시</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><a href="/JPA_4/#%EC%8A%A4%ED%94%84%EB%A7%81-%EB%8D%B0%EC%9D%B4%ED%84%B0-jpa-%EA%B5%AC%ED%98%84%EC%B2%B4">스프링 데이터 JPA 구현체</a></p>
+<ul>
+<li>
+<p><a href="/JPA_4/#readonly">readOnly</a></p>
+<ul>
+<li><a href="/JPA_4/#dirty-checking-%EB%AC%B4%EC%8B%9C">Dirty Checking 무시</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="/JPA_4/#%EC%83%88%EB%A1%9C%EC%9A%B4-%EC%97%94%ED%8B%B0%ED%8B%B0-%EA%B5%AC%EB%B6%84">새로운 엔티티 구분</a></li>
 <li><a href="/JPA_4/#tip">Tip!!</a></li>
 <li><a href="/JPA_4/#reference">Reference</a></li>
 </ul></div></main><footer><span>© 2022 Ian </span></footer></div><div id="top" style="opacity:0;pointer-events:none"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-double-up" class="svg-inline--fa fa-angle-double-up fa-w-10 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M177 255.7l136 136c9.4 9.4 9.4 24.6 0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9 0L160 351.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9 0L7 425.7c-9.4-9.4-9.4-24.6 0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1zm-34-192L7 199.7c-9.4 9.4-9.4 24.6 0 33.9l22.6 22.6c9.4 9.4 24.6 9.4 33.9 0l96.4-96.4 96.4 96.4c9.4 9.4 24.6 9.4 33.9 0l22.6-22.6c9.4-9.4 9.4-24.6 0-33.9l-136-136c-9.2-9.4-24.4-9.4-33.8 0z"></path></svg></div></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script>
